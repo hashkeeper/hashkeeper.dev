@@ -1,0 +1,12 @@
+{
+  "name": "hashkeeper.dev",
+  "version": "3.0.0",
+  "description": "Hashkeeper Fullstack & Software Development",
+  "license": "MIT",
+  "author": "Edward Cronin",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

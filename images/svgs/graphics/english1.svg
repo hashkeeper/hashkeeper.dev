@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="1030"
+   height="850"
+   viewBox="0 0 30.9 25.5"
+   version="1.1"
+   id="svg2"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="834.84735"
+       y="481.05533"
+       width="445.05338"
+       height="634.60986"
+       id="rect2" />
+  </defs>
+  <path
+     fill="none"
+     d="M 0,0 H 24 V 24 H 0 Z"
+     id="path1" />
+  <path
+     d="m 14,10 h 2 v 0.757 A 4.5,4.5 0 0 1 23,14.5 V 20 H 21 V 14.5 C 21,13.07 19.825,12 18.5,12 17.175,12 16,13.07 16,14.5 V 20 H 14 Z M 12,4 V 6 H 4 v 5 h 8 v 2 H 4 v 5 h 8 v 2 H 2 V 4 Z"
+     id="path2" />
+  <text
+     xml:space="preserve"
+     transform="matrix(0.03,0,0,0.03,-3.4712954,-4.1957615)"
+     id="text2"
+     style="font-size:466.667px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);shape-padding:34.1957;display:inline;fill:#fb79c7;stroke-width:1.88976;stroke-linejoin:bevel"><tspan
+       x="869.04297"
+       y="939.85872"
+       id="tspan3"><tspan
+         style="font-family:C059;-inkscape-font-specification:C059;fill:#000000"
+         id="tspan1">1</tspan></tspan></text>
+</svg>

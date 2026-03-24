@@ -1,0 +1,537 @@
+@media screen and (max-width: 1200px) {
+    #mainlogo {
+        position: fixed;
+        top: 25px;
+        left: 25px;
+    }
+
+    [aria-controls="navdropdown"] {
+        display: flex;
+        position: fixed;
+        margin-left: auto;
+        top: 25px;
+        right: 25px;
+    }
+
+    [aria-expanded="false"] ~  nav#navlist {
+        display: none;
+    }
+
+    [aria-expanded="false"] > svg#close {
+        display: none;
+    }
+
+    [aria-expanded="false"] > svg#open {
+        display: block;
+    }
+
+    [aria-expanded="true"] ~ nav#navlist {
+        position: fixed;
+    }
+
+    [aria-expanded="true"] > svg#close {
+        display: fixed;
+    }
+
+    [aria-expanded="true"] > svg#open {
+        display: none;
+    }
+
+    header#heads > nav#navlist {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        align-content: center;
+        background-color: white;
+        background: white;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+    }
+
+    header#heads > nav#navlist > div {
+        margin: 2rem 0;
+    }
+
+    header#heads > nav#navlist > hr {
+        display: block;
+        width: 90%;
+        margin-top: 5rem;
+        border-width: 1;
+        border-color: rgb(199, 199, 199);
+        background-color: rgb(199, 199, 199);
+        background: rgb(199, 199, 199);
+    }
+
+    section#initinfo {
+        flex-direction: column;
+        height: 55rem;
+    }
+
+    span#initinfo {
+        flex-direction: column;
+    }
+
+    section#initinfo > span#initdesc {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0 0 0;
+        padding: 0;
+        width: 75%;
+    }
+
+    section#initinfo > span#initicons {
+        width: 75%;
+        margin: 5rem 0 0 0;
+        align-self: center;
+        align-items: center;
+    }
+
+    #initicons > div#img00 { 
+        margin-left: 38%; 
+        margin-top: 2%;
+    }
+    
+    #initicons > div#img01 { 
+        margin-left: 5%; 
+        margin-top: 17%;
+    }
+    
+    #initicons > div#img02 { 
+        margin-left: 28%;  
+        margin-top: 15%;
+    }
+    
+    #initicons > div#img03 { 
+        margin-left: 10%; 
+        margin-top: 2%;
+    }
+    
+    #initicons > div#img04 { 
+        margin-left: 16%; 
+        margin-top: 23%;
+    }
+    
+    #initicons > div#img05 { 
+        margin-left: 0%; 
+        margin-top: 5%;
+    }
+    
+    #initicons > div#img06 { 
+        margin-left: 46%; 
+        margin-top: 20%;
+    }
+
+    section#templover {
+        width: 100%;
+        height: auto;
+    }
+
+    section#templover > h1 { font-size: 24px; }
+    section#templover > h4 { font-size: 12px; }
+
+    section#templover > span {
+        width: 100%;
+        height: 35rem;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    section#templover > span > div.sqrcards {  
+        width: 45%;
+        height: 48%;
+        margin: 1%;
+    }
+
+    section#adspace {
+        margin: 8rem 0;
+        height: auto;
+    }
+
+    section#adspace > img {
+        width: 25rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    section#adspace > span:nth-child(1) {
+        align-self: flex-end;
+    }
+
+    section#features.container {
+        width: 95vw;
+        margin: 1rem;
+    }
+
+    section#features > * {
+        margin: 1rem;
+    }
+
+    span#featurelist {
+        width: 100%;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    section#features > span#grid01 > hr {
+        width: 10rem;
+    }
+
+    section#test00 {
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#test00 > img {
+        width: 70%;
+    }
+
+    section#test00 > span {
+        align-items: center;
+    }
+
+    section#pricinglist {
+        width: 95vw;
+        height: 55rem;
+        margin: 3rem 0 0 0;
+    }
+
+    section#pricinglist > span#pricinggrid {
+        width: 95vw;
+        justify-content: space-between;
+        align-content: space-between;
+        margin: 0 0 3rem 0;
+        grid-template-areas: 
+        "b00 b00"
+        "b00 b00"
+        "b01 b02"
+        "b03 b04";
+    }
+
+    div#pricing00 {
+        width: 70vw;
+        padding: 3rem;
+        width: inherit;
+        height: 15rem;
+        justify-content: center;
+    }
+
+    div#pricing00 > h1 {
+        font-size: 46px;
+        text-align: center;
+    }
+
+    div#pricing00 > hr {
+        width: 90%;
+    }
+
+    div#pricing00 > h5 {
+        font-size: 16px;
+        align-self: center;
+    }
+
+    div#pricing00 > button {
+        width: 8rem;
+        margin-top: auto;
+        align-self: center;
+        color: white;
+    }
+
+    div#pricing00 > p {
+        align-self: center;
+    }
+
+    section#hireus {
+        width: 100vw;
+        height: 65rem;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    section#hireus > span#hirewording {
+        flex-direction: row;
+        width: 100%
+    }
+
+    section#hireus > span#hirewording > div {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    section#hireus > span#hirewording > div {
+        width: 90%;
+    }
+
+    #hirewording > div > h1 { font-size: 46px }
+    #hirewording > div > hr { width: 45%; }
+    #hirewording > div > h4 { font-size: 26px; }
+    #hirewording > div > h5 { font-size: 26px; }
+    #hirewording > div > h6 { font-size: 16px; color: rgb(141, 136, 161) }
+
+    section#hireus > span#hirewording> div:nth-child(1) {
+        width: 100vw;
+    }
+
+    section#hireus > #hireusform {
+        width: 85%;
+        max-width: 85%;
+    }
+
+    section#hireus > form#hireusform > input, select {
+        width: 100%;
+    }
+    
+    #hireusform > textarea {
+        width: 95%;
+    }
+
+    section#subfooter {
+        height: 35rem;
+        grid-template-areas: 
+        "sf00 sf01 sf02"
+        ". sf03 sf04";
+    }
+
+    footer > div:nth-child(2) > div:nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {  
+    nav#navlist { 
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+        justify-items: center;
+    }
+
+    nav#navlist > div {
+        flex-direction: column;
+    }
+
+    section#initinfo {
+        flex-direction: column;
+        padding: 0;
+        height: 45rem;
+    }
+
+    section#initinfo > span#initicons {
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+
+    #initicons > div#img00 > img { width: 45px; height: 45px; }
+    #initicons > div#img01 > img { width: 38px; height: 38px; }
+    #initicons > div#img02 > img { width: 52px; height: 52px; }
+    #initicons > div#img03 > img { width: 60px; height: 60px; }
+    #initicons > div#img04 > img { width: 55px; height: 55px; }
+    #initicons > div#img05 > img { width: 52px; height: 52px; }
+    #initicons > div#img06 > img { width: 65px; height: 65px; }
+
+    #initicons > div#img00 { 
+        margin-left: 0rem; 
+        margin-top: 0rem;
+    }
+
+    #initicons > div#img01 { 
+        margin-left: 8rem; 
+        margin-top: 3rem;
+    }
+
+    #initicons > div#img02 { 
+        margin-left: 16rem;  
+        margin-top: 0rem; 
+    }
+
+    #initicons > div#img03 { 
+        margin-left: 1rem; 
+        margin-top: 8rem; 
+    }
+
+    #initicons > div#img04 { 
+        margin-left: 8rem; 
+        margin-top: 10rem;
+    }
+
+    #initicons > div#img05 { 
+        margin-left: 25rem; 
+        margin-top: 3rem; 
+    }
+
+    #initicons > div#img06 { 
+        margin-left: 18rem; 
+        margin-top: 12rem;
+    }
+
+    section#templover {
+        width: 98vw;
+        height: 85rem;
+    }
+
+    section#templover > span > div.sqrcards {  
+        width: 90%;
+        height: 40%;
+        padding: 15px;
+        margin: 1%;
+    }
+
+    section#templover > span > div.sqrcards > * {  
+        padding: 5px 0;
+    }
+
+    section#adspace {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    section#adspace > span {
+        margin: 0 0 3rem 0;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    section#adspace > img {
+        width: 25rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    section#features > span > div {
+        flex-direction: column;
+    }
+
+    section#features > span#grid01 {
+        display: grid;
+        grid-template-areas:
+        "g00 t00"
+        "g01 t01"
+        "g02 t02"
+        "g03 t03";
+    }
+
+    section#features > span#grid01 > hr {
+        display: none;
+    }
+
+    section#features > span#grid01 > h6 {
+        margin: 0 0 0 1rem;
+        align-self: center;
+        justify-self: start;
+        text-align: start;
+    }
+
+    section#features > img {
+        width: 100vw;
+    }
+
+    #affiliates {
+        margin: 10rem 0 0 0;
+    }
+
+    #affiliates > span {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #affiliates > span > img {
+        margin: 1rem 0;
+    }
+
+    #affiliates > hr {
+        display: none;
+    }
+
+    #pricinggrid {
+        width: 100%;
+        height: 85rem;
+        margin: 5rem 0 0 0;
+        display: grid;
+        grid-template-areas: 
+        "b00"
+        "b01"
+        "b02"
+        "b03"
+        "b04";
+    }
+
+    #pricinglist > span#pricinggrade > div#pricing00 {
+        height: auto;
+    }
+
+    #pricinglist > span#pricinggrade > #pricing00 > * {
+        padding: 5rem 0;
+    }
+
+    section#hireus {
+        flex-direction: column;
+        height: auto;
+    }
+
+    section#hireus > span#hirewording {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#hireus > span#hirewording > div:nth-child(1) > hr {
+        width: 90%;
+    }
+
+    section#hireus > span#hirewording > div:nth-child(2) > div {
+        justify-items: center;
+        justify-content: center;
+    }
+
+    #hireus > div > span { 
+        width: 100; 
+        padding: 2rem;
+    }
+    
+    #hireus > div > form { 
+        width: 70%; 
+    }
+
+    section#subfooter {
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: 
+        "sf00"
+        "sf01"
+        "sf02"
+        "sf03"
+        "sf04";
+    }
+
+    section#subfooter > * {
+        width: 25rem;
+        justify-self: center;
+        align-self: center;
+        justify-items: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    footer > div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    footer > div:nth-child(2) > * {
+        margin: .75rem;
+        align-self: center;
+    }
+}

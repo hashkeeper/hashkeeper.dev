@@ -1,0 +1,1485 @@
+/* Jan */
+/* Light */
+#janL {
+  --bg: #238188;
+  --heading-color: #00001fff;
+  --gen-text-color: #060638;
+
+  --menu-bg: #52969b;
+  --menu-shadow: #234a5cff;
+  --menu-text-color: #234a5cff;
+  --dropdown-svg: #234a5cff;
+
+  --splash-bg-image: url("./../images/splashBg/janL.jpg");
+  --splash-bg-position: 0% 65%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #0a151aff;
+  --header-fill-H1B: #191f29ff;
+  --header-fill-A1F: #122730ff;
+  --header-fill-A1B: #293a4cff;
+  --header-fill-S1F: #234a5cff;
+  --header-fill-S1B: #425f7bff;
+  --header-fill-H2F: #2e6c7aff;
+  --header-fill-H2B: #577999ff;
+  --header-fill-K1F: #32979fff;
+  --header-fill-K1B: #6980a5ff;
+  --header-fill-E1F: #2a676fff;
+  --header-fill-E1B: #526a89ff;
+  --header-fill-E2F: #1d4c58ff;
+  --header-fill-E2B: #41556cff;
+  --header-fill-P1F: #18333fff;
+  --header-fill-P1B: #344156ff;
+  --header-fill-E3F: #102028ff;
+  --header-fill-E3B: #283343ff;
+  --header-fill-R1F: #0a151aff;
+  --header-fill-R1B: #191f29ff;
+
+  --header-bg: #317c8d;
+  --svg-lock-fill: #102028ff;
+  --svg-key-fill: #18333fff;
+  --svg-stream-fill: #93acd4;
+  --svg-book-fill: #316571;
+  --svg-haze-fill: #93acd4;
+
+  --svg-fill: #1aa2b4;
+  --container-bg: #589398;
+
+  --stack-fill: #589398;
+  --stack-text-color: #589398;
+  --stack-fg: #234a5cff;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #589398;
+  --footer-svg: #35636d;
+  --footer-fill1: #32979fff;
+  --footer-fill2: #6980a5ff;
+  --footer-fill3: #2a676fff;
+  --footer-fill4: #32979fff;
+  --footer-fill5: #6980a5ff;
+  --footer-fill6: #2a676fff;
+}
+/* Dark */
+#janD {
+  --bg: #0c1818ff;
+  --heading-color: #eac5a3;
+  --gen-text-color: #ad8866;
+
+  --menu-bg: #2a4f6aff;
+  --menu-shadow: #caac8cff;
+  --menu-text-color: #caac8cff;
+  --dropdown-svg: #caac8cff;
+
+  --splash-bg-image: url("./../images/splashBg/janD.jpg");
+  --splash-bg-position: 0% 100%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #0c1818ff;
+  --header-fill-H1B: #131d2aff;
+  --header-fill-A1F: #1a2323ff;
+  --header-fill-A1B: #202346ff;
+  --header-fill-S1F: #423224ff;
+  --header-fill-S1B: #20303cff;
+  --header-fill-H2F: #765838ff;
+  --header-fill-H2B: #24455cff;
+  --header-fill-K1F: #a37a4dff;
+  --header-fill-K1B: #2a4f6aff;
+  --header-fill-E1F: #634f36ff;
+  --header-fill-E1B: #22445dff;
+  --header-fill-E2F: #33291fff;
+  --header-fill-E2B: #30315fff;
+  --header-fill-P1F: #1c2727ff;
+  --header-fill-P1B: #272849ff;
+  --header-fill-E3F: #182020ff;
+  --header-fill-E3B: #1c283bff;
+  --header-fill-R1F: #0c1818ff;
+  --header-fill-R1B: #131d2aff;
+
+  --header-bg: #182020ff;
+  --svg-lock-fill: #33291fff;
+  --svg-key-fill: #634f36ff;
+  --svg-stream-fill: #9fd7ffff;
+  --svg-book-fill: #b5916a;
+  --svg-haze-fill: #9fd7ffff;
+
+  --svg-fill: #008fa2;
+  --container-bg: #20303cff;
+
+  --stack-fill: #427091;
+  --stack-text-color: #427091;
+  --stack-fg: #22445dff;
+
+  --map-bg: url("./../images/thumbnails/mapDark.png");
+
+  --footer-bg: #0f2222;
+  --footer-svg: #7a9595;
+  --footer-fill1: #a37a4dff;
+  --footer-fill2: #2a4f6aff;
+  --footer-fill3: #634f36ff;
+  --footer-fill4: #a37a4dff;
+  --footer-fill5: #2a4f6aff;
+  --footer-fill6: #634f36ff;
+}
+/* Feb */
+/* Light */
+#febL {
+  --bg: #f586ab;
+  --heading-color: #9e2463;
+  --gen-text-color: #4e0a2d;
+
+  --menu-bg: #de7d9e;
+  --menu-shadow: #22040e;
+  --menu-text-color: #22040e;
+  --dropdown-svg: #22040e;
+
+  --splash-bg-image: url("./../images/splashBg/febL.jpg");
+  --splash-bg-position: 0% 55%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #2d0906ff;
+  --header-fill-H1B: #33002fff;
+  --header-fill-A1F: #5a120cff;
+  --header-fill-A1B: #620e3aff;
+  --header-fill-S1F: #8a0027ff;
+  --header-fill-S1B: #9e155bff;
+  --header-fill-H2F: #b2003cff;
+  --header-fill-H2B: #e33b8eff;
+  --header-fill-K1F: #cc0043ff;
+  --header-fill-K1B: #eb61a2ff;
+  --header-fill-E1F: #c20042ff;
+  --header-fill-E1B: #e22c87ff;
+  --header-fill-E2F: #a30036ff;
+  --header-fill-E2B: #b62065ff;
+  --header-fill-P1F: #80002bff;
+  --header-fill-P1B: #660f3dff;
+  --header-fill-E3F: #420e0bff;
+  --header-fill-E3B: #52004bff;
+  --header-fill-R1F: #2d0906ff;
+  --header-fill-R1B: #33002fff;
+
+  --header-bg: #d96280;
+  --svg-lock-fill: #33002fff;
+  --svg-key-fill: #5b0053;
+  --svg-stream-fill: #ff9ecb;
+  --svg-book-fill: #a40058;
+  --svg-haze-fill: #ff9ecb;
+
+  --svg-fill: #e86565;
+  --container-bg: #e1678f;
+
+  --stack-fill: #f586ab;
+  --stack-text-color: #f586ab;
+  --stack-fg: #ca5f83;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #ff99bb;
+  --footer-svg: #7b3254;
+  --footer-fill1: #ca5f83;
+  --footer-fill2: #f586ab;
+  --footer-fill3: #e86565;
+  --footer-fill4: #ca5f83;
+  --footer-fill5: #f586ab;
+  --footer-fill6: #e86565;
+}
+/* Dark */
+#febD {
+  --bg: #420e0bff;
+  --heading-color: #e55a5a;
+  --gen-text-color: #d76363;
+
+  --menu-bg: #630505;
+  --menu-shadow: #e07070;
+  --menu-text-color: #e07070;
+  --dropdown-svg: #e07070;
+
+  --splash-bg-image: url("./../images/splashBg/febD.jpg");
+  --splash-bg-position: 0% 55%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #2d0906ff;
+  --header-fill-H1B: #33002fff;
+  --header-fill-A1F: #5a120cff;
+  --header-fill-A1B: #620e3aff;
+  --header-fill-S1F: #8a0027ff;
+  --header-fill-S1B: #9e155bff;
+  --header-fill-H2F: #b2003cff;
+  --header-fill-H2B: #e33b8eff;
+  --header-fill-K1F: #cc0043ff;
+  --header-fill-K1B: #eb61a2ff;
+  --header-fill-E1F: #c20042ff;
+  --header-fill-E1B: #e22c87ff;
+  --header-fill-E2F: #a30036ff;
+  --header-fill-E2B: #b21f63ff;
+  --header-fill-P1F: #80002bff;
+  --header-fill-P1B: #660f3dff;
+  --header-fill-E3F: #420e0bff;
+  --header-fill-E3B: #52004bff;
+  --header-fill-R1F: #2d0906ff;
+  --header-fill-R1B: #33002fff;
+
+  --header-bg: #2d0906ff;
+  --svg-lock-fill: #3f023a;
+  --svg-key-fill: #52004bff;
+  --svg-stream-fill: #ffcbe3;
+  --svg-book-fill: #711546;
+  --svg-haze-fill: #ffcbe3;
+
+  --svg-fill: #4a0303;
+  --container-bg: #80002bff;
+
+  --stack-fill: #57001d;
+  --stack-text-color: #57001d;
+  --stack-fg: #a30036ff;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #5d001f;
+  --footer-svg: #d76363;
+  --footer-fill1: #b21f63ff;
+  --footer-fill2: #a30036ff;
+  --footer-fill3: #e22c87ff;
+  --footer-fill4: #b21f63ff;
+  --footer-fill5: #a30036ff;
+  --footer-fill6: #e22c87ff;
+}
+/* Mar */
+/* Light */
+#marL {
+  --bg: #6fdcabff;
+  --heading-color: #053c23;
+  --gen-text-color: #044025;
+
+  --menu-bg: #35ba7e;
+  --menu-shadow: #053c23;
+  --menu-text-color: #053c23;
+  --dropdown-svg: #053c23;
+
+  --splash-bg-image: url("./../images/splashBg/marL.jpg");
+  --splash-bg-position: 0% 100%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #05140dff;
+  --header-fill-H1B: #0a291bff;
+  --header-fill-A1F: #0f3d2aff;
+  --header-fill-A1B: #196743ff;
+  --header-fill-S1F: #196642ff;
+  --header-fill-S1B: #28a46cff;
+  --header-fill-H2F: #248f5dff;
+  --header-fill-H2B: #6fdcabff;
+  --header-fill-K1F: #1f7a50ff;
+  --header-fill-K1B: #5bd79fff;
+  --header-fill-E1F: #196642ff;
+  --header-fill-E1B: #32cd87ff;
+  --header-fill-E2F: #145235ff;
+  --header-fill-E2B: #28a46cff;
+  --header-fill-P1F: #0f3d28ff;
+  --header-fill-P1B: #1e7b51ff;
+  --header-fill-E3F: #0a291bff;
+  --header-fill-E3B: #145236ff;
+  --header-fill-R1F: #05140dff;
+  --header-fill-R1B: #0a291bff;
+
+  --header-bg: #6fdcabff;
+  --svg-lock-fill: #05140dff;
+  --svg-key-fill: #05140dff;
+  --svg-stream-fill: #28a46cff;
+  --svg-book-fill: #0f3d2aff;
+  --svg-haze-fill: #28a46cff;
+
+  --svg-fill: #114929;
+  --container-bg: #168252;
+
+  --stack-fill: #57d69d;
+  --stack-text-color: #57d69d;
+  --stack-fg: #0e5d3a;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #32cd87ff;
+  --footer-svg: #0a6039;
+  --footer-fill1: #3c907cff;
+  --footer-fill2: #28a46cff;
+  --footer-fill3: #1e7b51ff;
+  --footer-fill4: #3c907cff;
+  --footer-fill5: #28a46cff;
+  --footer-fill6: #1e7b51ff;
+}
+/* Dark */
+#marD {
+  --bg: #02221fff;
+  --heading-color: #94d392;
+  --gen-text-color: #bbeeb9;
+
+  --menu-bg: #274b4d;
+  --menu-shadow: #94d392;
+  --menu-text-color: #94d392;
+  --dropdown-svg: #94d392;
+
+  --splash-bg-image: url("./../images/splashBg/marD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #02221fff;
+  --header-fill-H1B: #1d0c0eff;
+  --header-fill-A1F: #024037ff;
+  --header-fill-A1B: #412420ff;
+  --header-fill-S1F: #264f4aff;
+  --header-fill-S1B: #415658ff;
+  --header-fill-H2F: #0c7e5bff;
+  --header-fill-H2B: #4a6668ff;
+  --header-fill-K1F: #0c9c6dff;
+  --header-fill-K1B: #547578ff;
+  --header-fill-E1F: #0a7654ff;
+  --header-fill-E1B: #485f61ff;
+  --header-fill-E2F: #244c47ff;
+  --header-fill-E2B: #3a4e4fff;
+  --header-fill-P1F: #234340ff;
+  --header-fill-P1B: #4e2c27ff;
+  --header-fill-E3F: #024037ff;
+  --header-fill-E3B: #35181bff;
+  --header-fill-R1F: #02221fff;
+  --header-fill-R1B: #1d0c0eff;
+
+  --header-bg: #0d3630;
+  --svg-lock-fill: #1d0c0eff;
+  --svg-key-fill: #35181bff;
+  --svg-stream-fill: #a9f4a9;
+  --svg-book-fill: #4e2c27ff;
+  --svg-haze-fill: #a9f4a9;
+
+  --svg-fill: #485f61ff;
+  --container-bg: #223c3e;
+
+  --stack-fill: #0c413c;
+  --stack-text-color: #0c413c;
+  --stack-fg: #011a18;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #234340ff;
+  --footer-svg: #9fe0da;
+  --footer-fill1: #3a4e4fff;
+  --footer-fill2: #244c47ff;
+  --footer-fill3: #485f61ff;
+  --footer-fill4: #3a4e4fff;
+  --footer-fill5: #244c47ff;
+  --footer-fill6: #485f61ff;
+}
+/* Apr */
+/* Light */
+#aprL {
+ 
+  --bg: #6e90c4ff;
+  --heading-color: #fccf8dff;
+  --gen-text-color: #fccf8dff;
+
+  --menu-bg: #5174a7;
+  --menu-shadow: #f4a962ff;
+  --menu-text-color: #f4a962ff;
+  --dropdown-svg: #f4a962ff;
+
+  --splash-bg-image: url("./../images/splashBg/aprL.jpg");
+  --splash-bg-position: 0% 25%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #a27110ff;
+  --header-fill-H1B: #3f4224ff;
+  --header-fill-A1F: #ec9c3cff;
+  --header-fill-A1B: #334f75ff;
+  --header-fill-S1F: #fbb45bff;
+  --header-fill-S1B: #506fafff;
+  --header-fill-H2F: #fccf8dff;
+  --header-fill-H2B: #547dbaff;
+  --header-fill-K1F: #fcdbabff;
+  --header-fill-K1B: #6e90c4ff;
+  --header-fill-E1F: #f4a962ff;
+  --header-fill-E1B: #4266a4ff;
+  --header-fill-E2F: #faa338ff;
+  --header-fill-E2B: #384e7bff;
+  --header-fill-P1F: #f98d06ff;
+  --header-fill-P1B: #273959ff;
+  --header-fill-E3F: #d99017ff;
+  --header-fill-E3B: #1c2b40ff;
+  --header-fill-R1F: #a27110ff;
+  --header-fill-R1B: #3f4224ff;
+
+  --header-bg: #85a6d8;
+  --svg-lock-fill: #945406;
+  --svg-key-fill: #b97200;
+  --svg-stream-fill: #fcdbabff;
+  --svg-book-fill: #663f00;
+  --svg-haze-fill: #fcdbabff;
+
+  --svg-fill: #6e90c4ff;
+  --container-bg: #4f72a7;
+
+  --stack-fill: #93b4e6;
+  --stack-text-color: #93b4e6;
+  --stack-fg: #3d5c8b;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #5678aa;
+  --footer-svg: #0f223f;
+  --footer-fill1: #3f4224ff;
+  --footer-fill2: #a27110ff;
+  --footer-fill3: #1c2b40ff;
+  --footer-fill4: #3f4224ff;
+  --footer-fill5: #a27110ff;
+  --footer-fill6: #1c2b40ff;
+}
+/* Dark */
+#aprD {
+  --bg: #0b171eff;
+  --heading-color: #bbc059ff;
+  --gen-text-color: #e3e97e;
+
+  --menu-bg: #136b42;
+  --menu-shadow: #d7df46;
+  --menu-text-color: #d7df46;
+  --dropdown-svg: #d7df46;
+
+  --splash-bg-image: url("./../images/splashBg/aprD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #05140dff;
+  --header-fill-H1B: #0b171eff;
+  --header-fill-A1F: #13270cff;
+  --header-fill-A1B: #0d1d26ff;
+  --header-fill-S1F: #113908ff;
+  --header-fill-S1B: #13353aff;
+  --header-fill-H2F: #adb244ff;
+  --header-fill-H2B: #285c62ff;
+  --header-fill-K1F: #bbc059ff;
+  --header-fill-K1B: #2d717bff;
+  --header-fill-E1F: #517529ff;
+  --header-fill-E1B: #17484fff;
+  --header-fill-E2F: #1a3107ff;
+  --header-fill-E2B: #11383bff;
+  --header-fill-P1F: #0a2b03ff;
+  --header-fill-P1B: #132c3aff;
+  --header-fill-E3F: #13270cff;
+  --header-fill-E3B: #102632ff;
+  --header-fill-R1F: #05140dff;
+  --header-fill-R1B: #0b171eff;
+
+  --header-bg: #061a02;
+  --svg-lock-fill: #082c31;
+  --svg-key-fill: #17484fff;
+  --svg-stream-fill: #ebf08c;
+  --svg-book-fill: #285c62ff;
+  --svg-haze-fill: #ebf08c;
+
+  --svg-fill: #517529ff;
+  --container-bg: #263516;
+
+  --stack-fill: #3f5a36;
+  --stack-text-color: #3f5a36;
+  --stack-fg: #13270cff;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #102a38;
+  --footer-svg: #485e6b;
+  --footer-fill1: #102632ff;
+  --footer-fill2: #13270cff;
+  --footer-fill3: #132c3aff;
+  --footer-fill4: #102632ff;
+  --footer-fill5: #13270cff;
+  --footer-fill6: #132c3aff;
+}
+/* May */
+/* Light */
+#mayL {
+  --bg: #9fdf53ff;
+  --heading-color: #518118ff;
+  --gen-text-color: #1b2b08ff;
+
+  --menu-bg: #87d728ff;
+  --menu-shadow: #28400cff;
+  --menu-text-color: #28400cff;
+  --dropdown-svg: #28400cff;
+
+  --splash-bg-image: url("./../images/splashBg/mayL.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #0d1504ff;
+  --header-fill-H1B: #1b2b08ff;
+  --header-fill-A1F: #28400cff;
+  --header-fill-A1B: #446c14ff;
+  --header-fill-S1F: #426b14ff;
+  --header-fill-S1B: #6cac20ff;
+  --header-fill-H2F: #5d961dff;
+  --header-fill-H2B: #93db3eff;
+  --header-fill-K1F: #508118ff;
+  --header-fill-K1B: #9fdf53ff;
+  --header-fill-E1F: #426b14ff;
+  --header-fill-E1B: #87d728ff;
+  --header-fill-E2F: #355610ff;
+  --header-fill-E2B: #6cac20ff;
+  --header-fill-P1F: #28400cff;
+  --header-fill-P1B: #518118ff;
+  --header-fill-E3F: #1b2b08ff;
+  --header-fill-E3B: #365610ff;
+  --header-fill-R1F: #0d1504ff;
+  --header-fill-R1B: #1b2b08ff;
+
+  --header-bg: #87d728ff;
+  --svg-lock-fill: #28400cff;
+  --svg-key-fill: #28400cff;
+  --svg-stream-fill: #518118ff;
+  --svg-book-fill: #35560f;
+  --svg-haze-fill: #518118ff;
+
+  --svg-fill: #114929;
+  --container-bg: #6cac20ff;
+
+  --stack-fill: #5d961dff;
+  --stack-text-color: #5d961dff;
+  --stack-fg: #93db3eff;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #6cac20ff;
+  --footer-svg: #0d1504ff;
+  --footer-fill1: #6cac20ff;
+  --footer-fill2: #5d961dff;
+  --footer-fill3: #446c14ff;
+  --footer-fill4: #6cac20ff;
+  --footer-fill5: #5d961dff;
+  --footer-fill6: #446c14ff;
+}
+
+/* Dark */
+#mayD {
+  --bg: #0d1504ff;
+  --heading-color: #b5e67fff;
+  --gen-text-color: #b5e67fff;
+
+  --menu-bg: #365610ff;
+  --menu-shadow: #daf3bfff;
+  --menu-text-color: #daf3bfff;
+  --dropdown-svg: #daf3bfff;
+
+  --splash-bg-image: url("./../images/splashBg/mayD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #5d961dff;
+  --header-fill-H1B: #6aab21ff;
+  --header-fill-A1F: #77c025ff;
+  --header-fill-A1B: #91da3fff;
+  --header-fill-S1F: #91da3fff;
+  --header-fill-S1B: #b5e67fff;
+  --header-fill-H2F: #a9e269ff;
+  --header-fill-H2B: #daf3bfff;
+  --header-fill-K1F: #a9e269ff;
+  --header-fill-K1B: #e7f7d4ff;
+  --header-fill-E1F: #9dde54ff;
+  --header-fill-E1B: #ceeeaaff;
+  --header-fill-E2F: #84d629ff;
+  --header-fill-E2B: #b5e67fff;
+  --header-fill-P1F: #77c025ff;
+  --header-fill-P1B: #9dde54ff;
+  --header-fill-E3F: #6aab21ff;
+  --header-fill-E3B: #84d629ff;
+  --header-fill-R1F: #5d961dff;
+  --header-fill-R1B: #6aab21ff;
+
+  --header-bg: #1b2b08ff;
+  --svg-lock-fill: #a9e269ff;
+  --svg-key-fill: #93ca55;
+  --svg-stream-fill: #daf3bfff;
+  --svg-book-fill: #5d961dff;
+  --svg-haze-fill: #daf3bfff;
+
+  --svg-fill: #114929;
+  --container-bg: #172704;
+
+  --stack-fill: #172704;
+  --stack-text-color: #172704;
+  --stack-fg: #365610ff;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #365610ff;
+  --footer-svg: #9dde54ff;
+  --footer-fill1: #6cac20ff;
+  --footer-fill2: #28400cff;
+  --footer-fill3: #518118ff;
+  --footer-fill4: #6cac20ff;
+  --footer-fill5: #28400cff;
+  --footer-fill6: #518118ff;
+}
+
+/* Jun */
+/* Light */
+#junL {
+  --bg: #75b200ff;
+  --heading-color: #0f222f;
+  --gen-text-color: #0d1c26ff;
+
+  --menu-bg: #538000ff;
+  --menu-shadow: #0f222f;
+  --menu-text-color: #0f222f;
+  --dropdown-svg: #0f222f;
+
+  --splash-bg-image: url("./../images/splashBg/junL.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #172400ff;
+  --header-fill-H1B: #0d1c26ff;
+  --header-fill-A1F: #324d00ff;
+  --header-fill-A1B: #20465fff;
+  --header-fill-S1F: #538000ff;
+  --header-fill-S1B: #347098ff;
+  --header-fill-H2F: #75b200ff;
+  --header-fill-H2B: #5497c5ff;
+  --header-fill-K1F: #649900ff;
+  --header-fill-K1B: #67a3cbff;
+  --header-fill-E1F: #538000ff;
+  --header-fill-E1B: #418cbeff;
+  --header-fill-E2F: #436600ff;
+  --header-fill-E2B: #356f97ff;
+  --header-fill-P1F: #324d00ff;
+  --header-fill-P1B: #285371ff;
+  --header-fill-E3F: #213300ff;
+  --header-fill-E3B: #1a384cff;
+  --header-fill-R1F: #172400ff;
+  --header-fill-R1B: #0d1c26ff;
+
+  --header-bg: #75b200ff;
+  --svg-lock-fill: #356f97ff;
+  --svg-key-fill: #1a384cff;
+  --svg-stream-fill: #172400ff;
+  --svg-book-fill: #0d1c26ff;
+  --svg-haze-fill: #172400ff;
+
+  --svg-fill: #114929;
+  --container-bg: #649900ff;
+
+  --stack-fill: #64a713;
+  --stack-text-color: #64a713;
+  --stack-fg: #49790d;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #649900ff;
+  --footer-svg: #abe245;
+  --footer-fill1: #356f97ff;
+  --footer-fill2: #285371ff;
+  --footer-fill3: #418cbeff;
+  --footer-fill4: #356f97ff;
+  --footer-fill5: #285371ff;
+  --footer-fill6: #418cbeff;
+}
+
+  /* Dark */
+#junD {
+  --bg: #213300;
+  --heading-color: #95d547;
+  --gen-text-color: #acca87;
+
+  --menu-bg: #3d5708;
+  --menu-shadow: #acca87;
+  --menu-text-color: #acca87;
+  --dropdown-svg: #acca87;
+
+  --splash-bg-image: url("./../images/splashBg/junD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #75b200ff;
+  --header-fill-H1B: #1f74adff;
+  --header-fill-A1F: #97e500ff;
+  --header-fill-A1B: #3c9bddff;
+  --header-fill-S1F: #b0ff1aff;
+  --header-fill-S1B: #7dbde8ff;
+  --header-fill-H2F: #c2ff4cff;
+  --header-fill-H2B: #bedff4ff;
+  --header-fill-K1F: #c2ff4cff;
+  --header-fill-K1B: #d4e9f7ff;
+  --header-fill-E1F: #b9ff33ff;
+  --header-fill-E1B: #a8d3f0ff;
+  --header-fill-E2F: #a8ff00ff;
+  --header-fill-E2B: #7dbde8ff;
+  --header-fill-P1F: #97e500ff;
+  --header-fill-P1B: #52a8e0ff;
+  --header-fill-E3F: #86cc00ff;
+  --header-fill-E3B: #2691d9ff;
+  --header-fill-R1F: #75b200ff;
+  --header-fill-R1B: #1f74adff;
+
+  --header-bg: #213300;
+  --svg-lock-fill: #75b200ff;
+  --svg-key-fill: #97e500ff;
+  --svg-stream-fill: #a7d3f0;
+  --svg-book-fill: #c2ff4cff;
+  --svg-haze-fill: #a7d3f0;
+
+  --svg-fill: #172400ff;
+  --container-bg: #354b0b;
+
+  --stack-fill: #213300;
+  --stack-text-color: #213300;
+  --stack-fg: #477b08;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #2b4004;
+  --footer-svg: #bce276;
+  --footer-fill1: #395703;
+  --footer-fill2: #263902;
+  --footer-fill3: #1c2b02;
+  --footer-fill4: #395703;
+  --footer-fill5: #263902;
+  --footer-fill6: #1c2b02;
+}
+
+  /* Jul */
+  /* Light */
+#julL {
+  --bg: #6fc3afff;
+  --heading-color: #255b4fff;
+  --gen-text-color: #255b4fff;
+
+  --menu-bg: #f2ec38;
+  --menu-shadow: #255b4fff;
+  --menu-text-color: #255b4fff;
+  --dropdown-svg: #255b4fff;
+
+  --splash-bg-image: url("./../images/splashBg/julL.jpg");
+  --splash-bg-position: 0% 30%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #332100ff;
+  --header-fill-H1B: #0f241fff;
+  --header-fill-A1F: #4d3200ff;
+  --header-fill-A1B: #255b4fff;
+  --header-fill-S1F: #805400ff;
+  --header-fill-S1B: #3c907cff;
+  --header-fill-H2F: #b27500ff;
+  --header-fill-H2B: #5dbca5ff;
+  --header-fill-K1F: #996400ff;
+  --header-fill-K1B: #6fc3afff;
+  --header-fill-E1F: #805300ff;
+  --header-fill-E1B: #4bb49bff;
+  --header-fill-E2F: #664300ff;
+  --header-fill-E2B: #3c907cff;
+  --header-fill-P1F: #4d3200ff;
+  --header-fill-P1B: #2d6c5dff;
+  --header-fill-E3F: #422b00ff;
+  --header-fill-E3B: #1e483eff;
+  --header-fill-R1F: #332100ff;
+  --header-fill-R1B: #0f241fff;
+
+  --header-bg: #6fc3afff;
+  --svg-lock-fill: #fff950;
+  --svg-key-fill: #eae42b;
+  --svg-stream-fill: #fffc99;
+  --svg-book-fill: #bcb61c;
+  --svg-haze-fill: #fffb78;
+
+  --svg-fill: #54510d;
+  --container-bg: #fffb78;
+
+  --stack-fill: #6a6611;
+  --stack-text-color: #6a6611;
+  --stack-fg: #f2ec38;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #fffa62;
+  --footer-svg: #055845;
+  --footer-fill1: #3c907cff;
+  --footer-fill2: #b27500ff;
+  --footer-fill3: #eae42b;
+  --footer-fill4: #3c907cff;
+  --footer-fill5: #b27500ff;
+  --footer-fill6: #eae42b;
+}
+
+  /* Dark */
+#julD {
+  --bg: #010103;
+  --heading-color: #9ee5d6;
+  --gen-text-color: #98d478ff;
+
+  --menu-bg: #0f3616;
+  --menu-shadow: #3c8bddff;
+  --menu-text-color: #3c8bddff;
+  --dropdown-svg: #3c8bddff;
+
+  --splash-bg-image: url("./../images/splashBg/julD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #377c45ff;
+  --header-fill-H1B: #1f46adff;
+  --header-fill-A1F: #4bad39ff;
+  --header-fill-A1B: #3c8bddff;
+  --header-fill-S1F: #64c752ff;
+  --header-fill-S1B: #66cfffff;
+  --header-fill-H2F: #99d478ff;
+  --header-fill-H2B: #b3e7ffff;
+  --header-fill-K1F: #98d478ff;
+  --header-fill-K1B: #ccefffff;
+  --header-fill-E1F: #8acd65ff;
+  --header-fill-E1B: #a3cef5ff;
+  --header-fill-E2F: #64c752ff;
+  --header-fill-E2B: #7db2e8ff;
+  --header-fill-P1F: #429a32ff;
+  --header-fill-P1B: #5291e0ff;
+  --header-fill-E3F: #387b46ff;
+  --header-fill-E3B: #0d6af2ff;
+  --header-fill-R1F: #377c45ff;
+  --header-fill-R1B: #1f46adff;
+
+  --header-bg: #010914;
+  --svg-lock-fill: #99d478ff;
+  --svg-key-fill: #70ad4d;
+  --svg-stream-fill: #ccefffff;
+  --svg-book-fill: #326517;
+  --svg-haze-fill: #ccefffff;
+
+  --svg-fill: #54510d;
+  --container-bg: #185023;
+
+  --stack-fill: #16792c;
+  --stack-text-color: #16792c;
+  --stack-fg: #082d10;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #185023;
+  --footer-svg: #94e7a4;
+  --footer-fill1: #0d2d14;
+  --footer-fill2: #2b8e3f;
+  --footer-fill3: #55aa66;
+  --footer-fill4: #0d2d14;
+  --footer-fill5: #2b8e3f;
+  --footer-fill6: #55aa66;
+}
+
+  /* Aug */
+  /* Light */
+#augL {
+  --bg: #7e9e14ff;
+  --heading-color: #f7db3bff;
+  --gen-text-color: #2e3a07;
+
+  --menu-bg: #6f8e0c;
+  --menu-shadow: #d3b81e;
+  --menu-text-color: #d3b81e;
+  --dropdown-svg: #ebcd21;
+
+  --splash-bg-image: url("./../images/splashBg/augL.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #232d06ff;
+  --header-fill-H1B: #312a02ff;
+  --header-fill-A1F: #485a0cff;
+  --header-fill-A1B: #7b6905ff;
+  --header-fill-S1F: #6c8811ff;
+  --header-fill-S1B: #c4a808ff;
+  --header-fill-H2F: #90b517ff;
+  --header-fill-H2B: #f6d623ff;
+  --header-fill-K1F: #7e9e14ff;
+  --header-fill-K1B: #f7db3bff;
+  --header-fill-E1F: #6c8811ff;
+  --header-fill-E1B: #f5d20aff;
+  --header-fill-E2F: #5a710eff;
+  --header-fill-E2B: #c4a808ff;
+  --header-fill-P1F: #485a0cff;
+  --header-fill-P1B: #937e06ff;
+  --header-fill-E3F: #364409ff;
+  --header-fill-E3B: #625404ff;
+  --header-fill-R1F: #232d06ff;
+  --header-fill-R1B: #312a02ff;
+
+  --header-bg: #6c8811ff;
+  --svg-lock-fill: #c4a808ff;
+  --svg-key-fill: #dec536;
+  --svg-stream-fill: #ffec7e;
+  --svg-book-fill: #f5d20aff;
+  --svg-haze-fill: #ffec7e;
+
+  --svg-fill: #54510d;
+  --container-bg: #c4a808ff;
+
+  --stack-fill: #6c8811ff;
+  --stack-text-color: #6c8811ff;
+  --stack-fg: #f5d20aff;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #f6d623ff;
+  --footer-svg: #6c8811ff;
+  --footer-fill1: #c4a808ff;
+  --footer-fill2: #5a710eff;
+  --footer-fill3: #f5d20aff;
+  --footer-fill4: #c4a808ff;
+  --footer-fill5: #5a710eff;
+  --footer-fill6: #f5d20aff;
+}
+
+  /* Dark */
+#augD {
+  --bg: #1a0c0c;
+  --heading-color: #999999ff;
+  --gen-text-color: #b2b2b2ff;
+
+  --menu-bg: #666666ff;
+  --menu-shadow: #bfbfbfff;
+  --menu-text-color: #bfbfbfff;
+  --dropdown-svg: #bfbfbfff;
+
+  --splash-bg-image: url("./../images/splashBg/augD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #666666ff;
+  --header-fill-H1B: #595959ff;
+  --header-fill-A1F: #8c8c8cff;
+  --header-fill-A1B: #808080ff;
+  --header-fill-S1F: #999999ff;
+  --header-fill-S1B: #b2b2b2ff;
+  --header-fill-H2F: #bfbfbfff;
+  --header-fill-H2B: #d9d9d9ff;
+  --header-fill-K1F: #ccccccff;
+  --header-fill-K1B: #bfbfbfff;
+  --header-fill-E1F: #b2b2b2ff;
+  --header-fill-E1B: #a6a6a6ff;
+  --header-fill-E2F: #999999ff;
+  --header-fill-E2B: #8c8c8cff;
+  --header-fill-P1F: #808080ff;
+  --header-fill-P1B: #737373ff;
+  --header-fill-E3F: #666666ff;
+  --header-fill-E3B: #595959ff;
+  --header-fill-R1F: #666666ff;
+  --header-fill-R1B: #595959ff;
+
+  --header-bg: #281a1a;
+  --svg-lock-fill: #2a2a2a;
+  --svg-key-fill: #454545;
+  --svg-stream-fill: #d9d9d9ff;
+  --svg-book-fill: #666666ff;
+  --svg-haze-fill: #d9d9d9ff;
+
+  --svg-fill: #848080;
+  --container-bg: #322e2e;
+
+  --stack-fill: #706969;
+  --stack-text-color: #706969;
+  --stack-fg: #3b3b3b;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #3d3131;
+  --footer-svg: #a79b9b;
+  --footer-fill1: #504c4c;
+  --footer-fill2: #737171;
+  --footer-fill3: #a6a0a0;
+  --footer-fill4: #504c4c;
+  --footer-fill5: #737171;
+  --footer-fill6: #a6a0a0;
+}
+
+  /* Sep */
+  /* Light */
+#sepL {
+  --bg: #bd7975ff;
+  --heading-color: #5e741c;
+  --gen-text-color: #562932ff;
+
+  --menu-bg: #80932e;
+  --menu-shadow: #cae8ff;
+  --menu-text-color: #562932ff;
+  --dropdown-svg: #c1d67d;
+
+  --splash-bg-image: url("./../images/splashBg/sepL.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #331a1eff;
+  --header-fill-H1B: #111406ff;
+  --header-fill-A1F: #562932ff;
+  --header-fill-A1B: #475313ff;
+  --header-fill-S1F: #8a4250ff;
+  --header-fill-S1B: #3a5478ff;
+  --header-fill-H2F: #b46864ff;
+  --header-fill-H2B: #208bdfff;
+  --header-fill-K1F: #bd7975ff;
+  --header-fill-K1B: #55b0f6ff;
+  --header-fill-E1F: #ac5753ff;
+  --header-fill-E1B: #2599f4ff;
+  --header-fill-E2F: #8a4251ff;
+  --header-fill-E2B: #396eadff;
+  --header-fill-P1F: #67323bff;
+  --header-fill-P1B: #51601fff;
+  --header-fill-E3F: #442228ff;
+  --header-fill-E3B: #313a13ff;
+  --header-fill-R1F: #331a1eff;
+  --header-fill-R1B: #111406ff;
+
+  --header-bg: #738636;
+  --svg-lock-fill: #67323bff;
+  --svg-key-fill: #8a4251ff;
+  --svg-stream-fill: #b0ddff;
+  --svg-book-fill: #bd7975ff;
+  --svg-haze-fill: #b0ddff;
+
+  --svg-fill: #67323bff;
+  --container-bg: #a2bc4cff;
+
+  --stack-fill: #67323bff;
+  --stack-text-color: #67323bff;
+  --stack-fg: #55b0f6ff;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #8a4251ff;
+  --footer-svg: #c1d67dff;
+  --footer-fill1: #738636;
+  --footer-fill2: #ac5753ff;
+  --footer-fill3: #55b0f6ff;
+  --footer-fill4: #738636;
+  --footer-fill5: #ac5753ff;
+  --footer-fill6: #55b0f6ff;
+}
+
+  /* Dark */
+#sepD {
+  --bg: #052c21;
+  --heading-color: #02976bff;
+  --gen-text-color: #bcf5e2ff;
+
+  --menu-bg: #138664ff;
+  --menu-shadow: #9ce2daff;
+  --menu-text-color: #9ce2daff;
+  --dropdown-svg: #03fcb1ff;
+
+  --splash-bg-image: url("./../images/splashBg/sepD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #0a4332ff;
+  --header-fill-H1B: #2a5651ff;
+  --header-fill-A1F: #138664ff;
+  --header-fill-A1B: #3e746fff;
+  --header-fill-S1F: #1dc896ff;
+  --header-fill-S1B: #76bca5ff;
+  --header-fill-H2F: #47ebbaff;
+  --header-fill-H2B: #bcf5e2ff;
+  --header-fill-K1F: #48eabbff;
+  --header-fill-K1B: #9ce2daff;
+  --header-fill-E1F: #03fcb1ff;
+  --header-fill-E1B: #7dcec5ff;
+  --header-fill-E2F: #02ca8fff;
+  --header-fill-E2B: #65b4abff;
+  --header-fill-P1F: #02976bff;
+  --header-fill-P1B: #4b9a91ff;
+  --header-fill-E3F: #0e5842ff;
+  --header-fill-E3B: #3a7871ff;
+  --header-fill-R1F: #0a4332ff;
+  --header-fill-R1B: #2a5651ff;
+
+  --header-bg: #2a5651ff;
+  --svg-lock-fill: #3a7871ff;
+  --svg-key-fill: #76bca5ff;
+  --svg-stream-fill: #9ce2daff;
+  --svg-book-fill: #4b9a91ff;
+  --svg-haze-fill: #9ce2daff;
+
+  --svg-fill: #7dcec5ff;
+  --container-bg: #0a4332ff;
+
+  --stack-fill: #65b4abff;
+  --stack-text-color: #65b4abff;
+  --stack-fg: #0e5842ff;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #1a403c;
+  --footer-svg: #65b4abff;
+  --footer-fill1: #138664ff;
+  --footer-fill2: #3e746fff;
+  --footer-fill3: #1dc896ff;
+  --footer-fill4: #138664ff;
+  --footer-fill5: #3e746fff;
+  --footer-fill6: #1dc896ff;
+}
+/* Oct */
+/* Light */
+#octL {
+  --bg: #ac926dff;
+  --heading-color: #534e46;
+  --font-text-color: #534e46;
+
+  --menu-bg: #c37422ff;
+  --menu-shadow: #534e46;
+  --menu-text-color: #534e46;
+  --dropdown-svg: #534e46;
+
+  --splash-bg-image: url("./../images/splashBg/octL.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #9f8560ff;
+  --header-fill-H1B: #98541bff;
+  --header-fill-A1F: #9d8b7cff;
+  --header-fill-A1B: #c37422ff;
+  --header-fill-S1F: #b3a299ff;
+  --header-fill-S1B: #e6994cff;
+  --header-fill-H2F: #d6cec2ff;
+  --header-fill-H2B: #ecbe93ff;
+  --header-fill-K1F: #e1dbd1ff;
+  --header-fill-K1B: #e7b17eff;
+  --header-fill-E1F: #ccc2b2ff;
+  --header-fill-E1B: #ebae6bff;
+  --header-fill-E2F: #b3a299ff;
+  --header-fill-E2B: #e69a4cff;
+  --header-fill-P1F: #a29081ff;
+  --header-fill-P1B: #e28a30ff;
+  --header-fill-E3F: #ac926dff;
+  --header-fill-E3B: #c36c23ff;
+  --header-fill-R1F: #9f8560ff;
+  --header-fill-R1B: #98541bff;
+
+  --header-bg: #9f8560ff;
+  --svg-lock-fill: #e69a4cff;
+  --svg-key-fill: #c36c23ff;
+  --svg-stream-fill: #e1dbd1ff;
+  --svg-book-fill: #98541bff;
+  --svg-haze-fill: #e1dbd1ff;
+
+  --svg-fill: #b3a299ff;
+  --container-bg: #ebae6bff;
+
+  --stack-fill: #887659;
+  --stack-text-color: #887659;
+  --stack-fg: #e69a4cff;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #e69a4cff;
+  --footer-svg: #534e46;
+  --footer-fill1: #c36c23ff;
+  --footer-fill2: #ac926dff;
+  --footer-fill3: #e28a30ff;
+  --footer-fill4: #c36c23ff;
+  --footer-fill5: #ac926dff;
+  --footer-fill6: #e28a30ff;
+}
+/* Dark */
+#octD {
+  --bg: #1a1a1aff;
+  --heading-color: #847a6bff;
+  --gen-text-color: #b0b3b6;
+
+  --menu-bg: #586774ff;
+  --menu-shadow: #a8b3bdff;
+  --menu-text-color: #1a1a1aff;
+  --dropdown-svg: #1a1a1aff;
+
+  --splash-bg-image: url("./../images/splashBg/octD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #374149ff;
+  --header-fill-H1B: #1a1a1aff;
+  --header-fill-A1F: #586774ff;
+  --header-fill-A1B: #464139ff;
+  --header-fill-S1F: #7d8d9cff;
+  --header-fill-S1B: #625a50ff;
+  --header-fill-H2F: #a8b3bdff;
+  --header-fill-H2B: #988981ff;
+  --header-fill-K1F: #8b99a7ff;
+  --header-fill-K1B: #988881ff;
+  --header-fill-E1F: #7d8d9cff;
+  --header-fill-E1B: #847a6bff;
+  --header-fill-E2F: #6e8191ff;
+  --header-fill-E2B: #686055ff;
+  --header-fill-P1F: #637383ff;
+  --header-fill-P1B: #464139ff;
+  --header-fill-E3F: #586774ff;
+  --header-fill-E3B: #38332eff;
+  --header-fill-R1F: #374149ff;
+  --header-fill-R1B: #1a1a1aff;
+
+  --header-bg: #23211e;
+  --svg-lock-fill: #988981ff;
+  --svg-key-fill: #726259;
+  --svg-stream-fill: #a8b3bdff;
+  --svg-book-fill: #637383ff;
+  --svg-haze-fill: #a8b3bdff;
+
+  --svg-fill: #6e8191ff;
+  --container-bg: #374149ff;
+
+  --stack-fill: #586774ff;
+  --stack-text-color: #586774ff;
+  --stack-fg: #242323;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #242323;
+  --footer-svg: #586774ff;
+  --footer-fill1: #464139ff;
+  --footer-fill2: #586774ff;
+  --footer-fill3: #38332eff;
+  --footer-fill4: #464139ff;
+  --footer-fill5: #586774ff;
+  --footer-fill6: #38332eff;
+}
+/* Nov */
+/* Light */
+#novL {
+  --bg: #b2691aff;
+  --heading-color: #eea435;
+  --gen-text-color: #2b0808ff;
+
+  --menu-bg: #b2691aff;
+  --menu-shadow: #2b0808ff;
+  --menu-text-color: #2b0808ff;
+  --dropdown-svg: #2b0808ff;
+
+  --splash-bg-image: url("./../images/splashBg/novL.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #2b0808ff;
+  --header-fill-H1B: #351c0dff;
+  --header-fill-A1F: #5a100cff;
+  --header-fill-A1B: #7f3801ff;
+  --header-fill-S1F: #823d30ff;
+  --header-fill-S1B: #b2691aff;
+  --header-fill-H2F: #e98663ff;
+  --header-fill-H2B: #e89d31ff;
+  --header-fill-K1F: #f36e3fff;
+  --header-fill-K1B: #c8821dff;
+  --header-fill-E1F: #b05140ff;
+  --header-fill-E1B: #8a5f0fff;
+  --header-fill-E2F: #813d31ff;
+  --header-fill-E2B: #73410dff;
+  --header-fill-P1F: #871812ff;
+  --header-fill-P1B: #59350dff;
+  --header-fill-E3F: #5a100cff;
+  --header-fill-E3B: #4c2201ff;
+  --header-fill-R1F: #2b0808ff;
+  --header-fill-R1B: #351c0dff;
+
+  --header-bg: #a97108;
+  --svg-lock-fill: #2b0808ff;
+  --svg-key-fill: #5a100cff;
+  --svg-stream-fill: #e4ae63;
+  --svg-book-fill: #871812ff;
+  --svg-haze-fill: #e4ae63;
+
+  --svg-fill: #5a100cff;
+  --container-bg: #a75516;
+
+  --stack-fill: #5a100cff;
+  --stack-text-color: #5a100cff;
+  --stack-fg: #a44700;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #97550d;
+  --footer-svg: #f6bb62;
+  --footer-fill1: #e89d31ff;
+  --footer-fill2: #f36e3fff;
+  --footer-fill3: #c8821dff;
+  --footer-fill4: #e89d31ff;
+  --footer-fill5: #f36e3fff;
+  --footer-fill6: #c8821dff;
+}
+
+  /* Dark */
+#novD {
+  --bg: #03171d;
+  --heading-color: #efbea4;
+  --gen-text-color: #ecaa92;
+
+  --menu-bg: #285a6a;
+  --menu-shadow: #ce8c7eff;
+  --menu-text-color: #ce8c7eff;
+  --dropdown-svg: #ce8c7eff;
+
+  --splash-bg-image: url("./../images/splashBg/novD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #28718aff;
+  --header-fill-H1B: #833532ff;
+  --header-fill-A1F: #85a0adff;
+  --header-fill-A1B: #cb614aff;
+  --header-fill-S1F: #a8b6bdff;
+  --header-fill-S1B: #f5af89ff;
+  --header-fill-H2F: #d9d9d8ff;
+  --header-fill-H2B: #f5d1bcff;
+  --header-fill-K1F: #e6e6e5ff;
+  --header-fill-K1B: #f5d1bcff;
+  --header-fill-E1F: #c5c5b9ff;
+  --header-fill-E1B: #f0b697ff;
+  --header-fill-E2F: #a8b6bdff;
+  --header-fill-E2B: #ce8c7eff;
+  --header-fill-P1F: #85a0adff;
+  --header-fill-P1B: #c06a59ff;
+  --header-fill-E3F: #3f93a6ff;
+  --header-fill-E3B: #a6443fff;
+  --header-fill-R1F: #28718aff;
+  --header-fill-R1B: #833532ff;
+
+  --header-bg: #06232c;
+  --svg-lock-fill: #642220;
+  --svg-key-fill: #792a27;
+  --svg-stream-fill: #d9d9d8ff;
+  --svg-book-fill: #9e3a36;
+  --svg-haze-fill: #d9d9d8ff;
+
+  --svg-fill: #5b1714;
+  --container-bg: #1b4d5e;
+
+  --stack-fill: #5b2e2b;
+  --stack-text-color: #5b2e2b;
+  --stack-fg: #072935;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #103e48;
+  --footer-svg: #f0b1a5;
+  --footer-fill1: #28718aff;
+  --footer-fill2: #a6443fff;
+  --footer-fill3: #4092ad;
+  --footer-fill4: #28718aff;
+  --footer-fill5: #a6443fff;
+  --footer-fill6: #4092ad;
+}
+
+  /* Dec */
+  /* Light */
+#decL {
+  --bg: #60a23aff;
+  --heading-color: #5b1714;
+  --gen-text-color: #77241f;
+
+  --menu-bg: #447029ff;
+  --menu-shadow: #99000cff;
+  --menu-text-color: #db0013ff;
+  --dropdown-svg: #db0013ff;
+
+  --splash-bg-image: url("./../images/splashBg/decL.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #17250eff;
+  --header-fill-H1B: #4d0006ff;
+  --header-fill-A1F: #2d4a1cff;
+  --header-fill-A1B: #99000cff;
+  --header-fill-S1F: #447029ff;
+  --header-fill-S1B: #db0013ff;
+  --header-fill-H2F: #60a23aff;
+  --header-fill-H2B: #f00013ff;
+  --header-fill-K1F: #4d832fff;
+  --header-fill-K1B: #e50010ff;
+  --header-fill-E1F: #427128ff;
+  --header-fill-E1B: #c2000eff;
+  --header-fill-E2F: #375e21ff;
+  --header-fill-E2B: #a8000cff;
+  --header-fill-P1F: #2c4b1bff;
+  --header-fill-P1B: #80000aff;
+  --header-fill-E3F: #223715ff;
+  --header-fill-E3B: #660008ff;
+  --header-fill-R1F: #17250eff;
+  --header-fill-R1B: #4d0006ff;
+
+  --header-bg: #4d832fff;
+  --svg-lock-fill: #99000cff;
+  --svg-key-fill: #690009;
+  --svg-stream-fill: #97c181;
+  --svg-book-fill: #360004;
+  --svg-haze-fill: #97c181;
+
+  --svg-fill: #5b1714;
+  --container-bg: #447b24;
+
+  --stack-fill: #8f000a;
+  --stack-text-color: #8f000a;
+  --stack-fg: #38691b;
+
+  --map-bg: url("./../images/thumbnails/mapLight.png");
+
+  --footer-bg: #8f000a;
+  --footer-svg: #9fcf85;
+  --footer-fill1: #3c6725;
+  --footer-fill2: #a8000cff;
+  --footer-fill3: #2c4b1bff;
+  --footer-fill4: #3c6725;
+  --footer-fill5: #a8000cff;
+  --footer-fill6: #2c4b1bff;
+}
+
+  /* Dark */
+#decD {
+  --bg: #0c1307ff;
+  --heading-color: #861e18;
+  --gen-text-color: #ec8067;
+
+  --menu-bg: #0c1307ff;
+  --menu-shadow: #e2411dff;
+  --menu-text-color: #ec684b;
+  --dropdown-svg: #e2411dff;
+
+  --splash-bg-image: url("./../images/splashBg/decD.jpg");
+  --splash-bg-position: 0% 0%;
+  --splash-bg-size: cover;
+  --header-fill-H1F: #43090aff;
+  --header-fill-H1B: #0c1307ff;
+  --header-fill-A1F: #8c291cff;
+  --header-fill-A1B: #223715ff;
+  --header-fill-S1F: #e2411dff;
+  --header-fill-S1B: #345421ff;
+  --header-fill-H2F: #f79c6eff;
+  --header-fill-H2B: #63a63fff;
+  --header-fill-K1F: #d6825cff;
+  --header-fill-K1B: #517d36ff;
+  --header-fill-E1F: #e2411dff;
+  --header-fill-E1B: #37621eff;
+  --header-fill-E2F: #b53926ff;
+  --header-fill-E2B: #2c4d19ff;
+  --header-fill-P1F: #991a1aff;
+  --header-fill-P1B: #233716ff;
+  --header-fill-E3F: #861315ff;
+  --header-fill-E3B: #17250eff;
+  --header-fill-R1F: #43090aff;
+  --header-fill-R1B: #0c1307ff;
+
+  --header-bg: #0f1908;
+  --svg-lock-fill: #861315ff;
+  --svg-key-fill: #a63a3c;
+  --svg-stream-fill: #8cc86c;
+  --svg-book-fill: #eb814c;
+  --svg-haze-fill: #8cc86c;
+
+  --svg-fill: #5b1714;
+  --container-bg: #2a4918;
+
+  --stack-fill: #640007;
+  --stack-text-color: #640007;
+  --stack-fg: #38691b;
+  
+  --map-bg: url(./../images/thumbnails/mapDark.png);
+
+  --footer-bg: #17250eff;
+  --footer-svg: #c5ebae;
+  --footer-fill1: #314d1e;
+  --footer-fill2: #861315;
+  --footer-fill3: #294816;
+  --footer-fill4: #41602c;
+  --footer-fill5: #a31618;
+  --footer-fill6: #4a742f;
+}
+
+@font-face {
+  font-family: 'Metamorphous';
+  src: url('./../fonts/metamorphous_5.2.8/webfonts/metamorphous-latin-400-normal.woff') format('woff'),
+       url('./../fonts/metamorphous_5.2.8/webfonts/metamorphous-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+
+  --stack-fill: linear-gradient(#29ff21ff #39e8ffff #3661ffff #873dffff);
+}
+
+/* Extra Themes 
+Great Aquamarine Theme:
+  --header-bg: #2a5651ff;
+  --svg-lock-fill: #3a7871ff;
+  --svg-key-fill: #3a7871ff;
+  --svg-stream-fill: #9ce2daff;
+  --svg-book-fill: #4b9a91ff;
+  --svg-haze-fill: #9ce2daff;
+*/

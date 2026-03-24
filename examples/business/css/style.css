@@ -1,0 +1,588 @@
+#background00 {
+    width: 100vw;
+    height: 45rem;
+    background-image: url("/assets/background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 150rem auto;
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
+}
+
+span#ttop {
+    color: grey;
+    align-self: center;
+}
+
+span#ttop > div {
+    margin-left: auto;
+}
+
+header#heads {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100vw 45rem;
+}
+
+img#mainlogo {
+    width: 8rem;
+    height: auto;
+    z-index: 1;
+}
+
+#mbutt {
+    z-index: 1;
+}
+
+nav#navlist {
+    margin-left: auto;
+    z-index: 0;
+}
+
+nav#navlist > hr {
+    display: none;
+}
+
+nav#navlist > div > * {
+    width: 5.5rem;
+    height: 2rem;
+    margin: 0 .1rem;
+    align-self: center;
+    background-color: none;
+    background: none;
+    border-color: none;
+    border-style: none;
+}
+
+nav#navlist > div:nth-child(1) > button:nth-child(1) { color: rgba(51, 51, 196, 0.61); }
+nav#navlist > div:nth-child(3) > button:nth-child(1) { 
+    color: white;
+    background: rgb(51, 51, 196);
+    border-radius: 15px;
+}
+
+
+[aria-controls="navdropdown"] { display: none; }
+nav#navlist01 { display: none; }
+
+
+section#initinfo {
+    height: 40rem;
+    width: 100vw;
+    padding: 5rem 0 0 0;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#initinfo > span#initdesc {
+    width: 45%;
+    height: auto;
+    position: static;
+    align-self: center;
+    justify-content: center;
+    padding: 0 0 8rem 0;
+}
+
+span#initdesc > h1 { font-size: 46px;}
+span#initdesc > p { font-size: 18px; width: 50%; }
+
+span#initdesc > div > button:nth-child(1) { 
+    font-size: 16px;
+     width: 8rem;
+     height: 2.5rem;
+     border-radius: 15px;
+     background-color: rgb(51, 51, 196);
+     color: white;
+}
+
+span#initdesc > div >  button:nth-child(2)  { 
+    font-size: 16px;
+     width: 8rem;
+     height: 2.5rem;
+     border-radius: 15px;
+     background-color: none;
+     border-color: none;
+     border-style: none;
+     color: rgb(51, 51, 196);
+ }
+
+
+section#initinfo > #initicons {
+    width: 50%;
+    height: inherit;
+    position: static;
+    z-index: -5;
+}
+
+section#initinfo > #initicons > div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: visible;
+    padding: 15px;
+    object-fit: cover;
+    object-position: center;
+    outline-style: none;
+    outline-width: 0;
+    border-style: none;
+    border-width: 0;
+    background-color: white;
+    box-shadow: 0 7px 1px rgb(167, 167, 167);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#initicons > div > img {
+    object-fit: cover;
+    object-position: center;
+    outline-style: none;
+    outline-width: 0;
+    border-style: none;
+    border-width: 0;
+}
+
+#initicons > div#img00 > img { width: 45px; height: 45px; }
+#initicons > div#img01 > img { width: 38px; height: 38px; }
+#initicons > div#img02 > img { width: 52px; height: 52px; }
+#initicons > div#img03 > img { width: 60px; height: 60px; }
+#initicons > div#img04 > img { width: 55px; height: 55px; }
+#initicons > div#img05 > img { width: 52px; height: 52px; }
+#initicons > div#img06 > img { width: 65px; height: 65px; }
+
+#initicons > div#img00 { 
+    margin-left: 28%; 
+    margin-top: 0%; 
+    width: 45px; 
+    height: 45px;
+}
+
+#initicons > div#img01 { 
+    margin-left: 5%; 
+    margin-top: 17%; 
+    width: 38px; 
+    height: 38px 
+}
+
+#initicons > div#img02 { 
+    margin-left: 15%;  
+    margin-top: 15%; 
+    width: 52px; 
+    height: 52px 
+}
+
+#initicons > div#img03 { 
+    margin-left: 10%; 
+    margin-top: 5%; 
+    width: 60px; 
+    height: 60px 
+}
+
+#initicons > div#img04 { 
+    margin-left: 16%; 
+    margin-top: 23%; 
+    width: 55px; 
+    height: 55px 
+}
+
+#initicons > div#img05 { 
+    margin-left: 0%; 
+    margin-top: 5%; 
+    width: 52px; 
+    height: 52px 
+}
+
+#initicons > div#img06 { 
+    margin-left: 30%; 
+    margin-top: 20%; 
+    width: 65px; 
+    height: 65px 
+}
+
+section#templover {
+    align-content: center;
+    align-items: center;
+    height: 55rem;
+}
+
+#templover > h1:nth-child(1) { padding: 5rem 0 0 0; }
+
+#templover > span:nth-child(3) { 
+    width: 100%; 
+    margin: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-content: space-between;
+}
+
+#templover > span > div.sqrcards {
+    width: 13rem;
+    height: 17rem;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 7px 1px rgb(231, 231, 231);
+    border-radius: 15px;
+}
+
+#templover > span > div.sqrcards > button {
+    margin-top: auto;
+    background-color: none;
+    background: none;
+    border-width: 0;
+    color: blue;
+    text-align: start;
+}
+
+#templover > span > div > div > button { 
+    border-radius: 15px; 
+    background-color: rgb(54, 194, 124)
+}
+
+#templover > span > div > img { width: 3.5rem; height: 3.5rem; }
+#templover > span > div > * { margin: .1rem 0; }
+
+
+#adspace {
+    height: auto;
+    margin: 2.5rem 0 0 0;
+    align-items: center;
+    justify-items: center;
+}
+
+#adspace > span > h1 { width: 80%; }
+
+#adspace > span > button {
+    font-size: 16px;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    background-color: rgb(51, 51, 196);
+    color: white;
+}
+
+#adspace > img {
+    width: 55rem;
+    height: auto;
+    align-self: flex-end;
+    justify-self: flex-end;
+    box-shadow: -3px -7px 5rem rgb(162, 131, 170);
+}
+
+section#features {
+    margin: 7rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section#features > h1 {
+    margin: 1rem 0;
+}
+
+section#features > p {
+    margin: 1rem 0;
+    width: 23rem;
+}
+
+section#features > span#grid01 > img#gear00 { grid-area: g00; }
+section#features > span#grid01 > img#gear01 { grid-area: g01; }
+section#features > span#grid01 > img#gear02 { grid-area: g02; }
+section#features > span#grid01 > img#gear03 { grid-area: g03; }
+section#features > span#grid01 > h6#title00 { grid-area: t00; }
+section#features > span#grid01 > h6#title01 { grid-area: t01; }
+section#features > span#grid01 > h6#title02 { grid-area: t02; }
+section#features > span#grid01 > h6#title03 { grid-area: t03; }
+section#features > span#grid01 > hr#hr00 { grid-area: h00; }
+section#features > span#grid01 > hr#hr01 { grid-area: h01; }
+section#features > span#grid01 > hr#hr02 { grid-area: h02; }
+
+section#features > span#grid01 {
+    margin: 3rem 0;
+    width: auto;
+    display: grid;
+    grid-template-areas:
+    "g00 h00 g01 h01 g02 h02 g03"
+    "t00 . t01 . t02 . t03";
+}
+
+section#features > span#grid01 > img {
+    width: 4rem;
+    height: 4rem;
+    justify-self: center;
+    align-self: center;
+}
+
+section#features > span#grid01 > h6 {
+    font-size: 14px;
+}
+
+section#features > span#grid01 > hr {
+    width: 16rem;
+    height: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+#banner00 > img {
+    width: 100%;
+    height: auto;
+}
+
+#test00 {
+    height: auto;
+    justify-content: center;
+}
+
+#test00 > img { 
+    height: auto; 
+    box-shadow: -10px 10px 0 rgb(0, 0, 0);
+}
+
+#test00 > span {
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+}
+
+#test00 > span > img {
+    width: 150px;
+}
+
+#test00 > span > * { margin: 2rem 0 0 0; }
+#test00 > span > h6 { margin: 0; }
+
+#affiliates {
+    margin: 8rem 0 0 0;
+    align-content: center;
+    align-items: center;
+}
+
+#affiliates > span {
+    width: inherit;
+    margin: 3rem;
+    justify-content: space-between;
+}
+
+#affiliates > span > img {
+    width: 8rem;
+    height: auto;
+}
+
+#affiliates > hr {
+    width: 100%;
+    height: 0;
+}
+
+#pricinglist {
+    height: 35rem;
+    align-items: center;
+    margin: 10rem 0 10rem 0;
+}
+
+#pricinglist > h1 {
+    font-size: 38px;
+}
+
+#pricing00 { grid-area: b00; }
+#pricing01 { grid-area: b01; }
+#pricing02 { grid-area: b02; }
+#pricing03 { grid-area: b03; }
+#pricing04 { grid-area: b04; }
+
+#pricinggrid {
+    width: 100%;
+    height: inherit;
+    margin: 5rem 0 0 0;
+    display: grid;
+    grid-template-areas: 
+    "b00 b00 b01 b02"
+    "b00 b00 b03 b04";
+}
+
+#pricinggrid > div#pricing00 {
+    width: 20rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgb(172, 172, 172);
+}
+
+#pricinggrid > div#pricing00 > button {
+    background: rgb(51, 51, 196);
+    padding: .5rem;
+    border-radius: 15px;
+    width: 8rem;
+}
+
+#pricinggrid > * {
+    padding: 25px;
+}
+
+#pricinggrid > div > img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+section#hireus {
+    width: 100vw;
+    height: auto;
+    padding: 5rem;
+    background-color: #20335B;
+    color: white;
+    justify-content: center;
+    align-content: center;
+}
+
+section#hireus > * {
+    width: 37%;
+    height: auto;
+    margin: 2rem
+}
+
+section#hireus > form#hireusform {
+    width: 25rem;
+}
+    
+section#hireus > span#hirewording {
+    align-self: center;
+}
+
+section#hireus > span#hirewording > div > * {
+    margin: .5rem;
+    align-self: center;
+}
+
+span#hirewording > div { margin: .5rem; }
+span#hirewording > div > div { margin: 2rem; }
+span#hirewording > div > div > * { margin: .5rem; }
+
+#hirewording > div > h1 { font-size: 46px }
+#hirewording > div > hr { width: 100%; }
+#hirewording > div > h4 { font-size: 36px; float: left; overflow-wrap: break-word;}
+#hirewording > div > h5 { font-size: 26px; }
+#hirewording > div > h6 { font-size: 16px; color: #667787;}
+
+span#hirewording > div:nth-child(2) > div > img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+span#hirewording > div:nth-child(2) > div > img:nth-child(1) {
+    width: 7rem;
+    height: 7rem;
+    justify-self: center;
+    align-self: center;
+}
+
+section#hireus > form#hireusform {
+    color: black;
+    height: auto;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-self: center;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 15px;
+}
+
+section#hireus > form#hireusform > input, select {
+    width: 44%;
+    height: 2rem;
+    margin: .5rem;
+}
+
+section#hireus > form#hireusform > textarea {
+    width: 100%;
+}
+
+#footerlogo {
+    width: 8rem;
+}
+
+span#subfooterele00 { grid-area: sf00; }
+span#subfooterele01 { grid-area: sf01; }
+span#subfooterele02 { grid-area: sf02; }
+span#subfooterele03 { grid-area: sf03; }
+span#subfooterele04 { grid-area: sf04; }
+
+section#subfooter {
+    height: auto;
+    margin: 5rem 0;
+    justify-content: space-between;
+    display: grid;
+    grid-template-areas: 
+    "sf00 sf01 sf02 sf03 sf04";
+}
+
+section#subfooter > span > h5 {
+    font-size: 24px;
+}
+
+section#subfooter > span:nth-child(2) > div > button {  
+    border-radius: 15px;
+    background-color: rgb(54, 194, 124);
+}
+
+footer {
+    text-align: center;
+}
+
+footer > hr {
+    width: 95%;
+    border-color: gray;
+    border-width: 1;
+}
+
+footer > div:nth-child(2) {
+    height: auto;
+    align-items: center;
+}
+
+footer > div:nth-child(2) > div:nth-child(1) {
+    align-items: center;
+    align-content: center;
+}
+
+footer > div:nth-child(2) > div:nth-child(1) > * {
+    margin: .5rem;
+}
+
+footer > div:nth-child(2) > div:nth-child(2) {
+    margin-left: auto;
+}
+
+footer > div:nth-child(2) > div:nth-child(2) > * {
+    margin: .75rem;
+}
+
+footer > div:nth-child(2) > button {
+    height: 2rem;
+}
+
+footer > div:nth-child(2) > button > * {
+    margin: .5rem;
+}
+
+footer > p {
+    margin: 2rem 0;
+}
+
+footer > div:nth-child(2) > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+section#subfooter > span > * { margin: .5rem 0; }
