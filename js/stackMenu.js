@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }, {
       root: stackOptions,
-      rootMargin: '0px -28% 0px -28%',
-      threshold: 1.0
+      rootMargin: `0px -${stackOptions.clientWidth / 2}px 0px -${stackOptions.clientWidth / 2}px`,
+      threshold: 0
     });
 
     stackOptChildren.forEach(cur => {

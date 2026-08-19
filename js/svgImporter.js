@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+export function svgImporter () {
 	document.querySelectorAll('[data-svg]').forEach(container => {
 		const svgUrl = container.getAttribute('data-svg');
 
@@ -19,4 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
 				container.innerHTML = 'SVG failed to load';
 			});
 	});
-});
+};

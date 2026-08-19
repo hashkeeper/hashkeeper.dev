@@ -1,9 +1,120 @@
 /* Phones */
 @media only screen and (max-width: 768px) {
+  #hkHdr {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  }
 
+  #hkCryptog {
+    /* margin: 5% 0 0 0; */
+  }
+
+  #hkCryptog, #hkCryptog svg, #hkCryptog svg path {
+    width: 80vw;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  #textHdr {
+    margin: 1rem 0 0 0;
+    width: 95vw;
+  }
+
+  /* Soundbite */
+  #soundbite > h2 {
+    font-size: clamp(18px, 5.5vw, 24px); 
+  }
+
+  #dfWording {
+    padding: 0 .75rem;
+  }
+
+  #alterSvgs h2 {
+    font-size: clamp(12px, 4vw, 18px); 
+  }
+
+  #alterSvgs p { 
+    font-size: clamp(6px, 2vw, 12px); 
+  }
+
+  #alterSvgs {
+    width: clamp(100px, 73vw, 750px) !important;
+    height: clamp(300px, 65vh, 1000px) !important;
+  }
+
+  #affirmations {
+    width: clamp(110px, 10vw, 220px) !important;
+    height: clamp(300px, 65vh, 800px) !important;
+    border-radius: 10px;
+  }
+
+  #affirmations p {
+    font-size: clamp(6px, 2vw, 12px); ;
+  }
+
+  svg.miniIcons, svg.miniIcons path {
+    width: clamp(2rem, 35%, 5rem);
+  }
 }
 
 /* Tablets */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #hkHdr {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  }
 
+  #hkCryptog {
+    /* margin: 5% 0 0 0; */
+  }
+
+  #hkCryptog, #hkCryptog svg, #hkCryptog svg path {
+    width: 75vw;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  #textHdr {
+    margin: 1.5rem 0 0 0;
+    width: 80vw;
+  }
+
+  /* Soundbite */
+  #soundbite > h2 {
+    font-size: clamp(18px, 5.5vw, 24px);
+  }
+
+  #dfWording {
+    padding: 0 1rem;
+  }
+
+  #alterSvgs h2 {
+    font-size: clamp(12px, 4vw, 18px); 
+  }
+
+  #alterSvgs p { 
+    font-size: clamp(6px, 2vw, 12px); 
+  }
+
+  #alterSvgs {
+    width: clamp(100px, 75vw, 800px) !important;
+    height: clamp(300px, 60vh, 1000px) !important;
+    border-radius: 15px;
+  }
+
+  #affirmations {
+    width: clamp(110px, 15vw, 220px) !important;
+    height: clamp(300px, 60vh, 800px) !important;
+    border-radius: 15px;
+  }
+
+  #affirmations p {
+    font-size: clamp(6px, 2vw, 12px); ;
+  }
+
+  svg.miniIcons, svg.miniIcons path {
+    width: clamp(2rem, 37%, 5rem);
+  }
 }

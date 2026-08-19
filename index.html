@@ -12,25 +12,27 @@
   <link rel="stylesheet" href="./css/pageAnim.css">
   <link rel="stylesheet" href="./css/mediaQueries.css">
 
-  <script src="./js/svgImp.js"></script>
+  <script type="module" src="./js/core.js"></script>
+  
+  <!-- <script src="./js/svgImp.js"></script>
   <script src="./js/script.js" defer></script>
   <script src="./js/theme.js" defer></script>
   <script src="./js/stackMenu.js" defer></script>
   <script src="./js/animTriggers.js" defer></script>
   <script src="./js/animations.js" defer></script>
-  <script src="./js/deviceSupport.js" defer></script>
+  <script src="./js/deviceSupport.js" defer></script> -->
 </head>
 <body class="flex-column">
   <nav class="flex-column">
     <ul id="navList" class="flex-row">
-      <li><a href="#differentiators">Soundbite</a></li>
+      <li><a href="#soundbite">Soundbite</a></li>
+      <li><a href="#missionstatement">Mission</a></li>
       <!-- <li><a href="#reviews">Reviews</a></li> -->
       <li><a href="#examples">Examples</a></li>
       <li><a href="#stack">Our Stack</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#FAQ">FAQ</a></li>
       <hr>
-      <li><a href="#missState">Mission</a></li>
       <li><a href="">Blog</a></li>
     </ul>
     <div id="navTab">
@@ -131,50 +133,64 @@
   <div id="bufferHeader"></div>
 
   <main class="flex-column">
-    <section id="differentiators">
-      <h2 id="diffTop">Why Choose Hashkeeper?</h2>
+    <section id="soundbite" class="flex-column">
+      <div id="soundbiteCont">
+        <h2 id="diffTop">Why Choose Hashkeeper?</h2>
 
-      <div id="alterSvgs" class="flex-column">
-        <span class="dfSvgLeft">
-          <div class="dfSvgIcon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 24 24"><path fill="currentColor" d="M20.75 4.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0"/><path fill="currentColor" fill-rule="evenodd" d="m13.437 6.661l.005.003A5.334 5.334 0 0 1 16.19 9.2a3.707 3.707 0 0 0 3.316 2.049h1.245a.75.75 0 0 1 0 1.5h-1.245a5.207 5.207 0 0 1-4.658-2.878a3.834 3.834 0 0 0-1.976-1.821c-1.364-.562-1.796-.72-2.62-.66c-1.143.083-2.193.66-4.695 2.082l-1.435.815a.75.75 0 1 1-.742-1.304l1.436-.815l.172-.098c2.274-1.293 3.634-2.066 5.155-2.176c1.218-.089 1.954.215 3.295.766m-.132 3.835a.75.75 0 0 1-.05 1.06l-.535.478c-.28.25-.551.49-.798.724a7.19 7.19 0 0 0-.471.48a1.53 1.53 0 0 0-.146.187a1.25 1.25 0 0 0 .044.973c.042.089.13.21.363.418c.238.212.568.463 1.055.832l.075.056c.56.425.949.719 1.244 1.09c.328.413.565.89.696 1.401c.118.46.118.947.118 1.65V22a.75.75 0 0 1-1.5 0v-2.061c0-.833-.005-1.117-.07-1.37a2.25 2.25 0 0 0-.418-.841c-.163-.205-.387-.382-1.05-.884l-.024-.019a19.51 19.51 0 0 1-1.123-.888c-.297-.264-.553-.543-.72-.894a2.75 2.75 0 0 1-.096-2.14c.092-.248.27-.476.419-.647c.163-.189.364-.39.573-.587c.26-.246.565-.518.861-.782c.172-.152.34-.302.493-.442a.75.75 0 0 1 1.06.05M9.23 16.424a.75.75 0 0 1 .096 1.056l-1 1.201l-.097.116c-.642.771-1.113 1.338-1.771 1.646c-.658.308-1.395.308-2.4.307H2.75a.75.75 0 0 1 0-1.5h1.158c1.222 0 1.596-.017 1.913-.165c.318-.149.57-.426 1.352-1.364l1-1.201a.75.75 0 0 1 1.057-.096" clip-rule="evenodd"/></svg>
-          </div>
-          <div class="dfWording">
-            <h2>Agile Workflow</h2>
-            <p>When you choose Hashkeeper LLC, your contract is our focus.</p>
-          </div>
-        </span>
-        <span class="dfSvgRight">
-          <div class="dfWording">
-            <h2>Fullstack Solutions</h2>
-            <p>Sites are built from scratch using a L.E.M.P. stack. Let us be your administrators.</p>
-          </div>
-          <div class="dfSvgIcon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 512 512"><path fill="currentColor" d="M41 25v78h430V25zm254 23h18v32h-18zm121 0a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16M64 55h48v18H64zm80 0h48v18h-48zm80 0h48v18h-48zm-119 66v30h302v-30zm-64 48v78h430v-78zm254 23h18v32h-18zm121 0a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16m-352 7h48v18H64zm80 0h48v18h-48zm80 0h48v18h-48zm-119 66v30h302v-30zm-64 48v78h430v-78zm254 23h18v32h-18zm121 0a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16m-352 7h48v18H64zm80 0h48v18h-48zm80 0h48v18h-48zm13 66v30h38v-30zM25 457v30h130.2l20-30zm171.8 0l-20 30h158.4l-20-30zm140 0l20 30H487v-30z"/></svg>
-          </div>
-        </span>
-        <span class="dfSvgLeft">
-          <div class="dfSvgIcon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 24 24"><path fill="currentColor" d="M3 21a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7.414l2 2H20a1 1 0 0 1 1 1v3H4v9.996L6 11h16.5l-2.31 9.243a1 1 0 0 1-.97.757z"/></svg>
-          </div>
-          <div class="dfWording">
-            <h2>Domain Record Management</h2>
-            <p>We can maintain your DNS records,setting up things like subdomain, subdirectory redirection, including email servers.</p>
-          </div>
-        </span>
-        <span class="dfSvgRight">
-          <div class="dfWording">
-            <h2>WordPress Friendly</h2>
-            <p>We can get a WordPress server up and running for you, along with a static webpage, hosted off the same cloud server.</p>
-          </div>
-          <div class="dfSvgIcon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 24 24"><path fill="currentColor" d="M19.891 7.788a8.966 8.966 0 0 1 1.099 4.313a8.986 8.986 0 0 1-4.47 7.771l2.746-7.939c.513-1.282.684-2.309.684-3.219a7.165 7.165 0 0 0-.059-.926m-6.651.087a14.14 14.14 0 0 0 1.026-.088c.485-.063.428-.775-.056-.749c0 0-1.463.112-2.4.112c-.887 0-2.375-.125-2.375-.125c-.487-.024-.55.713-.061.738c0 0 .449.052.938.075l1.399 3.838l-1.975 5.899l-3.274-9.724a17.006 17.006 0 0 0 1.028-.083c.487-.063.43-.775-.055-.747c0 0-1.455.115-2.395.115c-.167 0-.365-.007-.575-.013C6.093 4.726 8.862 3.113 12 3.113c2.341 0 4.471.894 6.071 2.36c-.038-.002-.076-.008-.117-.008c-.883 0-1.51.77-1.51 1.596c0 .741.427 1.369.883 2.108c.343.601.742 1.37.742 2.481c0 .763-.295 1.662-.685 2.899l-.896 2.987l-3.25-9.675zM12 21.087a8.983 8.983 0 0 1-2.54-.364l2.697-7.838l2.763 7.572c.021.044.042.085.065.124a9.016 9.016 0 0 1-2.985.508m-8.99-8.988a8.94 8.94 0 0 1 .778-3.658l4.287 11.749a8.993 8.993 0 0 1-5.065-8.091m8.99-10c-5.513 0-10 4.487-10 10s4.487 10 10 10s10-4.487 10-10s-4.487-10-10-10"/></svg>
-          </div>
-        </span>
-      </div>
+        <div id="alterSvgs" class="flex-column">
+          <span class="dfSvgLeft">
+            <div class="dfSvgIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 24 24"><path fill="currentColor" d="M20.75 4.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0"/><path fill="currentColor" fill-rule="evenodd" d="m13.437 6.661l.005.003A5.334 5.334 0 0 1 16.19 9.2a3.707 3.707 0 0 0 3.316 2.049h1.245a.75.75 0 0 1 0 1.5h-1.245a5.207 5.207 0 0 1-4.658-2.878a3.834 3.834 0 0 0-1.976-1.821c-1.364-.562-1.796-.72-2.62-.66c-1.143.083-2.193.66-4.695 2.082l-1.435.815a.75.75 0 1 1-.742-1.304l1.436-.815l.172-.098c2.274-1.293 3.634-2.066 5.155-2.176c1.218-.089 1.954.215 3.295.766m-.132 3.835a.75.75 0 0 1-.05 1.06l-.535.478c-.28.25-.551.49-.798.724a7.19 7.19 0 0 0-.471.48a1.53 1.53 0 0 0-.146.187a1.25 1.25 0 0 0 .044.973c.042.089.13.21.363.418c.238.212.568.463 1.055.832l.075.056c.56.425.949.719 1.244 1.09c.328.413.565.89.696 1.401c.118.46.118.947.118 1.65V22a.75.75 0 0 1-1.5 0v-2.061c0-.833-.005-1.117-.07-1.37a2.25 2.25 0 0 0-.418-.841c-.163-.205-.387-.382-1.05-.884l-.024-.019a19.51 19.51 0 0 1-1.123-.888c-.297-.264-.553-.543-.72-.894a2.75 2.75 0 0 1-.096-2.14c.092-.248.27-.476.419-.647c.163-.189.364-.39.573-.587c.26-.246.565-.518.861-.782c.172-.152.34-.302.493-.442a.75.75 0 0 1 1.06.05M9.23 16.424a.75.75 0 0 1 .096 1.056l-1 1.201l-.097.116c-.642.771-1.113 1.338-1.771 1.646c-.658.308-1.395.308-2.4.307H2.75a.75.75 0 0 1 0-1.5h1.158c1.222 0 1.596-.017 1.913-.165c.318-.149.57-.426 1.352-1.364l1-1.201a.75.75 0 0 1 1.057-.096" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="dfWording">
+              <h2>Agile Workflow</h2>
+              <p>When you choose Hashkeeper LLC, your contract is our focus.</p>
+            </div>
+          </span>
+          <span class="dfSvgRight">
+            <div class="dfWording">
+              <h2>Fullstack Solutions</h2>
+              <p>Sites are built from scratch using a L.E.M.P. stack. Let us be your administrators.</p>
+            </div>
+            <div class="dfSvgIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 512 512"><path fill="currentColor" d="M41 25v78h430V25zm254 23h18v32h-18zm121 0a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16M64 55h48v18H64zm80 0h48v18h-48zm80 0h48v18h-48zm-119 66v30h302v-30zm-64 48v78h430v-78zm254 23h18v32h-18zm121 0a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16m-352 7h48v18H64zm80 0h48v18h-48zm80 0h48v18h-48zm-119 66v30h302v-30zm-64 48v78h430v-78zm254 23h18v32h-18zm121 0a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16m-352 7h48v18H64zm80 0h48v18h-48zm80 0h48v18h-48zm13 66v30h38v-30zM25 457v30h130.2l20-30zm171.8 0l-20 30h158.4l-20-30zm140 0l20 30H487v-30z"/></svg>
+            </div>
+          </span>
+          <span class="dfSvgLeft">
+            <div class="dfSvgIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 24 24"><path fill="currentColor" d="M3 21a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7.414l2 2H20a1 1 0 0 1 1 1v3H4v9.996L6 11h16.5l-2.31 9.243a1 1 0 0 1-.97.757z"/></svg>
+            </div>
+            <div class="dfWording">
+              <h2>Domain Record Management</h2>
+              <p>We can maintain your DNS records,setting up things like subdomain, subdirectory redirection, including email servers.</p>
+            </div>
+          </span>
+          <span class="dfSvgRight">
+            <div class="dfWording">
+              <h2>WordPress Friendly</h2>
+              <p>We can get a WordPress server up and running for you, along with a static webpage, hosted off the same cloud server.</p>
+            </div>
+            <div class="dfSvgIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35rem" height="35rem" viewBox="0 0 24 24"><path fill="currentColor" d="M19.891 7.788a8.966 8.966 0 0 1 1.099 4.313a8.986 8.986 0 0 1-4.47 7.771l2.746-7.939c.513-1.282.684-2.309.684-3.219a7.165 7.165 0 0 0-.059-.926m-6.651.087a14.14 14.14 0 0 0 1.026-.088c.485-.063.428-.775-.056-.749c0 0-1.463.112-2.4.112c-.887 0-2.375-.125-2.375-.125c-.487-.024-.55.713-.061.738c0 0 .449.052.938.075l1.399 3.838l-1.975 5.899l-3.274-9.724a17.006 17.006 0 0 0 1.028-.083c.487-.063.43-.775-.055-.747c0 0-1.455.115-2.395.115c-.167 0-.365-.007-.575-.013C6.093 4.726 8.862 3.113 12 3.113c2.341 0 4.471.894 6.071 2.36c-.038-.002-.076-.008-.117-.008c-.883 0-1.51.77-1.51 1.596c0 .741.427 1.369.883 2.108c.343.601.742 1.37.742 2.481c0 .763-.295 1.662-.685 2.899l-.896 2.987l-3.25-9.675zM12 21.087a8.983 8.983 0 0 1-2.54-.364l2.697-7.838l2.763 7.572c.021.044.042.085.065.124a9.016 9.016 0 0 1-2.985.508m-8.99-8.988a8.94 8.94 0 0 1 .778-3.658l4.287 11.749a8.993 8.993 0 0 1-5.065-8.091m8.99-10c-5.513 0-10 4.487-10 10s4.487 10 10 10s10-4.487 10-10s-4.487-10-10-10"/></svg>
+            </div>
+          </span>
+        </div>
 
-      <div id="affirmations" class="flex-column">
-        <div id="aff1Stack">
+        <div id="affirmations" class="flex-column">
+          <p>Front-End</p>
+          <p>Resilience</p>
+          <p>Open Source</p>
+          <p>Dependable</p>
+          <p>Containerization</p>
+          <p>Innovative</p>
+          <p>Epic DevOps</p>
+          <p>Dependable</p>
+          <p>OOP</p>
+          <p>Communication</p>
+          <p>Elite Security</p>
+          <p>Team Oriented</p>
+          <p>DRY Code</p>
+          <p>Productive</p>
           <p>Front-End</p>
           <p>Resilience</p>
           <p>Open Source</p>
@@ -190,49 +206,31 @@
           <p>DRY Code</p>
           <p>Productive</p>
         </div>
-        <div id="aff2Stack">
-          <p>Front-End</p>
-          <p>Resilience</p>
-          <p>Open Source</p>
-          <p>Dependable</p>
-          <p>Containerization</p>
-          <p>Innovative</p>
-          <p>Epic DevOps</p>
-          <p>Dependable</p>
-          <p>OOP</p>
-          <p>Communication</p>
-          <p>Elite Security</p>
-          <p>Team Oriented</p>
-          <p>DRY Code</p>
-          <p>Productive</p>
-        </div>
-      </div>
 
-      <div id="diffBottom" class="flex-row">
-        <hr>
-        <div class="miniDiff flex-column">
-          <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 10.5v-8A.5.5 0 0 0 13 2H1c-.265 0-.5.235-.5.5v8c0 .265.235.5.5.5h12c.265 0 .5-.235.5-.5M6 11l-1 2.5M8 11l1 2.5m-5 0h6"/><path d="M5 5L3.5 6.5L5 8m4-3l1.5 1.5L9 8"/></g></svg>
-          <p>Custom<br> Web Design</p>
-        </div>
-        <hr>
-        <div class="miniDiff flex-column">
-          <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="currentColor"><path fill-rule="evenodd" d="M14.725 13.334c.97-3.623-1.336-7.377-5.135-8.395C5.323 3.795-.725 6.762.544 10.35c.383 1.084 1.134 1.341 2.682 1.363l.108.002c1.1.013 1.471.1 1.678.436c.214.348.216.756.054 1.788c-.067.422-.088.569-.113.794c-.145 1.3.067 2.274.89 3.16c2.584 2.784 7.788-.48 8.882-4.56M1.486 10.017c-.908-2.57 4.217-5.084 7.845-4.112c3.277.878 5.252 4.093 4.428 7.17c-.924 3.446-5.287 6.182-7.183 4.14c-.594-.64-.745-1.333-.63-2.37c.024-.205.044-.344.108-.75c.2-1.275.197-1.836-.19-2.467c-.465-.756-1.059-.894-2.517-.912l-.107-.002c-1.159-.016-1.562-.154-1.754-.697" clip-rule="evenodd"/><path d="M4.75 9.5a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m4 0a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m2.5 3a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5M9.75 16a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m3.62-12.395a1 1 0 0 1 1.371.443l4.093 8.4a.652.652 0 0 1-1.149.611l-4.708-8.07a.998.998 0 0 1 .394-1.384"/><path fill-rule="evenodd" d="M11.538 3.484c.486.915 1.305 1.171 2.097.75c.791-.42 1.038-1.243.551-2.158C13.63 1.028 12.438.078 11.648.497c-.79.42-.668 1.939-.11 2.987m.882-.47a3.165 3.165 0 0 1-.32-1.137a1.975 1.975 0 0 1 .018-.496l.018.009c.05.024.205.096.403.254c.302.241.602.596.764.901c.229.43.164.646-.138.807c-.3.16-.516.092-.745-.337" clip-rule="evenodd"/></g></svg>
-          <p>Custom Graphic Design</p>
-        </div>
-        <hr>
-        <div class="miniDiff flex-column">
-          <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><g fill="currentColor"><path d="M223.94 174.08A48.33 48.33 0 0 1 176 216A136 136 0 0 1 40 80a48.33 48.33 0 0 1 41.92-47.94a8 8 0 0 1 8.3 4.8l21.13 47.2a8 8 0 0 1-.66 7.53L89.32 117a7.93 7.93 0 0 0-.54 7.81c8.27 16.93 25.77 34.22 42.75 42.41a7.92 7.92 0 0 0 7.83-.59l25-21.3a8 8 0 0 1 7.59-.69l47.16 21.13a8 8 0 0 1 4.83 8.31" opacity="0.2"/><path d="m222.37 158.46l-47.11-21.11l-.13-.06a16 16 0 0 0-15.17 1.4a8 8 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92a16 16 0 0 0-9.51-16.62M176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40a.6.6 0 0 0 0 .12l21 47l-20.67 24.74a6 6 0 0 0-.57.77a16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14a8 8 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208"/></g></svg>
-          <p>Client Customization</p>
-        </div>
-        <hr>
-        <div class="miniDiff flex-column">
-          <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M11 17H8c-2.828 0-4.243 0-5.121-.879C2 15.243 2 13.828 2 11v-1c0-3.771 0-5.657 1.172-6.828C4.343 2 6.229 2 10 2h5.5c2.335 0 3.502 0 4.386.472a4 4 0 0 1 1.642 1.642C22 4.998 22 6.165 22 8.5"/><path stroke="currentColor" stroke-width="1.5" d="M14 15c0-1.886 0-2.828.586-3.414C15.172 11 16.114 11 18 11c1.886 0 2.828 0 3.414.586C22 12.172 22 13.114 22 15v3c0 1.886 0 2.828-.586 3.414C20.828 22 19.886 22 18 22c-1.886 0-2.828 0-3.414-.586C14 20.828 14 19.886 14 18z"/><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M19 20h-2" opacity="0.5"/><path fill="currentColor" d="M11 22v.75a.75.75 0 0 0 .75-.75zm-3-.75a.75.75 0 0 0 0 1.5zM11.75 17a.75.75 0 0 0-1.5 0zM11 21.25H8v1.5h3zm.75.75v-5h-1.5v5z" opacity="0.5"/><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M11 13H2" opacity="0.5"/></g></svg>
-          <p>System Administration</p>
+        <div id="diffBottom" class="flex-row">
+          <hr>
+          <div class="miniDiff flex-column">
+            <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 10.5v-8A.5.5 0 0 0 13 2H1c-.265 0-.5.235-.5.5v8c0 .265.235.5.5.5h12c.265 0 .5-.235.5-.5M6 11l-1 2.5M8 11l1 2.5m-5 0h6"/><path d="M5 5L3.5 6.5L5 8m4-3l1.5 1.5L9 8"/></g></svg>
+            <p>Custom<br> Web Design</p>
+          </div>
+          <hr>
+          <div class="miniDiff flex-column">
+            <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="currentColor"><path fill-rule="evenodd" d="M14.725 13.334c.97-3.623-1.336-7.377-5.135-8.395C5.323 3.795-.725 6.762.544 10.35c.383 1.084 1.134 1.341 2.682 1.363l.108.002c1.1.013 1.471.1 1.678.436c.214.348.216.756.054 1.788c-.067.422-.088.569-.113.794c-.145 1.3.067 2.274.89 3.16c2.584 2.784 7.788-.48 8.882-4.56M1.486 10.017c-.908-2.57 4.217-5.084 7.845-4.112c3.277.878 5.252 4.093 4.428 7.17c-.924 3.446-5.287 6.182-7.183 4.14c-.594-.64-.745-1.333-.63-2.37c.024-.205.044-.344.108-.75c.2-1.275.197-1.836-.19-2.467c-.465-.756-1.059-.894-2.517-.912l-.107-.002c-1.159-.016-1.562-.154-1.754-.697" clip-rule="evenodd"/><path d="M4.75 9.5a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m4 0a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m2.5 3a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5M9.75 16a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m3.62-12.395a1 1 0 0 1 1.371.443l4.093 8.4a.652.652 0 0 1-1.149.611l-4.708-8.07a.998.998 0 0 1 .394-1.384"/><path fill-rule="evenodd" d="M11.538 3.484c.486.915 1.305 1.171 2.097.75c.791-.42 1.038-1.243.551-2.158C13.63 1.028 12.438.078 11.648.497c-.79.42-.668 1.939-.11 2.987m.882-.47a3.165 3.165 0 0 1-.32-1.137a1.975 1.975 0 0 1 .018-.496l.018.009c.05.024.205.096.403.254c.302.241.602.596.764.901c.229.43.164.646-.138.807c-.3.16-.516.092-.745-.337" clip-rule="evenodd"/></g></svg>
+            <p>Custom Graphic Design</p>
+          </div>
+          <hr>
+          <div class="miniDiff flex-column">
+            <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><g fill="currentColor"><path d="M223.94 174.08A48.33 48.33 0 0 1 176 216A136 136 0 0 1 40 80a48.33 48.33 0 0 1 41.92-47.94a8 8 0 0 1 8.3 4.8l21.13 47.2a8 8 0 0 1-.66 7.53L89.32 117a7.93 7.93 0 0 0-.54 7.81c8.27 16.93 25.77 34.22 42.75 42.41a7.92 7.92 0 0 0 7.83-.59l25-21.3a8 8 0 0 1 7.59-.69l47.16 21.13a8 8 0 0 1 4.83 8.31" opacity="0.2"/><path d="m222.37 158.46l-47.11-21.11l-.13-.06a16 16 0 0 0-15.17 1.4a8 8 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92a16 16 0 0 0-9.51-16.62M176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40a.6.6 0 0 0 0 .12l21 47l-20.67 24.74a6 6 0 0 0-.57.77a16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14a8 8 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208"/></g></svg>
+            <p>Client Customization</p>
+          </div>
+          <hr>
+          <div class="miniDiff flex-column">
+            <svg class="miniIcons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M11 17H8c-2.828 0-4.243 0-5.121-.879C2 15.243 2 13.828 2 11v-1c0-3.771 0-5.657 1.172-6.828C4.343 2 6.229 2 10 2h5.5c2.335 0 3.502 0 4.386.472a4 4 0 0 1 1.642 1.642C22 4.998 22 6.165 22 8.5"/><path stroke="currentColor" stroke-width="1.5" d="M14 15c0-1.886 0-2.828.586-3.414C15.172 11 16.114 11 18 11c1.886 0 2.828 0 3.414.586C22 12.172 22 13.114 22 15v3c0 1.886 0 2.828-.586 3.414C20.828 22 19.886 22 18 22c-1.886 0-2.828 0-3.414-.586C14 20.828 14 19.886 14 18z"/><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M19 20h-2" opacity="0.5"/><path fill="currentColor" d="M11 22v.75a.75.75 0 0 0 .75-.75zm-3-.75a.75.75 0 0 0 0 1.5zM11.75 17a.75.75 0 0 0-1.5 0zM11 21.25H8v1.5h3zm.75.75v-5h-1.5v5z" opacity="0.5"/><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M11 13H2" opacity="0.5"/></g></svg>
+            <p>System Administration</p>
+          </div>
         </div>
       </div>
     </section>
-
-    <div class="mainBuffer" data-svg="./images/svgs/buffers/hills&valleys.svg"></div>
 
     <!-- Review Section, when I have reviews -->
     <!-- <section id="reviewsCont" class="flex-column">
@@ -262,9 +260,10 @@
       </div>
     </section> -->
 
-    <section id="missState">
+    <section id="missionstatement" class="flex-column">
+      <div id="scrollDown" class="flex-row">Scroll Down <div data-svg="./images/svgs/buttons/chevrons.svg"></div></div>
       <div class="flex-row">
-      <h1>Mission Statement</h1>
+        <h1>Mission Statement</h1>
       </div>
       <div>
         <p>We remember the pre-internet world and saw technology merge into our lives. There will never be a generation who knows a world without technology completely dominating society. The tragedy: We got it all wrong. The promise of technology fortold an age of objective information forged by interfacing the world through direct-democracy. Instead, we are now dominated by the will of mega-corperation algorithm distraction and disinformation. As technology develops, technological literacy declines.</p>
@@ -297,20 +296,17 @@
           </ul>
         </ul>
       </div>
-      <div id="scrollDown" class="flex-row">Scroll Down <div data-svg="./images/svgs/buttons/chevrons.svg"></div></div>
       <div class="flex-row">
         <h3>We are a small business with large ambitions. Join our community, your patronage is greatly appreciated.</h3>
       </div>
     </section>
 
-    <div class="mainBuffer" data-svg="./images/svgs/buffers/foothills.svg"></div>
-
     <section id="examples" class="flex-column">
-      <h1>Examples/Codebase</h1>
-      
-      <div id="examplesCont">
+      <div id="examplesCont" class="flex-column">
+        <h1>Examples/Codebase</h1>
         <div id="examplesScroll" class="flex-row">
           <a class="example flex-column" href="./examples/business/index.html">
+            <div id="clickHere" class="flex-row">Check Me Out! <div data-svg="./images/svgs/buttons/chevrons.svg"></div></div>
             <p>Business Website</p>
           </a>
           <a class="example flex-column" href="https://hashkeeper.github.io/">
@@ -554,7 +550,7 @@
         <div class="faqA flex-column">
           <div class="faqABuffer"></div>
           <hr>
-          <p>Hashkeeper LLC is offering client directed, custom-made, frontend development, along with web infrustructure solutions.</p>
+          <p>Hashkeeper LLC is offering client directed, custom-made, full stack web and software development, along with web infrustructure solutions.</p>
         </div>
       </div>
 

@@ -5,6 +5,8 @@
   --heading-color: #00001fff;
   --gen-text-color: #060638;
 
+  --link-text-color: #0d0d50;
+
   --menu-bg: #52969b;
   --menu-shadow: #234a5cff;
   --menu-text-color: #234a5cff;
@@ -64,6 +66,8 @@
   --bg: #0c1818ff;
   --heading-color: #eac5a3;
   --gen-text-color: #ad8866;
+
+  --link-text-color: #a3642a;
 
   --menu-bg: #2a4f6aff;
   --menu-shadow: #caac8cff;
@@ -126,6 +130,8 @@
   --heading-color: #9e2463;
   --gen-text-color: #4e0a2d;
 
+  --link-text-color: #8a1a54;
+
   --menu-bg: #de7d9e;
   --menu-shadow: #22040e;
   --menu-text-color: #22040e;
@@ -185,6 +191,8 @@
   --bg: #420e0bff;
   --heading-color: #e55a5a;
   --gen-text-color: #d76363;
+
+  --link-text-color: #b74444;
 
   --menu-bg: #630505;
   --menu-shadow: #e07070;
@@ -247,6 +255,8 @@
   --heading-color: #053c23;
   --gen-text-color: #044025;
 
+  --link-text-color: #0d6a40;
+
   --menu-bg: #35ba7e;
   --menu-shadow: #053c23;
   --menu-text-color: #053c23;
@@ -307,6 +317,8 @@
   --heading-color: #94d392;
   --gen-text-color: #bbeeb9;
 
+  --link-text-color: #72bb70;
+
   --menu-bg: #274b4d;
   --menu-shadow: #94d392;
   --menu-text-color: #94d392;
@@ -364,10 +376,11 @@
 /* Apr */
 /* Light */
 #aprL {
- 
   --bg: #6e90c4ff;
   --heading-color: #fccf8dff;
   --gen-text-color: #fccf8dff;
+
+  --link-text-color: #d39b47;
 
   --menu-bg: #5174a7;
   --menu-shadow: #f4a962ff;
@@ -428,6 +441,8 @@
   --bg: #0b171eff;
   --heading-color: #bbc059ff;
   --gen-text-color: #e3e97e;
+
+  --link-text-color: #abb04c;
 
   --menu-bg: #136b42;
   --menu-shadow: #d7df46;
@@ -490,6 +505,8 @@
   --heading-color: #518118ff;
   --gen-text-color: #1b2b08ff;
 
+  --link-text-color: #415e1d;
+
   --menu-bg: #87d728ff;
   --menu-shadow: #28400cff;
   --menu-text-color: #28400cff;
@@ -550,6 +567,8 @@
   --bg: #0d1504ff;
   --heading-color: #b5e67fff;
   --gen-text-color: #b5e67fff;
+
+  --link-text-color: #78a24c;
 
   --menu-bg: #365610ff;
   --menu-shadow: #daf3bfff;
@@ -613,6 +632,8 @@
   --heading-color: #0f222f;
   --gen-text-color: #0d1c26ff;
 
+  --link-text-color: #264559;
+
   --menu-bg: #538000ff;
   --menu-shadow: #0f222f;
   --menu-text-color: #0f222f;
@@ -673,6 +694,8 @@
   --bg: #213300;
   --heading-color: #95d547;
   --gen-text-color: #acca87;
+
+  --link-text-color: #79905d;
 
   --menu-bg: #3d5708;
   --menu-shadow: #acca87;
@@ -736,6 +759,8 @@
   --heading-color: #255b4fff;
   --gen-text-color: #255b4fff;
 
+  --link-text-color: #408274;
+
   --menu-bg: #f2ec38;
   --menu-shadow: #255b4fff;
   --menu-text-color: #255b4fff;
@@ -796,6 +821,8 @@
   --bg: #010103;
   --heading-color: #9ee5d6;
   --gen-text-color: #98d478ff;
+
+  --link-text-color: #70a055;
 
   --menu-bg: #0f3616;
   --menu-shadow: #3c8bddff;
@@ -859,6 +886,8 @@
   --heading-color: #f7db3bff;
   --gen-text-color: #2e3a07;
 
+  --link-text-color: #4d5f14;
+
   --menu-bg: #6f8e0c;
   --menu-shadow: #d3b81e;
   --menu-text-color: #d3b81e;
@@ -919,6 +948,8 @@
   --bg: #1a0c0c;
   --heading-color: #999999ff;
   --gen-text-color: #b2b2b2ff;
+
+  --link-text-color: #8e7676;
 
   --menu-bg: #666666ff;
   --menu-shadow: #bfbfbfff;
@@ -982,6 +1013,8 @@
   --heading-color: #5e741c;
   --gen-text-color: #562932ff;
 
+  --link-text-color: #915763;
+
   --menu-bg: #80932e;
   --menu-shadow: #cae8ff;
   --menu-text-color: #562932ff;
@@ -1042,6 +1075,8 @@
   --bg: #052c21;
   --heading-color: #02976bff;
   --gen-text-color: #bcf5e2ff;
+
+  --link-text-color: #75b9a2;
 
   --menu-bg: #138664ff;
   --menu-shadow: #9ce2daff;
@@ -1104,6 +1139,8 @@
   --heading-color: #534e46;
   --font-text-color: #534e46;
 
+  --link-text-color: #7d7872;
+
   --menu-bg: #c37422ff;
   --menu-shadow: #534e46;
   --menu-text-color: #534e46;
@@ -1163,6 +1200,8 @@
   --bg: #1a1a1aff;
   --heading-color: #847a6bff;
   --gen-text-color: #b0b3b6;
+
+  --link-text-color: #778694;
 
   --menu-bg: #586774ff;
   --menu-shadow: #a8b3bdff;
@@ -1225,6 +1264,8 @@
   --heading-color: #eea435;
   --gen-text-color: #2b0808ff;
 
+  --link-text-color: #452828;
+
   --menu-bg: #b2691aff;
   --menu-shadow: #2b0808ff;
   --menu-text-color: #2b0808ff;
@@ -1285,6 +1326,8 @@
   --bg: #03171d;
   --heading-color: #efbea4;
   --gen-text-color: #ecaa92;
+
+  --link-text-color: #e27852;
 
   --menu-bg: #285a6a;
   --menu-shadow: #ce8c7eff;
@@ -1348,6 +1391,8 @@
   --heading-color: #5b1714;
   --gen-text-color: #77241f;
 
+  --link-text-color: #b75954;
+
   --menu-bg: #447029ff;
   --menu-shadow: #99000cff;
   --menu-text-color: #db0013ff;
@@ -1408,6 +1453,8 @@
   --bg: #0c1307ff;
   --heading-color: #861e18;
   --gen-text-color: #ec8067;
+
+  --link-text-color: #e45a3b;
 
   --menu-bg: #0c1307ff;
   --menu-shadow: #e2411dff;
