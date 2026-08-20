@@ -1,3 +1,19 @@
+export class StackMenuManager {
+  constructor () {
+    this.header = document.querySelector("header");
+    this.stackParent = document.querySelector('#stackCont');
+    this.stackParChildren = document.querySelectorAll('#stackDisplay > *');
+    this.stackOptions = document.querySelector('#stackOptions');
+    this.stackFieldset = document.querySelector('#stackOptions > fieldset');
+    this.stackOptChildren = document.querySelectorAll('#stackOptions > * > *');
+  }
+  
+  #init () {
+
+  }
+
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 // Splash Screen Variables 
     const header = document.querySelector("header");

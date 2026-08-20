@@ -19,17 +19,18 @@ export class AnimationManager {
     this.elementMap.set(targetEle, params);
   }
 
-  infiniteScroll (targetEle, direction, speed) {
-    const dirInt = (direction == "right" | direction == "down")? 1 : -1;
+  infiniteScroll (targetEle, direction, speed, hoverPause = false) {
+    const dirInt = (direction == "right" | direction == "down")? [ 1, -1 ] : [ -1, 1 ];
     const axis = (direction == "right" | direction == "left")? "X" : "Y";
     const axisStr = (direction == "right" | direction == "left")? "width" : "height";
-    if (dirInt == -1) { targetEle.style.justifyContent = "end"; }
-    let childArr = (dirInt == 1)? [...targetEle.children] : [...targetEle.children].reverse();
+    if (dirInt[0] == -1) { targetEle.style.justifyContent = "end"; }
+    let childArr = (dirInt[0] == 1)? [...targetEle.children] : [...targetEle.children].reverse();
 
     let arrLen = 0;
-    childArr.forEach((cur, ind), () => {
+    childArr.forEach((cur, ind) => {
       childArr[ind] = {
         "node": cur,
+        "transform": 0, 
         "nodeLen": cur.style[axisStr],
         "subjLen": arrLen
       }
@@ -40,11 +41,20 @@ export class AnimationManager {
 
     this.#addAnimation(targetEle, {
       "childArr": childArr,
-      "arrLen": arrLen,
-      "speed": speed * dirInt,
+      "parentArr": {
+        "axis": axis,
+        "arrLen": arrLen,
+        "speed": speed * dirInt[0],
+        "dirInt": dirInt
+      },
       "isPaused": false,
       "update": function () {
-
+        this.childArr.forEach(cur => {
+          cur.translate = (this.childArr.subjLen + (this.childArr.transform * this.parentArr.dirInt[0]) >= this.parentArr.arrLen)
+            ? (this.childArr.subjLen + this.childArr.nodeLen) * this.parentArr.dirInt[1]
+            : this.childArr.transform + this.parentArr.speed;
+          cur.node.style.translate = `transform${this.parentArr.axis}(${this.childArr.transform}px)`;
+        });
       }
     });
   }

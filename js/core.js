@@ -3,30 +3,30 @@ import { ThemeManager } from "./themeManager.js";
 import { ScrollManager } from "./scrollManager.js";
 import { AnimationManager } from "./animationManager.js";
 import { EventManager } from "./clickManager.js";
-import { StackMenuManager } from "./stackMenuManager.js";
 
 class Core {
     constructor () {
         this.elementObj = {
             "root": document.documentElement,
             "body": document.body,
-            "root": document.root
+            "head": document.head
         }
 
-        this.#init();
+        this.init();
     }
 
-    async #init () {
+    async init () {
         await this.#setDate();
         await this.#setVars();
         await svgImporter();
+        await this.#scrollSetup();
         await this.#themeSetup();
         await this.#animationSetup();
     }
 
     #setDate () {
         this.date = new Date();
-        this.elementObj.root.querySelector('#footerCopyright').innerText = `© 2023 - ${this.date.getFullYear()} Hashkeeper ™`
+        this.elementObj.root.querySelector('#footerCopyright').innerText = `© 2023 - ${this.date.getFullYear()} Hashkeeper™`
     }
 
     #setVars () {
@@ -38,6 +38,10 @@ class Core {
         window.addEventListener('load', setViewportVariables);
         window.addEventListener('resize', setViewportVariables);
         window.addEventListener('orientationchange', setViewportVariables);
+    }
+
+    #scrollSetup () {
+        this.scrollMan = new ScrollManager(this.elementObj);
     }
 
     #themeSetup () {
@@ -56,3 +60,5 @@ class Core {
         this.aniMan.infiniteScroll(document.querySelector("#examplesScroll"), 'right', .5, true);
     }
 }
+
+const coreInst = new Core();
