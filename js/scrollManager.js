@@ -1,21 +1,84 @@
 export class ScrollManager {
-    constructor (elementObj) {
-        this.elementObj = elementObj;
+  constructor(nodeObj) {
+    this.nodeObj = nodeObj;
 
-        // Menus and subelements (tabs)
-        this.navEl = document.querySelector('nav');
-        this.navTab = document.querySelector('#navTab > div');
-        this.themeEl = document.querySelector('#themePicker');
-        this.themeTab = document.querySelector('#themeTab > div');
-        // Menu element array
-        this.menuArr = [navEl, themeEl];
-        // Header elements
-        this.bufferArr = document.querySelectorAll(".buffeR");
-        this.header = document.querySelector('header');
-        this.headerBuffer = document.querySelector('#bufferHeader');
-        // Initial Splash Screen
-        this.hkSplash = document.querySelector('#hkSplash');
-        // FAQ Buttons
-        this.faqDropdownArr = document.querySelectorAll(".faqDropdown");
+    // Header elements
+    // Initial Splash Screen
+    this.hkSplash = document.querySelector("#hkSplash");
+    this.hkHeader = document.querySelector("#hkHeader");
+    // Scroll Trigger Elements
+    this.header = document.querySelector("header");
+    this.bufferOne = document.querySelector("#bufferOne");
+    this.bufferTwo = document.querySelector("#bufferTwo");
+    this.headerBuffer = document.querySelector("#bufferHeader");
+
+    this.soundbite = document.querySelector("#soundbite");
+
+    this.#init();
+  }
+
+  #init() {
+    this.headerObserver.observe(this.bufferOne);
+    this.headerObserver.observe(this.bufferTwo);
+    this.bodyObserver.observe(this.header);
+
+    this.nodeObj.body.scroll(0, 15);
+  }
+
+  headerObserver = new IntersectionObserver(
+    async (entries) => { entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.target === this.bufferOne) {
+        if (entry.isIntersecting) {
+          this.hkSplash.style.maskPosition = "0% 0%";
+        } else {
+          this.hkSplash.style.maskPosition = "0% -100vh";
+        }
+      } else if (entry.target === this.bufferTwo) {
+        if (entry.isIntersecting) {
+          this.hkHeader.style.opacity = "0";
+          this.header.style.transform = "translateY(-100%)";
+          this.nodeObj.body.style.overflow = "scroll";
+          this.soundbite.focus();
+          this.nodeObj.body.style.overflow = "hidden";
+          setTimeout(() => {
+            this.nodeObj.body.style.overflow = "scroll";
+          }, 2000);
+          this.headerObserver.disconnect();
+        } else {
+          this.nodeObj.body.style.overflow = "hidden";
+        }
+      }
+    })},
+    {
+      root: this.header,
+      rootMargin: "0px",
+      threshold: 0
     }
+  )
+
+  bodyObserver = new IntersectionObserver(
+    (entries) => { entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.bufferOne.focus();
+        this.headerObserver.observe(this.bufferOne);
+        this.headerObserver.observe(this.bufferTwo);
+        // this.hkSplash.style.maskPosition = "0% 0%";
+        // this.hkHeader.style.opacity = "1";
+        // this.nodeObj.body.style.overflow = "hidden";
+        // this.header.style.transform = "translateY(0%)";
+        // this.nodeObj.nav.style.opacity = "0";
+      } else if (!entry.isIntersecting) {
+        this.header.style.transform = "translateY(-100%)";
+        setTimeout(() => {
+          this.nodeObj.nav.style.opacity = "1";
+        }, 1000);
+      }
+    })},
+    {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0
+    }
+  )
 }

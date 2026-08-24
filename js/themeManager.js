@@ -1,12 +1,12 @@
 export class ThemeManager {
-  constructor (elementObj, date) {
-    this.elementObj = elementObj;
+  constructor (nodeObj, date) {
+    this.nodeObj = nodeObj;
     this.date = date;
 
-    this.refreshTheme = this.elementObj.root.querySelector('#refreshTheme');
+    this.refreshTheme = this.nodeObj.root.querySelector('#refreshTheme');
 
-    this.contrArr = this.elementObj.root.querySelectorAll('.contrTheme');
-    this.themeArr = this.elementObj.root.querySelectorAll('.monthTheme');
+    this.contrArr = this.nodeObj.root.querySelectorAll('.contrTheme');
+    this.themeArr = this.nodeObj.root.querySelectorAll('.monthTheme');
     this.elArr = [...this.contrArr, ...this.themeArr];
 
     this.monthsArr = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
@@ -20,7 +20,7 @@ export class ThemeManager {
 
   #init () {
     this.themeCheck();
-    this.elementObj.root.setAttribute('id', `${this.monthChecked}${this.contrChecked}`);
+    this.nodeObj.root.setAttribute('id', `${this.monthChecked}${this.contrChecked}`);
     this.refreshTheme.addEventListener("click", this.themeByDate);
     this.elArr.forEach(cur => cur.addEventListener("change", this.changeTheme));
     this.#forceReset();
@@ -28,43 +28,43 @@ export class ThemeManager {
 
   #forceReset () {    
     // force color / fill updates
-    this.elementObj.body.style.transform = 'scale(1)';
+    this.nodeObj.body.style.transform = 'scale(1)';
     requestAnimationFrame(() => {
-      this.elementObj.body.style.transform = '';
+      this.nodeObj.body.style.transform = '';
     });
   }
 
   changeTheme () {
-    this.monthChecked = this.elementObj.root.querySelector('input[name="theme"]:checked').value;
+    this.monthChecked = this.nodeObj.root.querySelector('input[name="theme"]:checked').value;
     localStorage.setItem("monthSet", this.monthChecked);
-    this.contrChecked = this.elementObj.root.querySelector('input[name="contr"]:checked').value;
+    this.contrChecked = this.nodeObj.root.querySelector('input[name="contr"]:checked').value;
     localStorage.setItem("contrSet", this.contrChecked);
-    this.elementObj.root.setAttribute('id', `${this.monthChecked}${this.contrChecked}`);
+    this.nodeObj.root.setAttribute('id', `${this.monthChecked}${this.contrChecked}`);
     this.#forceReset();
   }
 
   themeByDate () {
-    this.elementObj.root.querySelector(`.monthTheme > input[value="${this.curMonth}"]`).checked = true;
-    this.monthChecked = this.elementObj.root.querySelector('input[name="theme"]:checked').value;
+    this.nodeObj.root.querySelector(`.monthTheme > input[value="${this.curMonth}"]`).checked = true;
+    this.monthChecked = this.nodeObj.root.querySelector('input[name="theme"]:checked').value;
     localStorage.setItem("monthSet", this.monthChecked);
-    this.elementObj.root.querySelector(`.contrTheme > input#lightTheme`).checked = true;
-    this.contrChecked = this.elementObj.root.querySelector('input[name="contr"]:checked').value;
+    this.nodeObj.root.querySelector(`.contrTheme > input#lightTheme`).checked = true;
+    this.contrChecked = this.nodeObj.root.querySelector('input[name="contr"]:checked').value;
     localStorage.setItem("contrSet", this.contrChecked);
-    this.elementObj.root.setAttribute('id', `${this.monthChecked}${this.contrChecked}`);
+    this.nodeObj.root.setAttribute('id', `${this.monthChecked}${this.contrChecked}`);
   }
 
   themeCheck () {
     if (this.monthChecked || this.contrChecked) {
       if (this.contrChecked && this.monthChecked !== this.curMonth) {
-        this.elementObj.root.querySelector(`.monthTheme > input[value="${this.monthChecked}"]`).checked = true;
-        this.monthChecked = this.elementObj.root.querySelector('input[name="theme"]:checked').value;
-        this.elementObj.root.querySelector(`.contrTheme > input[value="${this.contrChecked}"]`).checked = true;
-        this.contrChecked = this.elementObj.root.querySelector('input[name="contr"]:checked').value;
+        this.nodeObj.root.querySelector(`.monthTheme > input[value="${this.monthChecked}"]`).checked = true;
+        this.monthChecked = this.nodeObj.root.querySelector('input[name="theme"]:checked').value;
+        this.nodeObj.root.querySelector(`.contrTheme > input[value="${this.contrChecked}"]`).checked = true;
+        this.contrChecked = this.nodeObj.root.querySelector('input[name="contr"]:checked').value;
       } else {
-        this.elementObj.root.querySelector(`.monthTheme > input[value="${this.curMonth}"]`).checked = true;
-        this.monthChecked = this.elementObj.root.querySelector('input[name="theme"]:checked').value;
-        this.elementObj.root.querySelector(`.contrTheme > input[value="${this.contrChecked}"]`).checked = true;
-        this.contrChecked = this.elementObj.root.querySelector('input[name="contr"]:checked').value;
+        this.nodeObj.root.querySelector(`.monthTheme > input[value="${this.curMonth}"]`).checked = true;
+        this.monthChecked = this.nodeObj.root.querySelector('input[name="theme"]:checked').value;
+        this.nodeObj.root.querySelector(`.contrTheme > input[value="${this.contrChecked}"]`).checked = true;
+        this.contrChecked = this.nodeObj.root.querySelector('input[name="contr"]:checked').value;
       }
     } else if (!this.monthChecked && !this.contrChecked) {
       this.themeByDate();

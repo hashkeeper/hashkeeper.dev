@@ -1,5 +1,6 @@
 export class AnimationManager {
-  constructor () {
+  constructor (nodeObj) {
+    this.nodeObj = nodeObj;
     this.elementMap = new Map();
 
     this.#loop();
@@ -23,21 +24,27 @@ export class AnimationManager {
     const dirInt = (direction == "right" | direction == "down")? [ 1, -1 ] : [ -1, 1 ];
     const axis = (direction == "right" | direction == "left")? "X" : "Y";
     const axisStr = (direction == "right" | direction == "left")? "width" : "height";
-    if (dirInt[0] == -1) { targetEle.style.justifyContent = "end"; }
     let childArr = (dirInt[0] == 1)? [...targetEle.children] : [...targetEle.children].reverse();
+    if (dirInt[0] == -1) { targetEle.style.justifyContent = "end"; }
 
     let arrLen = 0;
     childArr.forEach((cur, ind) => {
+
+      // console.log(cur);
+      
+      const tempLen = parseFloat(window.getComputedStyle(cur)[axisStr]);
       childArr[ind] = {
         "node": cur,
         "transform": 0, 
-        "nodeLen": cur.style[axisStr],
+        "nodeLen": tempLen,
         "subjLen": arrLen
       }
-      arrLen += cur.style[axisStr];
+      arrLen += tempLen;
     });
 
-    console.log(arrLen);
+    // console.log(targetEle);
+    // console.log(childArr);
+    // console.log(arrLen);
 
     this.#addAnimation(targetEle, {
       "childArr": childArr,

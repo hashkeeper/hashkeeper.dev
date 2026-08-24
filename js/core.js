@@ -2,63 +2,91 @@ import { svgImporter } from "./svgImporter.js";
 import { ThemeManager } from "./themeManager.js";
 import { ScrollManager } from "./scrollManager.js";
 import { AnimationManager } from "./animationManager.js";
-import { EventManager } from "./clickManager.js";
+import { ClickManager } from "./clickManager.js";
 
 class Core {
-    constructor () {
-        this.elementObj = {
-            "root": document.documentElement,
-            "body": document.body,
-            "head": document.head
-        }
+  constructor() {
+    this.nodeObj = {
+      "root": document.documentElement,
+      "body": document.body,
+      "head": document.head,
+      "nav": document.querySelector("nav")
+    };
 
-        this.init();
+    this.date = new Date();
+
+    this.scrollMan = new ScrollManager(this.nodeObj);
+    this.themeMan = new ThemeManager(this.nodeObj, this.date);
+    this.aniMan = new AnimationManager(this.nodeObj);
+    this.clickMan = new ClickManager(this.nodeObj);
+
+    this.init();
+  }
+
+  async init() {
+    await svgImporter();
+    await this.#setVars();
+    this.nodeObj.root.querySelector("#footerCopyright").innerText =
+      `© 2023 - ${this.date.getFullYear()} Hashkeeper™`;
+
+    await this.#scrollSetup();
+    await this.#themeSetup();
+    await this.#animationSetup();
+    await this.#clickSetup();
+  }
+
+  #setVars() {
+    function setViewportVariables() {
+      document.documentElement.style.setProperty(
+        "--vp-width",
+        `${window.innerWidth}px`,
+      );
+      document.documentElement.style.setProperty(
+        "--vp-height",
+        `${window.innerHeight}px`,
+      );
     }
 
-    async init () {
-        await this.#setDate();
-        await this.#setVars();
-        await svgImporter();
-        await this.#scrollSetup();
-        await this.#themeSetup();
-        await this.#animationSetup();
-    }
+    window.addEventListener("load", setViewportVariables);
+    window.addEventListener("resize", setViewportVariables);
+    window.addEventListener("orientationchange", setViewportVariables);
+  }
 
-    #setDate () {
-        this.date = new Date();
-        this.elementObj.root.querySelector('#footerCopyright').innerText = `© 2023 - ${this.date.getFullYear()} Hashkeeper™`
-    }
+  #scrollSetup() {
+    window.addEventListener('hashchange', () => {
+      this.scrollMan.bodyObserver.unobserve(this.headerBuffer);
+      this.scrollMan.bodyObserver.observe(this.headerBuffer);
+    });
+  }
 
-    #setVars () {
-        function setViewportVariables() {
-            document.documentElement.style.setProperty('--vp-width', `${window.innerWidth}px`);
-            document.documentElement.style.setProperty('--vp-height', `${window.innerHeight}px`);
-        }
+  #themeSetup() {}
 
-        window.addEventListener('load', setViewportVariables);
-        window.addEventListener('resize', setViewportVariables);
-        window.addEventListener('orientationchange', setViewportVariables);
-    }
+  #animationSetup() {
+    document.querySelectorAll(".stream").forEach((cur) => {
+      const randSpeed = parseFloat(Math.random() * 0.5) + 0.5;
+      this.aniMan.infiniteScroll(cur, "up", randSpeed);
+    });
+    this.aniMan.infiniteScroll(
+      document.querySelector("#affirmations"),
+      "top",
+      1.5,
+      true,
+    );
+    this.aniMan.infiniteScroll(
+      document.querySelector("#diffBottom"),
+      "left",
+      2,
+      true,
+    );
+    this.aniMan.infiniteScroll(
+      document.querySelector("#examplesScroll"),
+      "right",
+      0.5,
+      true,
+    );
+  }
 
-    #scrollSetup () {
-        this.scrollMan = new ScrollManager(this.elementObj);
-    }
-
-    #themeSetup () {
-        this.themeMan = new ThemeManager(this.elementObj, this.date);
-    }
-
-    #animationSetup () {
-        this.aniMan = new AnimationManager();
-
-        document.querySelectorAll(".stream").forEach(cur => {
-            const randSpeed = parseFloat(Math.random() * .5) + .5;
-            this.aniMan.infiniteScroll(cur, 'up', randSpeed);
-        });
-        this.aniMan.infiniteScroll(document.querySelector("#affirmations"), 'top', 1.5, true);
-        this.aniMan.infiniteScroll(document.querySelector("#diffBottom"), 'left', 2, true);
-        this.aniMan.infiniteScroll(document.querySelector("#examplesScroll"), 'right', .5, true);
-    }
+  #clickSetup() {}
 }
 
 const coreInst = new Core();

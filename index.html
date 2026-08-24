@@ -13,122 +13,116 @@
   <link rel="stylesheet" href="./css/mediaQueries.css">
 
   <script type="module" src="./js/core.js"></script>
-  
-  <!-- <script src="./js/svgImp.js"></script>
-  <script src="./js/script.js" defer></script>
-  <script src="./js/theme.js" defer></script>
-  <script src="./js/stackMenu.js" defer></script>
-  <script src="./js/animTriggers.js" defer></script>
-  <script src="./js/animations.js" defer></script>
-  <script src="./js/deviceSupport.js" defer></script> -->
 </head>
 <body class="flex-column">
   <nav class="flex-column">
-    <ul id="navList" class="flex-row">
-      <li><a href="#soundbite">Soundbite</a></li>
-      <li><a href="#missionstatement">Mission</a></li>
-      <!-- <li><a href="#reviews">Reviews</a></li> -->
-      <li><a href="#examples">Examples</a></li>
-      <li><a href="#stack">Our Stack</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#FAQ">FAQ</a></li>
-      <hr>
-      <li><a href="">Blog</a></li>
-    </ul>
-    <div id="navTab">
-      <div data-svg="./images/svgs/buttons/arrow.svg"></div>
+    <div id="siteMap">
+      <ul id="mapList" class="flex-row">
+        <li><a href="#soundbite">Soundbite</a></li>
+        <li><a href="#missionstatement">Mission</a></li>
+        <!-- <li><a href="#reviews">Reviews</a></li> -->
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#stack">Our Stack</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#FAQ">FAQ</a></li>
+        <hr>
+        <li><a href="">Blog</a></li>
+      </ul>
+      <div id="mapTab">
+        <div data-svg="./images/svgs/buttons/arrow.svg"></div>
+      </div>
     </div>
+
+    <div id="themePicker" class="flex-column">
+      <div id="themeTab" class="flex-row">
+        <div data-svg="./images/svgs/buttons/arrow.svg"></div>
+      </div>
+      <fieldset id="contrPicker" class="flex-row">
+        <label class="contrTheme" for="lightTheme">
+          <input id="lightTheme" type="radio" name="contr" value="L" checked>
+          <div data-svg="./images//svgs/buttons/sun.svg"></div>
+        </label>
+        <label class="contrTheme" for="darkTheme">
+          <input id="darkTheme" type="radio" name="contr" value="D">
+          <div data-svg="./images/svgs/buttons/moon.svg"></div>
+        </label>
+      </fieldset>
+      <fieldset id="monthPicker" class="flex-column">
+        <div class="flex-row">
+          <label class="monthTheme" for="janTheme">
+            <input type="radio" name="theme" value="jan">
+            [Jan]
+          </label>
+          <label class="monthTheme" for="febTheme">
+            <input type="radio" name="theme" value="feb">
+            [Feb]
+          </label>
+          <label class="monthTheme" for="marTheme">
+            <input type="radio" name="theme" value="mar">
+            [Mar]
+          </label>
+        </div>
+        <div class="flex-row">
+          <label class="monthTheme" for="aprTheme">
+            <input type="radio" name="theme" value="apr">
+            [Apr]
+          </label>
+          <label class="monthTheme" for="mayTheme">
+            <input type="radio" name="theme" value="may">
+            [May]
+          </label>
+          <label class="monthTheme" for="junTheme">
+            <input type="radio" name="theme" value="jun">
+            [Jun]
+          </label>
+        </div>
+        <div class="flex-row">
+          <label class="monthTheme" for="julTheme">
+            <input type="radio" name="theme" value="jul">
+            [Jul]
+          </label>
+          <label class="monthTheme" for="augTheme">
+            <input type="radio" name="theme" value="aug">
+            [Aug]
+          </label>
+          <label class="monthTheme" for="sepTheme">
+            <input type="radio" name="theme" value="sep">
+            [Sep]
+          </label>
+        </div>
+        <div class="flex-row">
+          <label class="monthTheme" for="octTheme">
+            <input type="radio" name="theme" value="oct">
+            [Oct]
+          </label>
+          <label class="monthTheme" for="novTheme">
+            <input type="radio" name="theme" value="nov">
+            [Nov]
+          </label>
+          <label class="monthTheme" for="decTheme">
+            <input type="radio" name="theme" value="dec">
+            [Dec]
+          </label>
+        </div>
+      </fieldset>
+      <p id="refreshTheme">Refresh Theme</p>
+    </div>
+  
+    <div id="bgFixed"></div>
   </nav>
 
-  <div id="themePicker" class="flex-column">
-    <div id="themeTab" class="flex-row">
-      <div data-svg="./images/svgs/buttons/arrow.svg"></div>
-    </div>
-    <fieldset id="contrPicker" class="flex-row">
-      <label class="contrTheme" for="lightTheme">
-        <input id="lightTheme" type="radio" name="contr" value="L" checked>
-        <div data-svg="./images//svgs/buttons/sun.svg"></div>
-      </label>
-      <label class="contrTheme" for="darkTheme">
-        <input id="darkTheme" type="radio" name="contr" value="D">
-        <div data-svg="./images/svgs/buttons/moon.svg"></div>
-      </label>
-    </fieldset>
-    <fieldset id="monthPicker" class="flex-column">
-      <div class="flex-row">
-        <label class="monthTheme" for="janTheme">
-          <input type="radio" name="theme" value="jan">
-          [Jan]
-        </label>
-        <label class="monthTheme" for="febTheme">
-          <input type="radio" name="theme" value="feb">
-          [Feb]
-        </label>
-        <label class="monthTheme" for="marTheme">
-          <input type="radio" name="theme" value="mar">
-          [Mar]
-        </label>
-      </div>
-      <div class="flex-row">
-        <label class="monthTheme" for="aprTheme">
-          <input type="radio" name="theme" value="apr">
-          [Apr]
-        </label>
-        <label class="monthTheme" for="mayTheme">
-          <input type="radio" name="theme" value="may">
-          [May]
-        </label>
-        <label class="monthTheme" for="junTheme">
-          <input type="radio" name="theme" value="jun">
-          [Jun]
-        </label>
-      </div>
-      <div class="flex-row">
-        <label class="monthTheme" for="julTheme">
-          <input type="radio" name="theme" value="jul">
-          [Jul]
-        </label>
-        <label class="monthTheme" for="augTheme">
-          <input type="radio" name="theme" value="aug">
-          [Aug]
-        </label>
-        <label class="monthTheme" for="sepTheme">
-          <input type="radio" name="theme" value="sep">
-          [Sep]
-        </label>
-      </div>
-      <div class="flex-row">
-        <label class="monthTheme" for="octTheme">
-          <input type="radio" name="theme" value="oct">
-          [Oct]
-        </label>
-        <label class="monthTheme" for="novTheme">
-          <input type="radio" name="theme" value="nov">
-          [Nov]
-        </label>
-        <label class="monthTheme" for="decTheme">
-          <input type="radio" name="theme" value="dec">
-          [Dec]
-        </label>
-      </div>
-    </fieldset>
-    <p id="refreshTheme">Refresh Theme</p>
+  <div id="hkSplash" class="flex-column" data-svg="./images/svgs/graphics/hashkeeper_longer.svg"></div>
+
+  <div id="hkHeader" class="flex-column">
+    <div id="hkCryptog" data-svg="./images/svgs/graphics/cryptography_graphic.svg"></div>
+    <h1 id="textHdr">Premier Front End,<br>Web Infrustructure,<br>& Software Development</h1>
   </div>
 
   <header class="flex-column">
-    <div id="hkSplash" class="flex-column" data-svg="./images/svgs/graphics/hashkeeper_longer.svg"></div>
-
-    <div id="hkHdr" class="flex-column">
-      <div id="hkCryptog" data-svg="./images/svgs/graphics/cryptography_graphic.svg"></div>
-      <h1 id="textHdr">Premier Front End,<br>Web Infrustructure,<br>& Software Development</h1>
-    </div>
-    
-    <div id="onE" class="buffeR"></div>
+    <div id="bufferOne"></div>
     <span id="headerSpine"></span>
-    <div id="twO" class="buffeR"></div>
+    <div id="bufferTwo"></div>
   </header>
-
-  <div id="bgFixed"></div>
 
   <div id="bufferHeader"></div>
 
@@ -177,20 +171,6 @@
         </div>
 
         <div id="affirmations" class="flex-column">
-          <p>Front-End</p>
-          <p>Resilience</p>
-          <p>Open Source</p>
-          <p>Dependable</p>
-          <p>Containerization</p>
-          <p>Innovative</p>
-          <p>Epic DevOps</p>
-          <p>Dependable</p>
-          <p>OOP</p>
-          <p>Communication</p>
-          <p>Elite Security</p>
-          <p>Team Oriented</p>
-          <p>DRY Code</p>
-          <p>Productive</p>
           <p>Front-End</p>
           <p>Resilience</p>
           <p>Open Source</p>

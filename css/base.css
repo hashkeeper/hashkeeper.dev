@@ -12,10 +12,10 @@ body {
 }
 
 nav {
+  width: 100vw;
+  height: 100vh;;
   position: fixed;
   align-items: end;
-  top: -2.5em;
-  z-index: 10;
   opacity: 0;
   transition: opacity 1s linear;
 }
@@ -68,7 +68,7 @@ header {
   width: var(--vp-width);
   height: var(--vp-height);
   top: 0;
-  position: absolute;
+  position: fixed;
   overflow-x: hidden;
   overflow-y: auto;
   justify-items: center;

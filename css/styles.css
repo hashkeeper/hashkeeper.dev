@@ -1,5 +1,14 @@
 /* Navigation */
-#navList {
+#siteMap {
+  position: fixed;
+  align-items: end;
+  top: -2.5em;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+#mapList {
   padding: 5px;
   width: auto;
   height: 1.75rem;
@@ -11,16 +20,16 @@
   list-style-type: none;
   text-wrap: nowrap;
 }
-#navList > li { padding: 0 1.25rem; }
-#navList a { color: var(--menu-text-color); }
-#navList > hr { 
+#mapList > li { padding: 0 1.25rem; }
+#mapList a { color: var(--menu-text-color); }
+#mapList > hr { 
   height: 5rem;
   width: 1px;
   border: none;
   background-color: var(--menu-shadow);
 }
 
-#navTab {
+#mapTab {
   width: 25px;
   height: 25px;
   padding: 5px;
@@ -40,16 +49,16 @@
   overflow: hidden;
 }
 
-#navTab > div { 
+#mapTab > div { 
   transform: scaleY(-1);
 }
 
-#navTab * {
+#mapTab * {
   width: 25px;
   height: 25px; 
 }
 
-#navTab > div > * {
+#mapTab > div > * {
   fill: var(--dropdown-svg);
 }
 
@@ -166,25 +175,25 @@
   user-select: none;
 }
 
-/* Header elements */
-.buffeR {
-  width: 10px;
-  height: 1px;
+/* Scroll trigger elements */
+#bufferOne, #bufferTwo {
+  width: 5px;
+  aspect-ratio: 1 / 1;
   position: relative;
   flex-shrink: 0;
 }
 
-#bufferHeader {
-  margin: 0 0 5px 0;
-  width: 5px;
-  aspect-ratio: 1 / 1;
-}
-
 #headerSpine {
-  width: 10px;
+  width: 5px;
   height: 120rem;
   position: relative;
   display: border-box;
+  flex-shrink: 0;
+}
+
+#bufferHeader {
+  width: 5px;
+  aspect-ratio: 1 / 1;
   flex-shrink: 0;
 }
 
@@ -235,7 +244,7 @@
 #hkSplash path#R1B { fill: var(--header-fill-R1B) !important; }
 
 /* Header Animation */
-#hkHdr {
+#hkHeader {
   top: 0;
   position: fixed;
   width: var(--vp-width);
@@ -337,7 +346,6 @@
   text-wrap: nowrap;
   text-align: center;
   grid-area: head;
-  z-index: 5;
 }
 
 #alterSvgs {
