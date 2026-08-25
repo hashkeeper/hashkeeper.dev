@@ -20,6 +20,21 @@ export class AnimationManager {
     this.elementMap.set(targetEle, params);
   }
 
+  #getFullLength (targetEle, axis) {
+    const eleStyles = this.nodeObj.window.getComputedStyle(targetEle);
+    if (axis === "width") {
+      const marginLeft = parseFloat(eleStyles.marginLeft);
+      const marginRight = parseFloat(eleStyles.marginRight);
+      const eleWidth = parseFloat(eleStyles.offsetWidth);
+      return marginLeft + marginRight + eleWidth;
+    } else {
+      const marginTop = parseFloat(eleStyles.marginTop);
+      const marginBottom = parseFloat(eleStyles.marginBottom);
+      const eleHeight = parseFloat(eleStyles.offsetHeight);
+      return marginTop + marginBottom + eleHeight;
+    }
+  }
+
   infiniteScroll (targetEle, direction, speed, hoverPause = false) {
     const dirInt = (direction == "right" | direction == "down")? [ 1, -1 ] : [ -1, 1 ];
     const axis = (direction == "right" | direction == "left")? "X" : "Y";
@@ -29,17 +44,15 @@ export class AnimationManager {
 
     let arrLen = 0;
     childArr.forEach((cur, ind) => {
-
-      // console.log(cur);
-      
-      const tempLen = parseFloat(window.getComputedStyle(cur)[axisStr]);
+      cur.style.flexShrink = "0";
+      const nodeLen = this.#getFullLength(cur, axis);
       childArr[ind] = {
         "node": cur,
         "transform": 0, 
-        "nodeLen": tempLen,
+        "nodeLen": nodeLen,
         "subjLen": arrLen
       }
-      arrLen += tempLen;
+      arrLen += nodeLen;
     });
 
     // console.log(targetEle);

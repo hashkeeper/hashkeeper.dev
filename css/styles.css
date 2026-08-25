@@ -246,11 +246,10 @@
 #hkHeader {
   top: 0;
   position: fixed;
-  width: var(--vp-width);
-  height: var(--vp-height);
+  width:100vw;
+  height: 100vh;
   background: var(--header-bg);
   justify-content: center;
-  justify-items: center;
   align-content: center;
   align-items: center;
   z-index: 5;
@@ -317,50 +316,65 @@
 }
 
 #soundbiteCont {
+  width: clamp(340px, 80vw, 1200px);
+  height: clamp(340px, 80vh, 900px);
   position: relative;
   display: grid;
-  grid-template: 
-  "head head head head"
-  "diff diff diff aff"
-  "diff diff diff aff"
-  "diff diff diff aff"
-  "bott bott bott bott";
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+    "head head"
+    "diff aff"
+    "bott bott";
+  grid-template-columns:
+    minmax(70%, 625px)
+    minmax(25%, 125px);
+  grid-template-rows: 
+    minmax(1%, 75px) 
+    minmax(60%, auto) 
+    minmax(20%, 250px);
   gap: clamp(.25rem, 1.5%, 1rem);
   justify-content: center;
   align-content: center;
 }
 
 #soundbiteCont p {
-  font-size: 16px;
   font-weight: bold;
 }
 #soundbiteCont > * { border-radius: 25px; }
 
 #diffTop {
-  top: -2.75rem;
-  position: absolute;
-  font-size: 50px;
+  font-size: clamp(15px, 4vw, 50px);
   text-wrap: nowrap;
   text-align: center;
   grid-area: head;
+  justify-self: start;
+  align-self: flex-end;
 }
 
 #alterSvgs {
-  width: clamp(100px, 65vw, 750px) !important;
-  height: clamp(300px, 55vh, 1000px) !important;
+  padding: 1rem;
   background: var(--container-bg);
   grid-area: diff;
   justify-content: space-around;
 }
 
 #alterSvgs h2 { color: var(--header-color); }
-#alterSvgs p { font-size: 14px; }
+
+.dfSvgLeft, .dfSvgRight {
+  height: clamp(50px, 15%, 7rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dfWording > h2 { 
+  font-size: clamp(12px, 2vw, 24px);
+  text-align: center;
+}
+.dfWording > p { font-size: clamp(8px, 1.25vw, 18px); }
 
 .dfSvgIcon {
-  width: clamp(50px, 15%, 7rem);
-  height: clamp(50px, 15%, 7rem);
+  width: clamp(50px, 20%, 7rem);
   aspect-ratio: 1 / 1;
   margin: 10px;
   display: flex;
@@ -368,71 +382,55 @@
   justify-content: center;
   align-items: center;
 }
-
-.dfWording {
-  padding: 0 1.5rem;
-  align-self: center;
-  justify-self: center;
-}
-
-.dfSvgRight, .dfSvgLeft {
-  width: 100%;
-  max-width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
+.dfSvgIcon * {
+  width: clamp(50px, 100%, 10rem);
+  height: auto;
+  aspect-ratio: 1 / 1;
 }
 
 #affirmations {
-  width: clamp(150px, 15vw, 220px) !important;
-  height: clamp(300px, 55vh, 800px) !important;
   position: relative;
   overflow: hidden;
   background: var(--container-bg);
   grid-area: aff;
   align-items: center;
 }
-#affirmations > * { position: absolute }
-#affirmations > div > p:first-child { margin: 0 0 .5em 0 }
+
+#affirmations > p { 
+  padding: 1rem 0;
+  font-size: clamp(8px, 2vw, 16px);
+}
 #affirmations > div > p { 
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
   text-align: center;
 }
 
 #diffBottom {
-  position: relative;
-  overflow: hidden;
-  border-radius: 25px;
+  overflow-x: hidden;
   background: var(--container-bg);
   grid-area: bott;
   align-items: center;
-  
-}
-
-#diffBottom > * {
-  position: absolute;
 }
 
 #diffBottom > hr {
-  width: 8em;
-  border: 3px solid var(--gen-text-color);
+  width: clamp(50px, 18%, 150px);
+  border: 2px solid var(--gen-text-color);
   border-radius: 25px;
 }
 
 .miniDiff {
-  width: 10rem;
+  width: clamp(12px, 20%, 190px);
   padding: 1rem 0;
   justify-items: center;
   align-items: center;
 }
 
 .miniDiff > p {
+  font-size: clamp(.6em, 1.25vw, 2em) !important;
   margin: 0 0 1rem 0;
-  width: 100%;
   text-align: center;
+  text-wrap: wrap;
+
 }
 
 .miniIcons {
@@ -440,8 +438,9 @@
 } 
 
 svg.miniIcons , svg.miniIcons path {
-  width: clamp(2rem, 35%, 5rem);
-  height: clamp(2rem, 35%, 5rem);
+  width: 40%;
+  height: auto;
+  aspect-ratio: 1 / 1;
 }
 
 /* Review Section, when I have some */
@@ -562,7 +561,7 @@ svg.miniIcons , svg.miniIcons path {
 
 #examplesScroll {
   width: clamp(100px, 80vw, 60rem) !important;
-  padding: 1.5rem 0 0 0;
+  padding: 2rem;
   position: relative;
   overflow-x: hidden;
   overflow-y: visible;
@@ -571,15 +570,16 @@ svg.miniIcons , svg.miniIcons path {
 
 .example {
   width: 15rem;
-  height: 15rem;
+  aspect-ratio: 1 / 1;
+  margin: 0 7rem;
   border-radius: 25px;
-  position: absolute;
   background-color: var(--svg-fill);
   background-size: contain;
   background-position: 0 0;
   color: var(--menu-text-color);
   justify-content: end;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .example > p {
@@ -597,7 +597,7 @@ div#examplesScroll > .example:nth-child(4) { background-image: url(./../images/t
 div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/thumbnails/reusableCode.png); }
 
 #clickHere {
-  top: -1.5rem;
+  top: 0rem;
   position: absolute;
 }
 

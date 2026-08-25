@@ -34,10 +34,11 @@ export class ScrollManager {
         }
       } else if (entry.target === this.bufferTwo) {
         if (entry.isIntersecting) {
+          this.headerObserver.disconnect();
+
           this.nodeObj.body.style.overflow = "scroll";
           this.soundbite.focus({ preventScroll: true });
-
-          this.headerObserver.disconnect();
+          this.nodeObj.body.style.overflow = "hidden";
 
           this.header.style.display = "none";
           this.hkHeader.style.opacity = "0";
@@ -56,7 +57,6 @@ export class ScrollManager {
       console.log(entry);
       if (entry.isIntersecting) {
         this.nodeObj.body.style.overflow = "hidden";
-
         this.header.style.display = "";
         this.header.scrollTo(0, 0);
         this.hkHeader.style.opacity = "1";
@@ -68,9 +68,10 @@ export class ScrollManager {
         this.header.style.display = "none";
         this.hkSplash.style.maskPosition = "0% -100vh";
         this.hkHeader.style.opacity = "0";
-          setTimeout(() => {
-            this.nodeObj.nav.style.opacity = "1";
-          }, 1000);
+        setTimeout(() => {
+          this.nodeObj.nav.style.opacity = "1";
+          this.nodeObj.body.style.overflow = "scroll";
+        }, 1000);
       }
     })},
     {

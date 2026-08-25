@@ -8,6 +8,7 @@ class Core {
   constructor() {
     this.nodeObj = {
       "root": document.documentElement,
+      "window": window,
       "body": document.body,
       "head": document.head,
       "nav": document.querySelector("nav")
