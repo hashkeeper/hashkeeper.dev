@@ -4,7 +4,6 @@
   align-items: end;
   top: -2.5em;
   z-index: 10;
-  opacity: 0;
   transition: opacity 1s linear;
 }
 
@@ -311,7 +310,7 @@
 #soundbite {
   width: 10px;
   height: 100vh;
-  margin: 0 !important;
+  margin: 50px 0 0 0 !important;
   padding: 0 !important;
   justify-content: center;
   align-items: center;
