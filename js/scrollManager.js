@@ -105,7 +105,7 @@ export class ScrollManager {
     this.nodeObj.body.style.overflow = "scroll";
     setTimeout(() => {
       this.nodeObj.window.scrollTo({
-        top: this.soundbite.offsetTop - 100,
+        top: this.soundbite.offsetTop - 50,
         behavior: 'instant'
       });
       setTimeout(() => {

@@ -326,10 +326,10 @@
     "bott bott";
   grid-template-columns:
     minmax(70%, 625px)
-    minmax(25%, 125px);
+    minmax(20%, 115px);
   grid-template-rows: 
     minmax(1%, 75px) 
-    minmax(60%, auto) 
+    minmax(75%, auto) 
     minmax(20%, 250px);
   gap: clamp(.25rem, 1.5%, 1rem);
   justify-content: center;
@@ -342,7 +342,7 @@
 #soundbiteCont > * { border-radius: 25px; }
 
 #diffTop {
-  font-size: clamp(15px, 4vw, 50px);
+  font-size: clamp(22px, 4vw, 50px);
   text-wrap: nowrap;
   text-align: center;
   grid-area: head;
@@ -367,20 +367,32 @@
   justify-content: space-between;
 }
 
-.dfWording > h2 { 
-  font-size: clamp(12px, 2vw, 24px);
-  text-align: center;
+.dfWording {
+  width: clamp(150px, 100%, 500px);
 }
-.dfWording > p { font-size: clamp(8px, 1.25vw, 18px); }
+
+.dfWording > h2, .dfWording > p {
+  width: clamp(175px, 87%, 500px);
+  flex-shrink: 0;
+}
+
+.dfWording > h2 {
+  font-size: clamp(12px, 2vw, 22px);
+}
+.dfWording > p {
+  padding: 10px 0 0 0;
+  font-size: clamp(8px, 1vw, 16px); 
+}
 
 .dfSvgIcon {
-  width: clamp(50px, 20%, 7rem);
+  width: clamp(30px, 14%, 7rem);
   aspect-ratio: 1 / 1;
-  margin: 10px;
+  margin: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 .dfSvgIcon * {
   width: clamp(50px, 100%, 10rem);
@@ -398,7 +410,7 @@
 
 #affirmations > p { 
   padding: 1rem 0;
-  font-size: clamp(8px, 2vw, 16px);
+  font-size: clamp(8px, 1.5vw, 16px);
 }
 #affirmations > div > p { 
   padding: 1em 0;
@@ -413,32 +425,27 @@
 }
 
 #diffBottom > hr {
-  width: clamp(50px, 18%, 150px);
+  width: clamp(50px, 15%, 150px);
+  margin: 0 2em;
   border: 2px solid var(--gen-text-color);
   border-radius: 25px;
 }
 
 .miniDiff {
-  width: clamp(12px, 20%, 190px);
-  padding: 1rem 0;
-  justify-items: center;
+  width: clamp(12px, 15%, 190px);
+  justify-content: center;
   align-items: center;
 }
 
 .miniDiff > p {
-  font-size: clamp(.6em, 1.25vw, 2em) !important;
-  margin: 0 0 1rem 0;
+  font-size: clamp(.5em, 1vw, 2em) !important;
   text-align: center;
   text-wrap: wrap;
 
 }
 
-.miniIcons {
-  padding: 1rem 0;
-} 
-
 svg.miniIcons , svg.miniIcons path {
-  width: 40%;
+  width: clamp(30px, 35%, 150px);
   height: auto;
   aspect-ratio: 1 / 1;
 }
@@ -496,8 +503,7 @@ svg.miniIcons , svg.miniIcons path {
 /* Mission Statement */
 #missionstatement {
   width: clamp(300px, 50vw, 650px);
-  height: auto;
-  aspect-ratio: 1 / 1;
+  height: clamp(260px, 73vh, 900px);
   position: relative;
   padding: 2.5rem clamp(1rem, 10%, 5rem);
   border-radius: 25px;
@@ -526,8 +532,8 @@ svg.miniIcons , svg.miniIcons path {
 
 #scrollDown {
   position: absolute;
-  padding: .4rem .05rem 0 .4rem;
-  bottom: 8rem;
+  padding: .4em .05em 0 .4em;
+  bottom: 22%;
   border-radius: 5px;
   background-color: var(--stack-fg);
   transition: opacity .5s linear;
@@ -560,7 +566,7 @@ svg.miniIcons , svg.miniIcons path {
 } 
 
 #examplesScroll {
-  width: clamp(100px, 80vw, 60rem) !important;
+  width: clamp(100px, 60vw, 60rem) !important;
   padding: 2rem;
   position: relative;
   overflow-x: hidden;
