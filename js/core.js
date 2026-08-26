@@ -53,12 +53,7 @@ class Core {
     window.addEventListener("orientationchange", setViewportVariables);
   }
 
-  #scrollSetup() {
-    window.addEventListener('hashchange', () => {
-      this.scrollMan.bodyObserver.unobserve(this.headerBuffer);
-      this.scrollMan.bodyObserver.observe(this.headerBuffer);
-    });
-  }
+  #scrollSetup() {}
 
   #themeSetup() {}
 

@@ -12,36 +12,45 @@ export class ScrollManager {
     this.bufferTwo = document.querySelector("#bufferTwo");
     this.bufferHeader = document.querySelector("#bufferHeader");
 
-    this.soundbite = document.querySelector("#soundbite");
+    this.soundbite = document.querySelector("#soundbiteCont");
+
+    this.isInBody = false;
+    this.isTransitioning = false;
 
     this.#init();
   }
 
   #init() {
-    this.headerObserver.observe(this.bufferOne);
-    this.headerObserver.observe(this.bufferTwo);
-    this.bodyObserver.observe(this.bufferHeader);
+    if (this.nodeObj.window.location.hash) {
+      this.isInBody = true;
+      this.bodyObserver.observe(this.bufferHeader);
+    } else {
+      this.headerObserver.observe(this.bufferOne);
+      this.headerObserver.observe(this.bufferTwo);
+    }
+
+    this.nodeObj.window.addEventListener('hashchange', () => {
+      this.isInBody = true;
+      this.bodyObserver.disconnect();
+      this.bodyObserver.observe(this.bufferHeader);
+    });
   }
 
-  headerObserver = new IntersectionObserver(
-    async (entries) => { entries.forEach((entry) => {
-      console.log(entry);
+  headerObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => {
       if (entry.target === this.bufferOne) {
-        if (entry.isIntersecting) {
-          this.hkSplash.style.maskPosition = "0% 0%";
-        } else {
-          this.hkSplash.style.maskPosition = "0% -100vh";
-        }
-      } else if (entry.target === this.bufferTwo) {
-        if (entry.isIntersecting) {
-          this.headerObserver.disconnect();
-
-          this.nodeObj.body.style.overflow = "scroll";
-          this.soundbite.focus({ preventScroll: true });
-          this.nodeObj.body.style.overflow = "hidden";
-
-          this.header.style.display = "none";
-          this.hkHeader.style.opacity = "0";
+        this.hkSplash.style.maskPosition = entry.isIntersecting ? "0% 0%" : "0% -100vh";
+      } else if (entry.target === this.bufferTwo && entry.isIntersecting) {
+        if (!this.isInBody && !this.isTransitioning) { 
+          this.isTransitioning = true;
+          this.headerObserver.unobserve(this.bufferOne);
+          this.headerObserver.unobserve(this.bufferTwo);
+          setTimeout(() => {       
+            this.header.scrollTo({
+              top: this.bufferOne,
+              behavior: 'instant'
+            });
+            this.transitionToBody();
+          }, 50);
         }
       }
     })},
@@ -52,19 +61,16 @@ export class ScrollManager {
     }
   )
 
-  bodyObserver = new IntersectionObserver(
-    (entries) => { entries.forEach((entry) => {
-      console.log(entry);
+  bodyObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        this.nodeObj.body.style.overflow = "hidden";
-        this.header.style.display = "";
-        this.header.scrollTo(0, 0);
-        this.hkHeader.style.opacity = "1";
-
-        this.headerObserver.observe(this.bufferOne);
-        this.headerObserver.observe(this.bufferTwo);
+        if (this.isInBody && !this.isTransitioning) {
+          this.isTransitioning = true;
+          this.bodyObserver.unobserve(this.bufferHeader);
+          setTimeout(() => {
+            this.transitionToHeader();
+          }, 50);
+        }
       } else {
-        this.headerObserver.disconnect();
         this.header.style.display = "none";
         this.hkSplash.style.maskPosition = "0% -100vh";
         this.hkHeader.style.opacity = "0";
@@ -80,4 +86,41 @@ export class ScrollManager {
       threshold: 0
     }
   )
+
+  transitionToHeader () {
+    this.nodeObj.body.style.overflow = "hidden";
+    this.nodeObj.nav.style.opacity = "0";
+    this.hkHeader.style.opacity = "1";
+    this.header.style.display = "";
+
+    setTimeout(() => {
+      this.isInBody = false;
+      this.isTransitioning = false;
+      this.headerObserver.observe(this.bufferOne);
+      this.headerObserver.observe(this.bufferTwo);
+    }, 300);
+  };
+
+  transitionToBody () {
+    this.nodeObj.body.style.overflow = "scroll";
+    setTimeout(() => {
+      this.nodeObj.window.scrollTo({
+        top: this.soundbite.offsetTop - 100,
+        behavior: 'instant'
+      });
+      setTimeout(() => {
+        this.nodeObj.body.style.overflow = "hidden";
+      }, 50);
+    }, 50);
+
+    this.hkHeader.style.opacity = "0";
+    this.header.style.display = "none";
+
+    setTimeout(() => {
+      this.nodeObj.body.style.overflow = "scroll";
+      this.isInBody = true;
+      this.isTransitioning = false;
+      this.bodyObserver.observe(this.bufferHeader);
+    }, 300);
+  }
 }

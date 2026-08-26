@@ -307,9 +307,9 @@
 /* Main Element */
 /* Soundbite Section */
 #soundbite {
-  width: 10px;
+  width: 100vw;
   height: 100vh;
-  margin: 50px 0 0 0 !important;
+  margin: 75px 0 0 0 !important;
   padding: 0 !important;
   justify-content: center;
   align-items: center;
