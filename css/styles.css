@@ -1,124 +1,3 @@
-/* Scroll trigger elements */
-#bufferOne, #bufferTwo {
-  width: 5px;
-  aspect-ratio: 1 / 1;
-  position: relative;
-  flex-shrink: 0;
-}
-
-#headerSpine {
-  width: 5px;
-  height: 120rem;
-  position: relative;
-  display: border-box;
-  flex-shrink: 0;
-}
-
-#bufferHeader {
-  width: 5px;
-  aspect-ratio: 1 / 1;
-  flex-shrink: 0;
-}
-
-/* Splash Screen */
-#hkSplash {
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  align-items: center;
-  background-color: var(--header-bg);
-  background-image: var(--splash-bg-image);
-  background-position: var(--splash-bg-position);
-  background-size: var(--splash-bg-size);
-  background-repeat: no-repeat;
-  mask-image: url(./../images/svgs/masks/headerMask.svg);
-  mask-size: 100% 100%;
-  mask-position: 0% 0%;
-  mask-repeat: no-repeat;
-  z-index: 11;
-  flex-shrink: 0;
-  transition: mask-position 1s linear;
-  pointer-events: none;
-}
-#hkSplash * { 
-  width: clamp(250px, 90vw, 75rem);
-  height: 100vh;
-}
-#hkSplash path#H1F { fill: var(--header-fill-H1F) !important; }
-#hkSplash path#H1B { fill: var(--header-fill-H1B) !important; }
-#hkSplash path#A1F { fill: var(--header-fill-A1F) !important; }
-#hkSplash path#A1B { fill: var(--header-fill-A1B) !important; }
-#hkSplash path#S1F { fill: var(--header-fill-S1F) !important; }
-#hkSplash path#S1B { fill: var(--header-fill-S1B) !important; }
-#hkSplash path#H2F { fill: var(--header-fill-H2F) !important; }
-#hkSplash path#H2B { fill: var(--header-fill-H2B) !important; }
-#hkSplash path#K1F { fill: var(--header-fill-K1F) !important; }
-#hkSplash path#K1B { fill: var(--header-fill-K1B) !important; }
-#hkSplash path#E1F { fill: var(--header-fill-E1F) !important; }
-#hkSplash path#E1B { fill: var(--header-fill-E1B) !important; }
-#hkSplash path#E2F { fill: var(--header-fill-E2F) !important; }
-#hkSplash path#E2B { fill: var(--header-fill-E2B) !important; }
-#hkSplash path#P1F { fill: var(--header-fill-P1F) !important; }
-#hkSplash path#P1B { fill: var(--header-fill-P1B) !important; }
-#hkSplash path#E3F { fill: var(--header-fill-E3F) !important; }
-#hkSplash path#E3B { fill: var(--header-fill-E3B) !important; }
-#hkSplash path#R1F { fill: var(--header-fill-R1F) !important; }
-#hkSplash path#R1B { fill: var(--header-fill-R1B) !important; }
-
-/* Header Animation */
-#hkHeader {
-  top: 0;
-  position: fixed;
-  width:100vw;
-  height: 100vh;
-  background: var(--header-bg);
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  z-index: 5;
-  opacity: 1;
-  transition: opacity 1s linear;
-  flex-shrink: 0;
-  pointer-events: none;
-}
-
-#hkCryptog {
-  --hkCryptog-dimensions: clamp(250px, 43vw, 700px);
-  width: var(--hkCryptog-dimensions);
-  height: var(--hkCryptog-dimensions);
-}
-#hkCryptog svg,
-#hkCryptog svg * {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-#hkCryptog .stream > * {
-  position: absolute;
-  fill: var(--svg-stream-fill);
-}
-
-#hkCryptog path#lock { fill: var(--svg-lock-fill) }
-#hkCryptog path#key { fill: var(--svg-key-fill) }
-#hkCryptog path#book { fill: var(--svg-book-fill) }
-#hkCryptog path#haze { fill: var(--svg-haze-fill) }
-
-#hkCryptog path#key {
-  animation: lockRotate 40s linear infinite;
-  transform-origin: center;
-  fill: var(--svg-key-fill);
-}
-
-#textHdr {
-  width: clamp(250px, 55%, 750px);
-  margin: 2rem 0 0 0;
-  text-align: center;
-  color: var(--heading-color);
-  font-size: clamp(16px, 5vw, 40px);
-  font-family: 'Metamorphous';
-}
-
 /* Section Elements */
 /* Soundbite Section */
 #soundbite {
@@ -265,57 +144,6 @@ svg.miniIcons , svg.miniIcons path {
   aspect-ratio: 1 / 1;
 }
 
-/* Review Section, when I have some */
-/* #reviewsCont {
-  width: 80vw;
-  height: 75vh;
-  align-items: center;
-}
-
-#reviews {
-  position: relative;
-  overflow: hidden;
-  justify-items: center;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.customers {
-  width: 30rem;
-  height: 20rem;
-  padding: 2rem;
-  position: absolute;
-  background: var(--menu-bg);
-  justify-content: space-between;
-  align-items: center;
-}
-.customers > p {
-  width: 17rem;
-}
-
-.customers > .customerPP {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 10em;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  aspect-ratio: 1 / 1;
-}
-#reviews > .customers:nth-child(1) > .customerPP { 
-  background-image: url(./../images/clients/business-8788635.jpg);
-  background-position: 50% 10%;
-  background-size: 200% auto !important;
-}
-#reviews > .customers:nth-child(2) > .customerPP { 
-  background-image: url(./../images/clients/connertheclient.png);
-  background-position: 0% 20%;
-}
-#reviews > .customers:nth-child(3) > .customerPP { 
-  background-image: url(./../images/clients/man-7849611.jpg);
-  background-position: 0% 20%;
-} */
-
-/* Mission Statement */
 #missionstatement {
   width: clamp(30px, 75vw, 650px);
   height: clamp(260px, 75vh, 900px);
@@ -420,6 +248,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 #clickHere {
   top: 0rem;
   position: absolute;
+  color: var(--gen-text-color);
 }
 
 #clickHere > div svg, #clickHere > div svg path {
@@ -505,12 +334,6 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 .itemStack > div {
   width: clamp(2rem, 10%, 10rem);
   height: clamp(2rem, 10%, 10rem);
-  /* min-width: 3rem;
-  width: 5vw;
-  max-width: 6rem;
-  min-height: 3rem;
-  height: 5vw;
-  max-height: 6rem; */
 }
 .itemStack > div * {
   width: 100%;
@@ -729,6 +552,33 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 #linksFooter {
-  width: auto;
-  height: 100%;
+  height: 2.5rem;
+  margin: 0 1rem 0 0;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+footer #linksFooter > * { margin: .25rem .5rem; }
+footer #linksFooter svg, footer #linksFooter svg path {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--footer-svg);
+}
+footer > div:nth-child(1) {
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div:nth-child(2) * {
+  width: 100vw;
+  height: .7rem;
+  bottom: 0;
+  position: absolute;
+}
+
+footer #path1 { fill: var(--footer-fill1) }
+footer #path2 { fill: var(--footer-fill2) }
+footer #path3 { fill: var(--footer-fill3) }
+footer #path4 { fill: var(--footer-fill4) }
+footer #path5 { fill: var(--footer-fill5) }
+footer #path6 { fill: var(--footer-fill6) }

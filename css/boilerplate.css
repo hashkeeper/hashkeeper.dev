@@ -1,0 +1,122 @@
+/* Variable Switches */
+:root {
+  --sff-width-margin: clamp(15px, 5vw, 50px);
+  --sff-height-margin: clamp(15px, 5vh, 50px);
+  --container-width: clamp(360px, 75vw, 1200px);
+  --container-height: clamp(360px, 75vh, 1200px);
+}
+/* ***************** */
+/* General Purpose Classes */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+/* *********************** */
+
+/* Boiler Plate Element Styling */
+/* Root Elements */
+html {
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  color: var(--gen-text-color);
+  background: var(--bg);
+  justify-items: center;
+  align-items: center;
+}
+
+/* Text Blocks */
+h1, h2, h3, h4, h5, h6 { 
+  color: var(--heading-color);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a { color: var(--link-text-color); }
+a:visited { color: var(--link-text-color); }
+
+ol { margin: 0; }
+ul { margin: 0; }
+
+hr { margin: 0; }
+
+/* Inputs */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Specific Use Elements */
+nav {
+  width: 100vw;
+  height: 100vh;;
+  position: fixed;
+  align-items: end;
+  opacity: 0;
+  transition: opacity 1s linear;
+  z-index: 15;
+  pointer-events: none;
+}
+nav * { pointer-events: auto; }
+
+/* Sectioning Elements */
+header {
+  width: var(--vp-width);
+  height: var(--vp-height);
+  top: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  justify-items: center;
+  align-items: center;
+  z-index: 14;
+  -ms-overflow-style: show;
+  scrollbar-width: auto;
+  scroll-behavior: auto;
+  transition: opacity 1s linear;
+}
+body.pageTop header { opacity: 0; }
+
+main {
+  width: 100vw;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  margin: 8rem 0 0 0;
+  padding: 5rem 0 0 0;
+}
+
+footer {
+  width: 100vw;
+  height: 3rem;
+  bottom: 0;
+  background-color: var(--footer-bg);
+  position: relative;
+}
