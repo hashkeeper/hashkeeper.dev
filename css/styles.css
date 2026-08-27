@@ -502,10 +502,10 @@ svg.miniIcons , svg.miniIcons path {
 
 /* Mission Statement */
 #missionstatement {
-  width: clamp(300px, 50vw, 650px);
-  height: clamp(260px, 73vh, 900px);
+  width: clamp(30px, 75vw, 650px);
+  height: clamp(260px, 75vh, 900px);
   position: relative;
-  padding: 2.5rem clamp(1rem, 10%, 5rem);
+  padding: 1em clamp(1em, 10%, 5em) 2.5em clamp(1em, 10%, 5em);
   border-radius: 25px;
   background-color: var(--container-bg);
   justify-content: center;
@@ -514,7 +514,7 @@ svg.miniIcons , svg.miniIcons path {
 
 #missionstatement > div:nth-child(2) > h1 {
   text-align: center;
-  margin: 0 0 1rem 0; 
+  margin: 0 0 .5em 0; 
   text-wrap: nowrap;
 }
 
@@ -533,7 +533,7 @@ svg.miniIcons , svg.miniIcons path {
 #scrollDown {
   position: absolute;
   padding: .4em .05em 0 .4em;
-  bottom: 22%;
+  top: 7em;
   border-radius: 5px;
   background-color: var(--stack-fg);
   transition: opacity .5s linear;
