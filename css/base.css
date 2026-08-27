@@ -35,7 +35,10 @@ nav {
   align-items: end;
   opacity: 0;
   transition: opacity 1s linear;
+  z-index: 15;
+  pointer-events: none;
 }
+nav * { pointer-events: auto; }
 
 fieldset {
   padding: 0;
@@ -77,7 +80,7 @@ header {
   overflow-y: auto;
   justify-items: center;
   align-items: center;
-  z-index: 10;
+  z-index: 14;
   -ms-overflow-style: show;
   scrollbar-width: auto;
   scroll-behavior: auto;
@@ -89,6 +92,7 @@ body.pageTop header {
 }
 
 section {
+  position: relative;
   z-index: 1;
 }
 
