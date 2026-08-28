@@ -1,14 +1,5 @@
 /* Section Elements */
 /* Soundbite Section */
-#soundbite {
-  width: 100vw;
-  height: 100vh;
-  margin: 75px 0 0 0 !important;
-  padding: 0 !important;
-  justify-content: center;
-  align-items: center;
-}
-
 #soundbiteCont {
   width: clamp(340px, 80vw, 1200px);
   height: clamp(340px, 80vh, 900px);
@@ -23,8 +14,8 @@
     minmax(20%, 115px);
   grid-template-rows: 
     minmax(1%, 75px) 
-    minmax(75%, auto) 
-    minmax(20%, 250px);
+    minmax(60%, auto) 
+    minmax(15%, 250px);
   gap: clamp(.25rem, 1.5%, 1rem);
   justify-content: center;
   align-content: center;
@@ -144,7 +135,14 @@ svg.miniIcons , svg.miniIcons path {
   aspect-ratio: 1 / 1;
 }
 
-#missionstatement {
+#missState {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#missStateCont {
   width: clamp(30px, 75vw, 650px);
   height: clamp(260px, 75vh, 900px);
   position: relative;
@@ -155,13 +153,13 @@ svg.miniIcons , svg.miniIcons path {
   align-items: center;
 }
 
-#missionstatement > div:nth-child(2) > h1 {
+#missStateCont > div:nth-child(2) > h1 {
   text-align: center;
   margin: 0 0 .5em 0; 
   text-wrap: nowrap;
 }
 
-#missionstatement > div:nth-child(3) {
+#missStateCont > div:nth-child(3) {
   width: 100%;
   height: clamp(200px, 60vh, 800px);
   border-radius: 10px;
@@ -170,8 +168,8 @@ svg.miniIcons , svg.miniIcons path {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-#missionstatement > div:nth-child(3) > p { text-indent: 2rem; }
-#missionstatement:hover > #scrollDown { opacity: .25; }
+#missStateCont > div:nth-child(3) > p { text-indent: 2rem; }
+#missStateCont:hover > #scrollDown { opacity: .25; }
 
 #scrollDown {
   position: absolute;
@@ -186,19 +184,13 @@ svg.miniIcons , svg.miniIcons path {
   animation: bounce 1s infinite alternate ease-in-out;
 }
 
-#missionstatement > div:nth-child(4) > h3 {
+#missStateCont > div:nth-child(4) > h3 {
   text-align: center;
   margin: 1rem 0 0 0;
   font-size: clamp(12px, 1.5vw, 20px);
 }
 
 /* Examples */
-#examples {
-  width: clamp(100px, 80vw, 60rem);
-  border-radius: 5px;
-  align-items: center;
-}
-
 #examplesCont {
   width: clamp(100px, 80vw, 60rem) !important;
   padding: 1rem;
@@ -257,19 +249,15 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 /* Stack Scroll Menu */
-#stack {
-  align-items: center;
-}
-
 #stackCont {
-  width: clamp(320px, 80vw, 45rem);
-  height: clamp(320px, 80vw, 45rem);
+  width: clamp(320px, 55%, 45rem);
+  aspect-ratio: 1 / 1;
   align-items: center;
 }
 
 #stackDisplay {
-  width: clamp(320px, 80vw, 45rem);
-  height: clamp(320px, 80vw, 45rem);
+  width: clamp(320px, 100%, 45rem);
+  height: clamp(290px, 95%, 45rem);
   border-radius: 25px 25px 0 0;
   background-color: var(--container-bg);
   position: relative;
@@ -278,15 +266,10 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
   align-items: center;
 }
 
-#stackDisplay > * {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-}
-
 #stackOptions {
-  width: clamp(320px, 80vw, 45rem);
-  padding: .5rem 0;
+  width: clamp(320px, 100%, 45em);
+  height: 5%;
+  padding: 1% 0;
   background-color: var(--stack-fg);
   border-radius: 0 0 25px 25px;
   overflow-x: scroll;
@@ -300,122 +283,92 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 #stackOptions > fieldset {
-  margin: 0 12rem 0 13rem;
+  margin: 0 12em 0 13em;
   width: inherit;
   text-wrap: nowrap;
   contain: content;
 }
 #stackOptions > fieldset > * {
-  margin: 0 5rem;
+  margin: 0 5em;
   font-size: clamp(6px, 3vw, 18px);
 }
 
 .clusterStack {
-  background-color: var(--stack-fg);
-  border-radius: 2rem;
+  width: fit-content;
+  min-width: 0px;
+  max-width: 550px;
+  max-height: 90%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: center;
+  align-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  background-color: var(--stack-fg);
   transition: top .5s ease-out;
 }
 
-.itemsStack {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .itemStack {
-  margin: 0 clamp(1rem, 5%, 3rem);
+  width: clamp(50px, 15%, 150px);
+  min-width: 0;
+  min-height: 0;
+  height: auto;
   display: flex;
+  flex: 1 1 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.itemStack > div {
-  width: clamp(2rem, 10%, 10rem);
-  height: clamp(2rem, 10%, 10rem);
+.itemStack > div {    
+  width: 70%;
+  height: 70%;
+  flex: 0 0 auto;
 }
 .itemStack > div * {
   width: 100%;
   height: 100%;
+  display: block;
   fill: var(--stack-fill);
 }
 
 .itemStack > h3 {
-  font-size: clamp(6px, 3vw, 18px);
+  font-size: clamp(10px, 2vw, 18px);
 }
 
 #stackOptions h2, .itemStack > h3 { color: var(--stack-text-color); }
 
 #stackDisplay > .clusterStack:nth-child(1) > .itemsStack > .itemStack:nth-child(3) {
-  margin: 0 15rem;
+  margin: 0 15em;
 }
 
-#stackDisplay > .clusterStack:nth-child(1) {
-  width: clamp(16rem, 78vw, 35rem);
-  height: clamp(16rem, 78vw, 35rem);
-  border-radius: 25rem;
-}
-#stackDisplay > .clusterStack:nth-child(2) {
-  width: clamp(15rem, 50vw, 35rem);
-  height: clamp(15rem, 50vw, 35rem);
-  border-radius: 20rem;
-}
-#stackDisplay > .clusterStack:nth-child(3) { 
-  width: clamp(16rem, 65vw, 35rem);
-  height: clamp(16rem, 65vw, 35rem);
-  border-radius: 20rem;
-}
-#stackDisplay > .clusterStack:nth-child(4) { 
-  width: clamp(8rem, 30vw, 35rem);
-  height: clamp(8rem, 30vw, 35rem);
-  border-radius: 20rem;
-}
-#stackDisplay > .clusterStack:nth-child(5) {
-  width: clamp(14rem, 50vw, 35rem);
-  height: clamp(14rem, 50vw, 35rem);
-  border-radius: 20rem;
-}
-#stackDisplay > .clusterStack:nth-child(6) { 
-  width: clamp(16rem, 78vw, 35rem);
-  height: clamp(16rem, 78vw, 35rem);
-  border-radius: 20rem;
-}
-#stackDisplay > .clusterStack:nth-child(7) { 
-  width: clamp(16rem, 78vw, 35rem);
-  height: clamp(16rem, 78vw, 35rem);
-  border-radius: 20rem;
-}
 #podmanIcon { 
-  width: 5rem;
-  height: 5rem;
+  width: 5em;
+  height: 5em;
   background-image: url(./../images/svgs/icons/podman.png); 
   background-size: 100%;
   background-position: center;
 }
-#stackDisplay > .clusterStack:nth-child(8) { 
-  width: 25rem;
-  height: 25rem;
-  border-radius: 20rem;
-}
 
 /* About Section */
-#about {
+#aboutCont {
   display: inline-grid;
-  grid-template: 
-  "head head head head head"
-  "map map map like like"
-  "map map map like like"
-  "map map map like like"
-  "accr accr accr like like";
-  grid-template-columns: repeat(5, fit-content(100%));
-  grid-template-rows: repeat(5, fit-content(100%));
+  grid-template:
+  "head head"
+  "map like"
+  "accr like";
+  grid-template-columns: repeat(2, fit-content(100%));
+  grid-template-rows: repeat(2, fit-content(100%));
   gap: clamp(.25rem, 5%, 2rem);
   justify-content: center;
+  align-items: center;
 }
 
-#about > h1 {
-  width: 10rem;
+#aboutCont > h1 {
   grid-area: head;
   align-self: center;
   justify-self: center;
@@ -479,8 +432,9 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 
 /* FAQ Section */
 #FAQ {
-  margin: 10rem 0 !important;
-  width: 45rem;
+  width: auto;
+  height: auto;
+  margin: 5rem 0 10rem 0;
   align-items: center;
 }
 

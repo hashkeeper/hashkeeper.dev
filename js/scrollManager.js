@@ -12,7 +12,7 @@ export class ScrollManager {
     this.bufferTwo = document.querySelector("#bufferTwo");
     this.bufferHeader = document.querySelector("#bufferHeader");
 
-    this.soundbite = document.querySelector("#soundbiteCont");
+    this.soundbite = document.querySelector("#soundbite");
 
     this.isInBody = false;
     this.isTransitioning = false;
@@ -105,7 +105,7 @@ export class ScrollManager {
     this.nodeObj.body.style.overflow = "scroll";
     setTimeout(() => {
       this.nodeObj.window.scrollTo({
-        top: this.soundbite.offsetTop - 50,
+        top: this.soundbite.offsetTop,
         behavior: 'instant'
       });
       setTimeout(() => {

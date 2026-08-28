@@ -101,16 +101,21 @@ body.pageTop header { opacity: 0; }
 
 main {
   width: 100vw;
+  padding: 1rem 0 0 0;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
 
 section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
-  margin: 8rem 0 0 0;
-  padding: 5rem 0 0 0;
 }
 
 footer {
