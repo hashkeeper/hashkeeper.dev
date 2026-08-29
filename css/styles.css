@@ -284,7 +284,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 #stackOptions > fieldset {
-  margin: 0 0 0 50%;
+  margin: 0 50%;
   width: inherit;
   text-wrap: nowrap;
   contain: content;
