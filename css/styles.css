@@ -257,7 +257,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 
 #stackDisplay {
   width: clamp(320px, 100%, 45rem);
-  height: clamp(290px, 95%, 45rem);
+  height: clamp(260px, 90%, 45rem);
   border-radius: 25px 25px 0 0;
   background-color: var(--container-bg);
   position: relative;
@@ -268,12 +268,13 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 
 #stackOptions {
   width: clamp(320px, 100%, 45em);
-  height: 5%;
+  height: clamp(35px, 10%, 2em);
   padding: 1% 0;
   background-color: var(--stack-fg);
   border-radius: 0 0 25px 25px;
   overflow-x: scroll;
   overflow-y: hidden;
+  scroll-snap-type: x mandatory;
   contain: content;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -283,14 +284,21 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 #stackOptions > fieldset {
-  margin: 0 12em 0 13em;
+  margin: 0 0 0 50%;
   width: inherit;
   text-wrap: nowrap;
   contain: content;
 }
 #stackOptions > fieldset > * {
   margin: 0 5em;
-  font-size: clamp(6px, 3vw, 18px);
+  font-size: clamp(10px, 2.5vw, 18px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  scroll-snap-align: center;
+}
+#stackOptions > fieldset > label:nth-child(1){ 
+  margin: 0 5em 0 0;
 }
 
 .clusterStack {
@@ -306,27 +314,27 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
   flex-wrap: wrap;
   flex-shrink: 0;
   justify-content: center;
-  align-content: center;
-  align-items: center;
+  align-content: space-evenly;
+  align-items: flex-start;
   background-color: var(--stack-fg);
   transition: top .5s ease-out;
 }
 
 .itemStack {
-  width: clamp(50px, 15%, 150px);
+  width: clamp(100px, 35%, 225px);
   min-width: 0;
   min-height: 0;
   height: auto;
   display: flex;
-  flex: 1 1 0;
+  flex: 0 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .itemStack > div {    
-  width: 70%;
-  height: 70%;
+  width: 45%;
+  height: 45%;
   flex: 0 0 auto;
 }
 .itemStack > div * {
