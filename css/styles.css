@@ -318,7 +318,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
   align-content: space-evenly;
   align-items: flex-start;
   background-color: var(--stack-fg);
-  transition: top .5s ease-out;
+  transition: transform .5s ease-out;
 }
 
 .itemStack {
@@ -358,7 +358,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 #podmanIcon { 
   width: 5em;
   height: 5em;
-  background-image: url(./../images/svgs/icons/podman.png); 
+  background-image: url("./../images/svgs/icons/podman.png"); 
   background-size: 100%;
   background-position: center;
 }

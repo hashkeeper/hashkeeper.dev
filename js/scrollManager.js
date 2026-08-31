@@ -28,8 +28,8 @@ export class ScrollManager {
     });
 
     this.velocity = 1;
-    this.DAMPING = 0.8;
-    this.MIN_DELTA = 0.2;
+    this.DAMPING = 0.75;
+    this.MIN_DELTA = 0.1;
 
     this.#init();
   }
