@@ -18,13 +18,18 @@ export class ScrollManager {
 
     // Stack Menu Elements
     this.stackParent = document.querySelector("#stackCont");
-    this.stackOptions = document.querySelector("#stackOptions");
     this.stackClusters = document.querySelectorAll("#stackDisplay > *");
-    this.stackTriggers = document.querySelectorAll("#stackOptions > label > input");
+    this.stackOptions = document.querySelector("#stackOptions");
+    this.stackTriggers = document.querySelectorAll("#stackOptions > fieldset >  label > input");
+    this.stackNodeMap = new Map();
+
+    this.stackTriggers.forEach((cur, ind) => {
+      this.stackNodeMap.set(cur, this.stackClusters[ind]);
+    });
 
     this.velocity = 1;
-    this.DAMPING = .8;
-    this.MIN_DELTA = .2;
+    this.DAMPING = 0.8;
+    this.MIN_DELTA = 0.2;
 
     this.#init();
   }
@@ -54,7 +59,9 @@ export class ScrollManager {
       this.header.scrollTop += parseFloat(e.deltaY) / 2;
     });
 
-    this.stackParent.addEventListener( "wheel", (e) => {
+    this.stackParent.addEventListener(
+      "wheel",
+      (e) => {
         e.preventDefault();
 
         this.velocity += e.deltaY * 0.65;
@@ -129,26 +136,19 @@ export class ScrollManager {
 
   stackObserver = new IntersectionObserver(
     (entries) => {
+      console.log(entries);
       entries.forEach((entry) => {
-        stackClusters.forEach(
-          (cur) =>
-            (cur.style.top = `${parseFloat(window.getComputedStyle(stackParent)["height"])}px`),
-        );
-        const entryInd = observedArr.indexOf(entry.target);
-        const entryHeight =
-          parseFloat(
-            window.getComputedStyle(stackParChildren[entryInd])["height"],
-          ) / 2;
-        const yPos =
-          (parseFloat(window.getComputedStyle(stackParent)["height"]) - 32) /
-            2 -
-          entryHeight;
-        stackClusters[entryInd].style.top = `${yPos}px`;
+        const curNode = this.stackNodeMap.get(entry.target);
+        if (entry.isIntersecting) {
+          curNode.style.transform = `translateY(0)`;
+        } else {
+          curNode.style.transform = `translateY(110%)`;
+        }
       });
     },
     {
-      root: stackOptions,
-      rootMargin: "0px",
+      root: this.stackOptions,
+      rootMargin: '0px -45% 0px -45%',
       threshold: 0,
     },
   );

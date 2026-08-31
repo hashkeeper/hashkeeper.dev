@@ -305,7 +305,8 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
   width: fit-content;
   min-width: 0px;
   max-width: 550px;
-  max-height: 90%;
+  max-height: 95%;
+  margin: 5%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   position: absolute;

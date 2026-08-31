@@ -73,7 +73,7 @@ export class AnimationManager {
           cur.translate = (this.childArr.subjLen + (this.childArr.transform * this.parentArr.dirInt[0]) >= this.parentArr.arrLen)
             ? (this.childArr.subjLen + this.childArr.nodeLen) * this.parentArr.dirInt[1]
             : this.childArr.transform + this.parentArr.speed;
-          cur.node.style.translate = `transform${this.parentArr.axis}(${this.childArr.transform}px)`;
+          cur.node.style.transform = `translate${this.parentArr.axis}(${this.childArr.transform}px)`;
         });
       }
     });
