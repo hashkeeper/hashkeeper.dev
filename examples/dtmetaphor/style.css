@@ -1,0 +1,138 @@
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #6da6c9;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(125, 143, 160);
+    width: 100vw;
+    height: 39px;
+    justify-self: flex-end;
+    align-items: center;
+    z-index: 500; 
+    flex-grow: 1;
+}
+
+nav * {
+    margin: 0 15px 0 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#iconS {
+    z-index: 1;
+}
+
+.desktopIcons {
+    margin: 25px 0 0 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.windowS {
+    position: absolute;
+    border: 2px solid rgb(56, 56, 56);
+    width: 80vw;
+    height: 70vh;
+    background-color: rgb(125, 143, 160);
+    justify-content: space-between;
+}
+
+.windowS:nth-child(1) {top: 25px; right: 50px; }
+.windowS:nth-child(2) {top: 35px; right: 75px; }
+.windowS:nth-child(3) {top: 45px; right: 100px; }
+.windowS:nth-child(4) {top: 55px; right: 125px; }
+
+.windowRow {
+    width: inherit;  
+    justify-content: space-between;
+}
+
+.windowRow:nth-child(2) { height: auto; }
+
+.windowRow div:nth-child(1) { align-self: start; }
+.windowRow div:nth-child(2) { align-self: center; }
+.windowRow div:nth-child(3) { align-self: end; }
+
+#startMenu {
+    display: none;
+    position: absolute;
+    bottom: 39px;
+    width: 448px;
+    height: 65%;
+    background-color:  rgb(125, 143, 160);
+    border: 2px rgb(56, 56, 56);
+    border-style: solid solid none none;
+}
+
+#startButton {
+    width: 100px;
+    background-color: rgb(82, 82, 82);
+    padding: 0 10px 0 15px;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(56, 56, 56);
+    border-radius: 5px;
+}
+
+#startIcon {
+    width: 35px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+    .desktopIcons {
+        margin: 25px 0 0 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .windowS {
+        display: block;
+        position: absolute;
+        width: calc(100% - 4px);
+        height: calc(100vh - 40px);
+        margin: 0 0 0 0;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 39px;
+    }
+
+    .windowS:nth-child(1) {top: 0px; left: 0px; right: 0px; bottom: 39px;}
+    .windowS:nth-child(2) {top: 0px; left: 0px; right: 0px; bottom: 39px;}
+    .windowS:nth-child(3) {top: 0px; left: 0px; right: 0px; bottom: 39px;}
+    .windowS:nth-child(4) {top: 0px; left: 0px; right: 0px; bottom: 39px;}
+
+    #startMenu {
+        display: block;
+        position: absolute;
+        width: calc(100% - 2px);
+        height: calc(100% - 39px);
+        margin: 0 0 0 0;
+        top: 0px;
+        left: 0px;
+        bottom: 39px;
+    }
+}

@@ -253,15 +253,19 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 /* Stack Scroll Menu */
+#stack > h1 {
+  font-size: clamp(18px, 4vw, 44px);
+}
+
 #stackCont {
-  width: clamp(320px, 55%, 45rem);
+  width: clamp(300px, 50%, 45rem);
   aspect-ratio: 1 / 1;
   align-items: center;
 }
 
 #stackDisplay {
-  width: clamp(320px, 100%, 45rem);
-  height: clamp(260px, 90%, 45rem);
+  width: clamp(350px, 100%, 45rem);
+  height: clamp(280px, 80%, 45rem);
   border-radius: 25px 25px 0 0;
   background-color: var(--container-bg);
   position: relative;
@@ -271,8 +275,8 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 #stackOptions {
-  width: clamp(320px, 100%, 45em);
-  height: clamp(35px, 10%, 2em);
+  width: clamp(350px, 100%, 45em);
+  height: clamp(30px, 10%, 2em);
   padding: 1% 0;
   background-color: var(--stack-fg);
   border-radius: 0 0 25px 25px;
@@ -375,35 +379,45 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
   "map like"
   "accr like";
   grid-template-columns: repeat(2, fit-content(100%));
-  grid-template-rows: repeat(3, fit-content(100%));
-  gap: clamp(.25rem, 5%, 2rem);
+  grid-template-rows: 
+    5%
+    repeat(2, fit-content(100%));
+  gap: clamp(.25rem, 3%, 2rem);
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 550px) {
  #aboutCont {
   grid-template:
   "head head"
   "map accr"
   "like like";
+  grid-template-columns: repeat(2, fit-content(100%));
+  grid-template-rows: 
+    5%
+    repeat(2, fit-content(100%));
  }
   
  #aboutAccrd { 
   flex-direction: column !important;
-  height: clamp(200px, 50vw, 30rem);
+  height: clamp(225px, 50vw, 30rem);
   }
- #aboutLikes { width: clamp(350px, 80vw, 600px) !important; }
+ #aboutLikes { 
+  width: clamp(350px, 90vw, 600px) !important;
+  height: clamp(300px, 35vh, 600px) !important;;
+  }
 }
 
 #aboutCont > h1 {
   grid-area: head;
   align-self: center;
   justify-self: center;
+  font-size: clamp(28px, 5vw, 44px);
 }
 
 #aboutMap {
-  width: clamp(200px, 50vw, 30rem);
-  height: clamp(200px, 50vw, 30rem);
+  width: clamp(225px, 35vw, 25rem);
+  height: clamp(225px, 35vw, 25rem);
   aspect-ratio: 1 / 1;
   border-radius: 20rem;
   background-image: var(--map-bg);
@@ -451,7 +465,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 
 #aboutLikes {
   width: clamp(200px, 25vw, 600px);
-  height: clamp(250px, 25vw, 600px);
+  height: clamp(250px, 100%, 600px);
   border-radius: 15px;
   background-color: var(--container-bg);
   grid-area: like;
@@ -472,7 +486,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 }
 
 .faqDropdown {
-  width: clamp(340px, 80vw, 1200px);
+  width: clamp(340px, 50vw, 750px);
   margin: .5rem 0;
   position: relative;
   overflow: hidden;
@@ -502,8 +516,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
 
 .faqQ {
   width: 100%;
-  font-size: min(12px, 18px);
-  text-align: center;
+  font-size: clamp(12px, 1vw, 18px);
 }
 
 .faqA {

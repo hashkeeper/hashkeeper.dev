@@ -136,7 +136,6 @@ export class ScrollManager {
 
   stackObserver = new IntersectionObserver(
     (entries) => {
-      console.log(entries);
       entries.forEach((entry) => {
         const curNode = this.stackNodeMap.get(entry.target);
         if (entry.isIntersecting) {

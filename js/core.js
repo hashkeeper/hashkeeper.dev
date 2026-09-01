@@ -28,7 +28,7 @@ class Core {
     await svgImporter();
     await this.#setVars();
     this.nodeObj.root.querySelector("#footerCopyright").innerText =
-      `© 2023 - ${this.date.getFullYear()} Hashkeeper™`;
+      `© 2023 - ${this.date.getFullYear()} Hashkeeper LLC™`;
 
     await this.#scrollSetup();
     await this.#themeSetup();
