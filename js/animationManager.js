@@ -23,14 +23,14 @@ export class AnimationManager {
   #getFullLength (targetEle, axis) {
     const eleStyles = this.nodeObj.window.getComputedStyle(targetEle);
     if (axis === "width") {
-      const marginLeft = parseFloat(eleStyles.marginLeft);
-      const marginRight = parseFloat(eleStyles.marginRight);
-      const eleWidth = parseFloat(eleStyles.offsetWidth);
+      const marginLeft = parseFloat(eleStyles.getPropertyValue("margin-left"));
+      const marginRight = parseFloat(eleStyles.getPropertyValue("margin-right"));
+      const eleWidth = parseFloat(targetEle.offsetWidth);
       return marginLeft + marginRight + eleWidth;
     } else {
-      const marginTop = parseFloat(eleStyles.marginTop);
-      const marginBottom = parseFloat(eleStyles.marginBottom);
-      const eleHeight = parseFloat(eleStyles.offsetHeight);
+      const marginTop = parseFloat(eleStyles.getPropertyValue("margin-top"));
+      const marginBottom = parseFloat(eleStyles.getPropertyValue("margin-bottom"));
+      const eleHeight = parseFloat(targetEle.offsetHeight);
       return marginTop + marginBottom + eleHeight;
     }
   }
@@ -48,16 +48,14 @@ export class AnimationManager {
       const nodeLen = this.#getFullLength(cur, axis);
       childArr[ind] = {
         "node": cur,
-        "transform": 0, 
+        "transform": 0,
         "nodeLen": nodeLen,
         "subjLen": arrLen
       }
       arrLen += nodeLen;
     });
 
-    // console.log(targetEle);
-    // console.log(childArr);
-    // console.log(arrLen);
+    console.log(childArr);
 
     this.#addAnimation(targetEle, {
       "childArr": childArr,
@@ -70,11 +68,12 @@ export class AnimationManager {
       "isPaused": false,
       "update": function () {
         this.childArr.forEach(cur => {
-          cur.translate = (this.childArr.subjLen + (this.childArr.transform * this.parentArr.dirInt[0]) >= this.parentArr.arrLen)
-            ? (this.childArr.subjLen + this.childArr.nodeLen) * this.parentArr.dirInt[1]
-            : this.childArr.transform + this.parentArr.speed;
-          cur.node.style.transform = `translate${this.parentArr.axis}(${this.childArr.transform}px)`;
+          cur.transform = (cur.subjLen + (cur.transform * this.parentArr.dirInt[0]) >= this.parentArr.arrLen)
+            ? cur.subjLen * this.parentArr.dirInt[1]
+            : cur.transform + this.parentArr.speed;
+          cur.node.style.transform = `translate${this.parentArr.axis}(${cur.transform}px)`;
         });
+        console.log(true);
       }
     });
   }

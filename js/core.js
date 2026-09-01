@@ -25,15 +25,20 @@ class Core {
   }
 
   async init() {
-    await svgImporter();
-    await this.#setVars();
-    this.nodeObj.root.querySelector("#footerCopyright").innerText =
-      `© 2023 - ${this.date.getFullYear()} Hashkeeper LLC™`;
+    try {
+      await svgImporter();
 
-    await this.#scrollSetup();
-    await this.#themeSetup();
-    await this.#animationSetup();
-    await this.#clickSetup();
+      this.#setVars();
+      this.nodeObj.root.querySelector("#footerCopyright").innerText =
+        `© 2023 - ${this.date.getFullYear()} Hashkeeper LLC™`;
+
+      this.#animationSetup();
+      this.#scrollSetup();
+      this.#themeSetup();
+      this.#clickSetup();
+    } catch (error) {
+      console.log(error);
+    } 
   }
 
   #setVars() {
@@ -64,7 +69,7 @@ class Core {
     });
     this.aniMan.infiniteScroll(
       document.querySelector("#affirmations"),
-      "top",
+      "up",
       1.5,
       true,
     );
