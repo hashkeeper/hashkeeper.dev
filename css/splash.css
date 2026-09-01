@@ -84,7 +84,7 @@
 }
 
 #hkCryptog {
-  --hkCryptog-dimensions: clamp(250px, 43vw, 700px);
+  --hkCryptog-dimensions: clamp(225px, 35vw, 700px);
   width: var(--hkCryptog-dimensions);
   height: var(--hkCryptog-dimensions);
 }
@@ -111,10 +111,10 @@
 }
 
 #textHdr {
-  width: clamp(250px, 55%, 750px);
+  width: clamp(300px, 65%, 750px);
   margin: 2rem 0 0 0;
   text-align: center;
   color: var(--heading-color);
-  font-size: clamp(16px, 5vw, 40px);
+  font-size: clamp(20px, 5%, 40px);
   font-family: 'Metamorphous';
 }
