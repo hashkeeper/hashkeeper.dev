@@ -15,6 +15,9 @@ export class ThemeManager {
     this.contrChecked = localStorage.getItem("contrSet");
     this.monthChecked = localStorage.getItem("monthSet");
 
+    this.changeTheme = this.changeTheme.bind(this);
+    this.themeByDate = this.themeByDate.bind(this);
+
     this.#init();
   }
 

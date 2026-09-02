@@ -173,7 +173,7 @@
 .monthTheme:has(input[type="radio"]:checked){ font-weight: bold; }
 
 #refreshTheme {
-  height: 100%;
+  padding: 1rem 0;
   display: block;
   position: relative;
   color: var(--menu-text-color);
