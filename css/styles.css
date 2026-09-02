@@ -241,7 +241,7 @@ div#examplesScroll > .example:nth-child(4) { background-image: url(./../images/t
 div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/thumbnails/reusableCode.png); }
 
 #clickHere {
-  top: 0rem;
+  top: -1.5rem;
   position: absolute;
   color: var(--gen-text-color);
   text-wrap: nowrap;

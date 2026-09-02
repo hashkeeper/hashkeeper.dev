@@ -21,16 +21,19 @@ export class AnimationManager {
   }
 
   #getFullLength (targetEle, axis) {
-    const eleStyles = this.nodeObj.window.getComputedStyle(targetEle);
-    if (axis === "width") {
-      const marginLeft = parseFloat(eleStyles.getPropertyValue("margin-left"));
-      const marginRight = parseFloat(eleStyles.getPropertyValue("margin-right"));
-      const eleWidth = parseFloat(targetEle.offsetWidth);
+    const eleStyles = getComputedStyle(targetEle);
+    console.log(targetEle, axis);
+    if (axis === "X") {
+      const marginLeft = parseFloat(eleStyles.marginLeft);
+      const marginRight = parseFloat(eleStyles.marginRight);
+      const eleWidth = parseFloat(targetEle.getBoundingClientRect().width);
+      console.log(marginLeft, marginRight, eleWidth);
       return marginLeft + marginRight + eleWidth;
     } else {
-      const marginTop = parseFloat(eleStyles.getPropertyValue("margin-top"));
-      const marginBottom = parseFloat(eleStyles.getPropertyValue("margin-bottom"));
-      const eleHeight = parseFloat(targetEle.offsetHeight);
+      const marginTop = parseFloat(eleStyles.marginTop);
+      const marginBottom = parseFloat(eleStyles.marginBottom);
+      const eleHeight = parseFloat(targetEle.getBoundingClientRect().height);
+      console.log(marginTop, marginBottom, eleHeight);
       return marginTop + marginBottom + eleHeight;
     }
   }
@@ -38,7 +41,7 @@ export class AnimationManager {
   infiniteScroll (targetEle, direction, speed, hoverPause = false) {
     const dirInt = (direction == "right" | direction == "down")? [ 1, -1 ] : [ -1, 1 ];
     const axis = (direction == "right" | direction == "left")? "X" : "Y";
-    const axisStr = (direction == "right" | direction == "left")? "width" : "height";
+    const axisStr = (axis == "X")? "width" : "height";
     let childArr = (dirInt[0] == 1)? [...targetEle.children] : [...targetEle.children].reverse();
     if (dirInt[0] == -1) { targetEle.style.justifyContent = "end"; }
 
@@ -55,11 +58,9 @@ export class AnimationManager {
       arrLen += nodeLen;
     });
 
-    console.log(childArr);
-
     this.#addAnimation(targetEle, {
       "childArr": childArr,
-      "parentArr": {
+      "parentObj": {
         "axis": axis,
         "arrLen": arrLen,
         "speed": speed * dirInt[0],
@@ -68,12 +69,11 @@ export class AnimationManager {
       "isPaused": false,
       "update": function () {
         this.childArr.forEach(cur => {
-          cur.transform = (cur.subjLen + (cur.transform * this.parentArr.dirInt[0]) >= this.parentArr.arrLen)
-            ? cur.subjLen * this.parentArr.dirInt[1]
-            : cur.transform + this.parentArr.speed;
-          cur.node.style.transform = `translate${this.parentArr.axis}(${cur.transform}px)`;
+          cur.transform = cur.subjLen + (cur.transform * this.parentObj.dirInt[0]) >= this.parentObj.arrLen - cur.nodeLen
+            ? (cur.subjLen + cur.nodeLen) * this.parentObj.dirInt[1]
+            : cur.transform + this.parentObj.speed;
+          cur.node.style.transform = `translate${this.parentObj.axis}(${cur.transform}px)`;
         });
-        console.log(true);
       }
     });
   }
@@ -96,7 +96,7 @@ export class AnimationManager {
 // setTimeout(() => {
 //   function infiniteScroll(eleArr, speed, direction, childSpacing = 0, parentPadding = 0) {
 //     const childArr = [...eleArr.children];
-//     const childObj = {};
+//     const childArr = {};
 //     const axis = (direction === 'top' || direction === 'bottom')? ['height', 'width'] : ['width', 'height'];
 
 //     let arrLen = 0;
