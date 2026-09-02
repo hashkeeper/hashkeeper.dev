@@ -1,9 +1,9 @@
 export function svgImporter () {
-	return new Promise(async (resolve, reject) => {
-		await document.querySelectorAll('[data-svg]').forEach(container => {
+	return Promise.all([...document.querySelectorAll('[data-svg]')]
+		.map(async (container) => {
 			const svgUrl = container.getAttribute('data-svg');
 
-			fetch(svgUrl)
+			await fetch(svgUrl)
 				.then(response => response.text())
 				.then(svgText => {
 					container.innerHTML = svgText;
@@ -18,9 +18,6 @@ export function svgImporter () {
 				.catch(error => {
 					console.error('Error loading SVG:', error);
 					container.innerHTML = 'SVG failed to load';
-					reject();
 				});
-		});
-	resolve();
-	});
-};
+		}));
+}
