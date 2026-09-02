@@ -95,7 +95,6 @@
   display: block;
 }
 #hkCryptog .stream > * {
-  position: absolute;
   fill: var(--svg-stream-fill);
 }
 

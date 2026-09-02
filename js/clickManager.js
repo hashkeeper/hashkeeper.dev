@@ -1,30 +1,34 @@
 export class ClickManager {
-  constructor() {
+  constructor (nodeObj) {
+    this.nodeObj = nodeObj;
+
     // Menus and subelements (tabs)
-    this.navEl = document.querySelector("nav");
-    this.navTab = document.querySelector("#navTab > div");
-    this.themeEl = document.querySelector("#themePicker");
-    this.themeTab = document.querySelector("#themeTab > div");
-    // Click bools
-    this.navBool = true;
+    this.mapEl = this.nodeObj.root.querySelector("#mapCont");
+    this.mapTab = this.nodeObj.root.querySelector("#mapTab > div");
+    this.mapBool = true;
+
+    this.themeEl = this.nodeObj.root.querySelector("#themePicker");
+    this.themeTab = this.nodeObj.root.querySelector("#themeTab > div");
     this.themeBool = true;
+
     // FAQ Buttons
-    this.faqDropdownArr = document.querySelectorAll(".faqDropdown");
+    this.faqDropdownArr = this.nodeObj.root.querySelectorAll(".faqDropdown");
+
+    this.#init();
   }
 
   #init() {
-    // Click Event Listeners
-    this.navTab.addEventListener("click", function () {
-      this.navEl.style.animation = this.navBool
-        ? `1s ease-out forwards navAppear`
-        : `1s ease-out forwards navDisappear`;
-      this.navTab.style.animation = this.navBool
-        ? `1s ease-out forwards navTabFlip`
-        : `1s ease-out forwards navTabRight`;
-      this.navBool = this.navBool ? false : true;
+    this.mapTab.addEventListener("click", () => {
+      this.mapEl.style.animation = this.mapBool
+        ? `1s ease-out forwards mapAppear`
+        : `1s ease-out forwards mapDisappear`;
+      this.mapTab.style.animation = this.mapBool
+        ? `1s ease-out forwards mapTabFlip`
+        : `1s ease-out forwards mapTabRight`;
+      this.mapBool = this.mapBool ? false : true;
     });
 
-    this.themeTab.addEventListener("click", function () {
+    this.themeTab.addEventListener("click", () => {
       this.themeEl.style.animation = this.themeBool
         ? `1s ease-out forwards themeAppear`
         : `1s ease-out forwards themeDisappear`;
@@ -40,7 +44,7 @@ export class ClickManager {
       const answerEl = childrenArr[1];
       childrenArr[0].addEventListener("click", () => {
         let posBool =
-          window.getComputedStyle(arrowEl).transform ===
+         window.getComputedStyle(arrowEl).transform ===
           "matrix(-1, 0, 0, -1, 0, 0)"
             ? true
             : false;
