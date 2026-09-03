@@ -16,7 +16,7 @@
 </head>
 <body class="flex-column">
   <nav class="flex-column">
-    <div id="mapCont">
+    <div id="mapCont" class="flex-column">
       <ul id="mapList" class="flex-row">
         <li><a href="#soundbite">Soundbite</a></li>
         <li><a href="#missState">Mission</a></li>
@@ -32,79 +32,81 @@
       </div>
     </div>
 
-    <div id="themePicker" class="flex-column">
+    <div id="themeCont" class="flex-row">
+      <div id="themePicker" class="flex-column">
+        <fieldset id="contrPicker" class="flex-row">
+          <label class="contrTheme" for="lightTheme">
+            <input id="lightTheme" type="radio" name="contr" value="L" checked>
+            <div data-svg="./images//svgs/buttons/sun.svg"></div>
+          </label>
+          <label class="contrTheme" for="darkTheme">
+            <input id="darkTheme" type="radio" name="contr" value="D">
+            <div data-svg="./images/svgs/buttons/moon.svg"></div>
+          </label>
+        </fieldset>
+        <fieldset id="monthPicker" class="flex-column">
+          <div class="flex-row">
+            <label class="monthTheme" for="janTheme">
+              <input type="radio" name="theme" value="jan">
+              [Jan]
+            </label>
+            <label class="monthTheme" for="febTheme">
+              <input type="radio" name="theme" value="feb">
+              [Feb]
+            </label>
+            <label class="monthTheme" for="marTheme">
+              <input type="radio" name="theme" value="mar">
+              [Mar]
+            </label>
+          </div>
+          <div class="flex-row">
+            <label class="monthTheme" for="aprTheme">
+              <input type="radio" name="theme" value="apr">
+              [Apr]
+            </label>
+            <label class="monthTheme" for="mayTheme">
+              <input type="radio" name="theme" value="may">
+              [May]
+            </label>
+            <label class="monthTheme" for="junTheme">
+              <input type="radio" name="theme" value="jun">
+              [Jun]
+            </label>
+          </div>
+          <div class="flex-row">
+            <label class="monthTheme" for="julTheme">
+              <input type="radio" name="theme" value="jul">
+              [Jul]
+            </label>
+            <label class="monthTheme" for="augTheme">
+              <input type="radio" name="theme" value="aug">
+              [Aug]
+            </label>
+            <label class="monthTheme" for="sepTheme">
+              <input type="radio" name="theme" value="sep">
+              [Sep]
+            </label>
+          </div>
+          <div class="flex-row">
+            <label class="monthTheme" for="octTheme">
+              <input type="radio" name="theme" value="oct">
+              [Oct]
+            </label>
+            <label class="monthTheme" for="novTheme">
+              <input type="radio" name="theme" value="nov">
+              [Nov]
+            </label>
+            <label class="monthTheme" for="decTheme">
+              <input type="radio" name="theme" value="dec">
+              [Dec]
+            </label>
+          </div>
+        </fieldset>
+        <p id="refreshTheme">Refresh Theme</p>
+      </div>
       <div id="themeTab" class="flex-row">
         <div data-svg="./images/svgs/buttons/arrow.svg"></div>
       </div>
-      <fieldset id="contrPicker" class="flex-row">
-        <label class="contrTheme" for="lightTheme">
-          <input id="lightTheme" type="radio" name="contr" value="L" checked>
-          <div data-svg="./images//svgs/buttons/sun.svg"></div>
-        </label>
-        <label class="contrTheme" for="darkTheme">
-          <input id="darkTheme" type="radio" name="contr" value="D">
-          <div data-svg="./images/svgs/buttons/moon.svg"></div>
-        </label>
-      </fieldset>
-      <fieldset id="monthPicker" class="flex-column">
-        <div class="flex-row">
-          <label class="monthTheme" for="janTheme">
-            <input type="radio" name="theme" value="jan">
-            [Jan]
-          </label>
-          <label class="monthTheme" for="febTheme">
-            <input type="radio" name="theme" value="feb">
-            [Feb]
-          </label>
-          <label class="monthTheme" for="marTheme">
-            <input type="radio" name="theme" value="mar">
-            [Mar]
-          </label>
-        </div>
-        <div class="flex-row">
-          <label class="monthTheme" for="aprTheme">
-            <input type="radio" name="theme" value="apr">
-            [Apr]
-          </label>
-          <label class="monthTheme" for="mayTheme">
-            <input type="radio" name="theme" value="may">
-            [May]
-          </label>
-          <label class="monthTheme" for="junTheme">
-            <input type="radio" name="theme" value="jun">
-            [Jun]
-          </label>
-        </div>
-        <div class="flex-row">
-          <label class="monthTheme" for="julTheme">
-            <input type="radio" name="theme" value="jul">
-            [Jul]
-          </label>
-          <label class="monthTheme" for="augTheme">
-            <input type="radio" name="theme" value="aug">
-            [Aug]
-          </label>
-          <label class="monthTheme" for="sepTheme">
-            <input type="radio" name="theme" value="sep">
-            [Sep]
-          </label>
-        </div>
-        <div class="flex-row">
-          <label class="monthTheme" for="octTheme">
-            <input type="radio" name="theme" value="oct">
-            [Oct]
-          </label>
-          <label class="monthTheme" for="novTheme">
-            <input type="radio" name="theme" value="nov">
-            [Nov]
-          </label>
-          <label class="monthTheme" for="decTheme">
-            <input type="radio" name="theme" value="dec">
-            [Dec]
-          </label>
-        </div>
-      </fieldset>
-      <p id="refreshTheme">Refresh Theme</p>
     </div>
   </nav>
 

@@ -1,18 +1,23 @@
 /* Site Navigation */
 #mapCont, #mapCont * { z-index: 15; }
-#mapCont {
-  position: fixed;
-  align-items: end;
-  top: -2.5em;
-  transition: opacity 1s linear;
+#mapCont {  
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+  position: absolute;
+  inset: 0;
+  transition: 
+    opacity 1s linear,
+    transform 1s linear;
 }
 
 #mapList {
   padding: 5px;
-  width: auto;
+  width: clamp(10rem, 40vw, 35rem);
   height: 1.75rem;
   background: var(--menu-bg);
   align-items: center;
+  justify-content: space-around;
   overflow: hidden;
   border-radius: 25px 25px 0 25px;
   box-shadow: 0 0 0 1px var(--menu-shadow);
@@ -20,13 +25,13 @@
   text-wrap: nowrap;
 }
 #mapList > li {
-  padding: 0 1.25rem;
+  font-size: clamp(8px, 5vw, 14px);
 }
 #mapList a {
   color: var(--menu-text-color);
 }
 #mapList > hr {
-  height: 5rem;
+  height: 100%;
   width: 1px;
   border: none;
   background-color: var(--menu-shadow);
@@ -36,8 +41,6 @@
   width: 25px;
   height: 25px;
   padding: 5px;
-  top: -2px;
-  position: relative;
   background: var(--menu-bg);
   border-radius: 0 0 25% 25%;
   box-shadow:
@@ -46,8 +49,7 @@
     0 -1px 0 0 rgba(0, 0, 0, 0),
     0 1px 0 0 var(--menu-shadow);
   display: flex;
-  justify-self: right;
-  align-self: right;
+  align-self: end;
   font-size: 25px;
   overflow: hidden;
 }
@@ -66,20 +68,27 @@
 }
 
 /* Theme Picker */
+#themeCont {
+  width: max-content;
+  height: max-content;
+  margin: auto 0;
+  position: absolute;
+  inset: 0;
+  transition: 
+    opacity 1s linear,
+    transform 1s linear;
+}
+
 #themePicker, #themePicker * { z-index: 15; }
 #themePicker {
-  position: fixed;
-  width: 250px;
-  height: 275px;
-  left: -16em;
-  top: 35%;
+  width: clamp(15rem, 15vw, 20rem);
+  height: clamp(12rem, 26vh, 20rem);
   background: var(--menu-bg);
   justify-content: start;
   align-items: center;
   border-radius: 25px 0 25px 25px;
   box-shadow: 0 0 0 1px var(--menu-shadow);
   z-index: 10;
-  transition: opacity 1s linear;
 }
 
 #themePicker > fieldset {
@@ -91,14 +100,13 @@
   height: 25px;
   padding: 5px;
   background: var(--menu-bg);
-  position: absolute;
-  right: -35px;
   border-radius: 25% 25% 0 0;
   box-shadow:
     1px 0 0 0 var(--menu-shadow),
     -1px 0 0 0 var(--menu-shadow),
     0 1px 0 0 rgba(0, 0, 0, 0),
     0 -1px 0 0 var(--menu-shadow);
+  z-index: 10;
   transform: rotate(90deg);
 }
 
