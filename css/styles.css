@@ -204,7 +204,7 @@ svg.miniIcons , svg.miniIcons path {
 #examplesCont > h1 { font-size: min(26px, 52px); }
 
 #examplesScroll {
-  width: clamp(100px, 60vw, 60rem) !important;
+  width: clamp(90px, 60vw, 55rem) !important;
   padding: 1.5rem;
   position: relative;
   overflow-x: hidden;
@@ -213,7 +213,7 @@ svg.miniIcons , svg.miniIcons path {
 }
 
 .example {
-  width: clamp(200px, 15%, 50rem) !important;
+  width: clamp(200px, 32%, 50rem) !important;
   aspect-ratio: 1 / 1;
   margin: 0 7rem;
   border-radius: 25px;

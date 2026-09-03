@@ -81,7 +81,7 @@
 
 #themePicker, #themePicker * { z-index: 15; }
 #themePicker {
-  width: clamp(15rem, 15vw, 20rem);
+  width: clamp(15rem, 15vw, 250px);
   height: clamp(12rem, 26vh, 20rem);
   background: var(--menu-bg);
   justify-content: start;
