@@ -13,8 +13,7 @@
 
 #mapList {
   padding: 5px;
-  width: clamp(10rem, 40vw, 35rem);
-  height: 1.75rem;
+  width: clamp(28rem, 40vw, 35rem);
   background: var(--menu-bg);
   align-items: center;
   justify-content: space-around;
@@ -24,6 +23,14 @@
   list-style-type: none;
   text-wrap: nowrap;
 }
+@media (max-width: 550px) {
+  #mapList {
+    flex-direction: column;
+    width: auto;
+    margin: 0 70%;
+  }
+}
+
 #mapList > li {
   font-size: clamp(8px, 5vw, 14px);
 }
@@ -82,7 +89,7 @@
 #themePicker, #themePicker * { z-index: 15; }
 #themePicker {
   width: clamp(15rem, 15vw, 250px);
-  height: clamp(12rem, 26vh, 20rem);
+  height: clamp(17rem, 26vh, 20rem);
   background: var(--menu-bg);
   justify-content: start;
   align-items: center;

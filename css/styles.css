@@ -386,6 +386,7 @@ div#examplesScroll > .example:nth-child(5) { background-image: url(./../images/t
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 550px) {
  #aboutCont {
   grid-template:
