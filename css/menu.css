@@ -14,6 +14,7 @@
 #mapList {
   padding: 5px;
   width: clamp(28rem, 40vw, 35rem);
+  height: clamp(2rem, 2vh, 6rem);
   background: var(--menu-bg);
   align-items: center;
   justify-content: space-around;
@@ -24,10 +25,15 @@
   text-wrap: nowrap;
 }
 @media (max-width: 550px) {
+  #mapCont { margin: 0 0 0 60%; }
   #mapList {
+    width: 7rem;
+    height: 10rem;
     flex-direction: column;
-    width: auto;
-    margin: 0 70%;
+  }
+  #mapList > li > hr { 
+    height: 1px !important;
+    width: 150px !important;
   }
 }
 
@@ -36,9 +42,10 @@
 }
 #mapList a {
   color: var(--menu-text-color);
+  font-size: clamp(.85rem, 1vw, 1.125rem);
 }
-#mapList > hr {
-  height: 100%;
+#mapList > li > hr {
+  height: 150px;
   width: 1px;
   border: none;
   background-color: var(--menu-shadow);
@@ -180,6 +187,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-size: clamp(.85rem, 1vw, 1.125rem);
 }
 .monthTheme > input {
   width: inherit;
