@@ -27,15 +27,13 @@ class Core {
   async init() {
     try {
       await svgImporter();
-
       this.#setVars();
       this.nodeObj.root.querySelector("#footerCopyright").innerText =
         `© 2023 - ${this.date.getFullYear()} Hashkeeper LLC™`;
-
-      this.#animationSetup();
-      this.#scrollSetup();
-      this.#themeSetup();
-      this.#clickSetup();
+      await this.#animationSetup();
+      await this.#scrollSetup();
+      await this.#themeSetup();
+      await this.#clickSetup();
     } catch (error) {
       console.log(error);
     } 

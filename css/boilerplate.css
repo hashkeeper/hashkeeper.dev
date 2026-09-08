@@ -35,6 +35,7 @@ body {
   background: var(--bg);
   justify-items: center;
   align-items: center;
+  overflow: hidden;
 }
 
 /* Text Blocks */
