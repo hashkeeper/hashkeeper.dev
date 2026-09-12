@@ -26,8 +26,8 @@ class Core {
 
   async init() {
     try {
-      await svgImporter();
       this.#setVars();
+      await svgImporter();
       this.nodeObj.root.querySelector("#footerCopyright").innerText =
         `© 2023 - ${this.date.getFullYear()} Hashkeeper LLC™`;
       await this.#animationSetup();
