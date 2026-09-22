@@ -1,0 +1,22 @@
+body[data-theme="dark"] {
+  --text-color: white;
+  --footer-text-color: #585858;
+  --bg-image: url('/assets/bgs/bg_dark.webp');
+  --header-image: url('/assets/hkwaveyDark.webp');
+  --themePicker-image: url('/assets/icons/sun.svg');
+  --themePicker-fill: #b2b0b0;
+  --main-bg: #3b3b3b;
+  --main-border: hsla(0, 0%, 25%, 0.3);
+}
+
+body[data-theme="light"] {
+  --text-color: black;
+  --footer-text-color: #7d7d7d;
+  --bg-image: url('/assets/bgs/bg_light.webp');
+  --header-image: url('/assets/hkwaveyLight.webp');
+  --themePicker-image: url('/assets/icons/moon.svg');
+  --themePicker-fill: #525252;
+  --main-bg: #b2b2b2;
+  --main-border: hsla(0, 0%, 70%, 0.3);
+  ;
+}

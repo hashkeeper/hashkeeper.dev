@@ -1,0 +1,23 @@
+#logoHeader {
+  width: clamp(55px, 8%, 165px);
+  height: clamp(70px, 10%, 75px);
+  margin: 0 0 0 clamp(5px, 5%, 30px);
+  background-image: var(--header-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+
+#themePicker {
+  width: clamp(30px, 5%, 50px);
+  aspect-ratio: 1 / 1;
+  margin: 0 clamp(5px, 5%, 30px) 0 0;
+  border-radius: 20rem;
+  fill: var(--themePicker-fill);
+}
+
+#footerCopyright {
+  color: var(--footer-text-color);
+  margin: 0 0 clamp(5px, 2%, 10px) clamp(5px, 2%, 10px);
+}
