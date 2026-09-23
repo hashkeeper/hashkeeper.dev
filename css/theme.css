@@ -1,4 +1,5 @@
 body[data-theme="dark"] {
+  --bg-color: #191919;
   --text-color: white;
   --footer-text-color: #585858;
   --bg-image: url('/assets/bgs/bg_dark.webp');
@@ -10,6 +11,7 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="light"] {
+  --bg-color: #EBFFDF;
   --text-color: black;
   --footer-text-color: #7d7d7d;
   --bg-image: url('/assets/bgs/bg_light.webp');
@@ -18,5 +20,4 @@ body[data-theme="light"] {
   --themePicker-fill: #525252;
   --main-bg: #b2b2b2;
   --main-border: hsla(0, 0%, 70%, 0.3);
-  ;
 }
